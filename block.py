@@ -1,11 +1,10 @@
 class block():
-    def __init__(self, blocks, address) -> None:
-        blocks[address] = self
+    def __init__(self, address) -> None:
         self.address = address
 
 class codeBlock(block):
-    def __init__(self, blocks, address) -> None:
-        super().__init__(blocks, address)
+    def __init__(self, address) -> None:
+        super().__init__(address)
         self.target = []
         self.opcodes = []
 
@@ -30,8 +29,8 @@ class codeBlock(block):
         return s
 
 class dataBlock(block):
-    def __init__(self, blocks, address, data) -> None:
-        super().__init__(blocks, address)
+    def __init__(self, address, data) -> None:
+        super().__init__(address)
         self.data = data
 
     def __str__(self) -> str:
