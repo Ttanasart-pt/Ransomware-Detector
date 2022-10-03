@@ -50,6 +50,6 @@ def disassmble(infile, outfile):
 if __name__ == "__main__":
     infile = "sample/VirusShare_711597ee812105d3ea6600bb0be7a25a"
     #infile = "sample/VirusShare_e1831d608e91f8eda9633ab698d90513"
-    outfile = f"assembly/{os.path.basename(infile)}.txt"
+    outfile = f"assembly/{os.path.basename(infile)} lin.txt"
     
     disassmble(infile, outfile)

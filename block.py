@@ -36,7 +36,7 @@ class codeBlock(block):
             self.appendTarget(b.address)
             self.opcodes = self.opcodes[:ind]
             self.endAddr = addr
-            
+
         return b
 
     def __len__(self):

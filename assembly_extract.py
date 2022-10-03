@@ -20,7 +20,11 @@ class Disassamble():
         self.blocks = {}
 
     def blockExist(self, addr):
+        if addr in self.blocks:
+            return self.blocks[addr]
+
         ar = list(self.blocks.keys())
+        ar.sort()
         st = 0
         ed = len(ar) - 1
 
@@ -54,7 +58,7 @@ class Disassamble():
                 block.append(_asm)
             if willBreak:
                 _block = codeBlock(asm.address)
-                self.blocks[addr] = _block
+                self.blocks[asm.address] = _block
                 block.appendTarget(asm.address)
                 block = _block
                 willBreak = False
