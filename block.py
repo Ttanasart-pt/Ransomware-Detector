@@ -35,6 +35,22 @@ class dataBlock(block):
 
     def __str__(self) -> str:
         s = f"\n=== DATA BLOCK ADDRESS {hex(self.address)} ===\n"
-        s += f"  {hex(self.address)}\t{self.data}\n"
+        addr = self.address
+
+        linew = 16
+        for i in range(0, len(self.data), linew):
+            dat = self.data[i : i + linew]
+            sb = ''
+            st = ''
+            for d in dat:
+                byt = str(d.to_bytes(1, 'little'))
+                byt = byt[2:]
+                byt = byt[:-1]
+                st += byt if byt[0] != "\\" else "0"
+                sb += "0x{:02x}".format(d)[:2] + " "
+
+            s += f"  {hex(addr)}\t{sb}\t{st}\n"
+            addr += linew
+        
         s += f"=== DATA BLOCK END ===\n"
         return s

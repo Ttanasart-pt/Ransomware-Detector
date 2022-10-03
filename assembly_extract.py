@@ -34,7 +34,7 @@ class Disassamble():
         willBreak = False
 
         for asm in disam:
-            if _asm is not None:
+            if _asm:
                 block.append(_asm)
             if willBreak:
                 _block = codeBlock(asm.address)
