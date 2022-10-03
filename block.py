@@ -1,3 +1,6 @@
+from audioop import add
+
+
 class block():
     def __init__(self, address) -> None:
         self.address = address
@@ -8,11 +11,33 @@ class codeBlock(block):
         self.target = []
         self.opcodes = []
 
+        self.endAddr = address
+
     def append(self, assm):
         self.opcodes.append(assm)
+        self.endAddr = max(self.endAddr, assm.address)
         
     def appendTarget(self, addr):
         self.target.append(addr)
+
+    def split(self, addr):
+        ind = 0
+        b = None
+        for i, op in enumerate(self.opcodes):
+            if op.address < addr:
+                continue
+            if b is None:
+                ind = i
+                b = codeBlock(addr)
+            b.append(op)
+        if b is not None:
+            b.target = [t for t in self.target]
+            self.target.clear()
+            self.appendTarget(b.address)
+            self.opcodes = self.opcodes[:ind]
+            self.endAddr = addr
+            
+        return b
 
     def __len__(self):
         return len(self.opcodes)
@@ -26,7 +51,13 @@ class codeBlock(block):
             for i in self.target:
                 s += f"    {hex(i)}\n"
         s += f"=== CODE BLOCK END ===\n"
-        return s
+        return s    
+        
+    def writeOpcodes(self) -> str:
+        s = ''
+        for i in self.opcodes:
+            s += f"{i.mnemonic},"
+        return s    
 
 class dataBlock(block):
     def __init__(self, address, data) -> None:
@@ -47,7 +78,7 @@ class dataBlock(block):
                 byt = byt[2:]
                 byt = byt[:-1]
                 st += byt if byt[0] != "\\" else "0"
-                sb += "0x{:02x}".format(d)[:2] + " "
+                sb += "0x{:02x}".format(d)[2:] + " "
 
             s += f"  {hex(addr)}\t{sb}\t{st}\n"
             addr += linew

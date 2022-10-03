@@ -7,8 +7,6 @@ import argparse
 
 from block import codeBlock, dataBlock
 
-## EXE opcode graph extractor
-
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
         "jge", "jb", "jbe", "ja", "jae", "jcxz", "jecxz", "jrcxz", "loop", "loopne",
@@ -21,8 +19,26 @@ class Disassamble():
         self.md.skipdata = True
         self.blocks = {}
 
+    def blockExist(self, addr):
+        ar = list(self.blocks.keys())
+        st = 0
+        ed = len(ar) - 1
+
+        lastBlock  = self.blocks[ar[-1]]
+        if lastBlock.endAddr < addr:
+            return None
+
+        while ed - st > 1:
+            md = round((st + ed) / 2)
+            if ar[md] == addr:
+                return self.blocks[ar[md]]
+            elif ar[md] > addr:
+                ed = md
+            else:
+                st = md
+        return self.blocks[ar[st]]
+
     def readTextSection(self, section):
-        addrs = []
         addr = section.VirtualAddress
         code = section.get_data()
         
@@ -60,9 +76,13 @@ class Disassamble():
                     break
                 frm, addr  = queue.get()
                 disam = self.md.disasm(code, addr)
-                self.blocks[addr] = codeBlock(addr)
-                frm.appendTarget(addr)
 
+                b = self.blockExist(addr)
+                if b and b.address < addr < b.endAddr:
+                    self.blocks[addr] = b.split(addr)
+                else:
+                    self.blocks[addr] = codeBlock(addr)
+                frm.appendTarget(addr)
             _asm = asm
 
     def readDataSection(self, section):
@@ -92,6 +112,14 @@ class Disassamble():
             for _, b in self.blocks.items():
                 f.write(str(b))
 
+    def writeOpcode(self, fname):
+        with open(fname, "w") as f:
+            for _, b in self.blocks.items():
+                if not isinstance(b, codeBlock):
+                    continue
+                f.write(b.writeOpcodes() + "\n")
+
+
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("-i")
@@ -101,7 +129,9 @@ if __name__ == "__main__":
     infile = "sample/VirusShare_711597ee812105d3ea6600bb0be7a25a" if parse.i == None else parse.i
     #infile = "sample/VirusShare_e1831d608e91f8eda9633ab698d90513"
     outfile = f"assembly/{os.path.basename(infile)}.txt" if parse.o == None else parse.o
+    opfile = f"assembly/{os.path.basename(infile)} ops.txt"
     
     dism = Disassamble()
     dism.disassmble(infile)
     dism.write(outfile)
+    dism.writeOpcode(opfile)
