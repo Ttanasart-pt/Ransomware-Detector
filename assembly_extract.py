@@ -4,6 +4,7 @@ import pefile
 import os
 from capstone import *
 import argparse
+import csv
 
 from block import codeBlock, dataBlock
 
@@ -18,6 +19,8 @@ class Disassamble():
         self.md = Cs(CS_ARCH_X86, CS_MODE_32)
         self.md.skipdata = True
         self.blocks = {}
+
+        self.adjGraph = []
 
     def blockExist(self, addr):
         if addr in self.blocks:
@@ -123,7 +126,27 @@ class Disassamble():
                     continue
                 f.write(b.writeOpcodes() + "\n")
 
+    def writeAdj(self, fname):
+        with open(fname, "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.adjGraph)
 
+    def graphify(self):
+        blockInd = {}
+
+        for _, b in self.blocks.items():
+            if not isinstance(b, codeBlock):
+                continue
+            b.ind = len(blockInd)
+            blockInd[b.address] = b.ind
+        
+        for _, b in self.blocks.items():
+            if not isinstance(b, codeBlock):
+                continue
+            fr = b.ind
+            for t in b.target:
+                self.adjGraph.append([fr, blockInd[t]])
+        
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("-i")
@@ -132,10 +155,17 @@ if __name__ == "__main__":
     parse = args.parse_args()
     infile = "sample/VirusShare_711597ee812105d3ea6600bb0be7a25a" if parse.i == None else parse.i
     #infile = "sample/VirusShare_e1831d608e91f8eda9633ab698d90513"
-    outfile = f"assembly/{os.path.basename(infile)}.txt" if parse.o == None else parse.o
-    opfile = f"assembly/{os.path.basename(infile)} ops.txt"
+
+    adj = os.path.basename(infile)[:16]
+    outfile = f"assembly/{adj}.txt" if parse.o == None else parse.o
+    opfile = f"assembly/{adj} ops.txt"
+    adjFile = f"assembly/{adj} adj.txt"
     
     dism = Disassamble()
     dism.disassmble(infile)
+
     dism.write(outfile)
     dism.writeOpcode(opfile)
+    
+    dism.graphify()
+    dism.writeAdj(adjFile)

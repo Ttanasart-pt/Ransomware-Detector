@@ -1,9 +1,7 @@
-from audioop import add
-
-
 class block():
     def __init__(self, address) -> None:
         self.address = address
+        self.ind = 0
 
 class codeBlock(block):
     def __init__(self, address) -> None:
