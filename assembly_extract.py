@@ -12,8 +12,8 @@ class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
         "jge", "jb", "jbe", "ja", "jae", "jcxz", "jecxz", "jrcxz", "loop", "loopne",
         "loope", "call", "lcall"]
-    END = ["ret", "retn", "retf", "iret", "int3"]
     BNC = ["jmp", "jmpf", "ljmp"]
+    END = ["ret", "retn", "retf", "iret", "int3"]
 
     def __init__(self):
         self.md = Cs(CS_ARCH_X86, CS_MODE_32)
@@ -23,9 +23,6 @@ class Disassamble():
         self.adjGraph = []
 
     def blockExist(self, addr):
-        if addr in self.blocks:
-            return self.blocks[addr]
-
         ar = list(self.blocks.keys())
         ar.sort()
         st = 0
@@ -60,7 +57,8 @@ class Disassamble():
             if _asm:
                 block.append(_asm)
             if willBreak:
-                _block = codeBlock(asm.address)
+                _block = self.blocks[asm.address] if asm.address in self.blocks\
+                    else codeBlock(asm.address)
                 self.blocks[asm.address] = _block
                 block.appendTarget(asm.address)
                 block = _block
@@ -83,12 +81,13 @@ class Disassamble():
                     break
                 frm, addr  = queue.get()
                 disam = self.md.disasm(code, addr)
-
-                b = self.blockExist(addr)
-                if b and b.address < addr < b.endAddr:
-                    self.blocks[addr] = b.split(addr)
-                else:
-                    self.blocks[addr] = codeBlock(addr)
+                
+                if addr not in self.blocks:
+                    b = self.blockExist(addr)
+                    if b and b.address < addr < b.endAddr:
+                        self.blocks[addr] = b.split(addr)
+                    else:
+                        self.blocks[addr] = codeBlock(addr)
                 frm.appendTarget(addr)
             _asm = asm
 
@@ -124,7 +123,7 @@ class Disassamble():
             for _, b in self.blocks.items():
                 if not isinstance(b, codeBlock):
                     continue
-                f.write(b.writeOpcodes() + "\n")
+                f.write(f"{b.ind}: {b.writeOpcodes()}\n")
 
     def writeAdj(self, fname):
         with open(fname, "w") as f:
@@ -164,8 +163,8 @@ if __name__ == "__main__":
     dism = Disassamble()
     dism.disassmble(infile)
 
+    dism.graphify()
+
     dism.write(outfile)
     dism.writeOpcode(opfile)
-    
-    dism.graphify()
     dism.writeAdj(adjFile)

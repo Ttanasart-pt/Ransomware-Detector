@@ -43,7 +43,7 @@ class codeBlock(block):
     def __str__(self) -> str:
         s = f"\n=== CODE BLOCK ADDRESS {hex(self.address)} ===\n"
         for i in self.opcodes:
-            s += f"  {hex(i.address)}\t{i.mnemonic}  \t{i.op_str}\n"
+            s += f"  {hex(i.address)}\t{i.mnemonic:5}  \t{i.op_str}\n"
         if self.target:
             s += f"  === BLOCK LINK ===\n"
             for i in self.target:
