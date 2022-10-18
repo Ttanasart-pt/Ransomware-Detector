@@ -16,7 +16,6 @@ class OpcodeProcessor():
                     self.DICTIONARY[word]= len(self.DICTIONARY)
             self.max_length = max(self.max_length, len(sentence))
         self.DICT_SIZE = len(self.DICTIONARY)
-        print("Sentence read complete")
 
     def sentenceProcess(self, sentence):
         pad = self.max_length - len(sentence)

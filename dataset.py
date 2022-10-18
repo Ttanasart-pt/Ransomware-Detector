@@ -1,10 +1,13 @@
+import os
+from tqdm import tqdm
+
 import torch
 from torch_geometric.data import Data
 
 import csv
 from process import OpcodeProcessor
 
-def convGraph(path):
+def convGraph(path, y):
     opfile  = f"{path} ops.txt"
     adjfile = f"{path} adj.txt"
     
@@ -28,11 +31,19 @@ def convGraph(path):
     op.sentencesRead(sentences_raw)
     
     x = op.sentenceIndex(sentences_raw)
-    y = torch.tensor([1])
+    y = torch.tensor([y])
     edge = torch.tensor(adjec_raw).t().contiguous()
     
     data = Data(x = x, y = y, edge_index = edge)
-    print(data)
+    return data
 
 if __name__ == "__main__":
-    convGraph("assembly/VirusShare_71159")
+    dataset = []
+    
+    for f in tqdm(os.listdir('ransom')):
+        if len(f) > 24 + 4:
+            continue
+        path = 'ransom/' + f[:-4]
+        dataset.append(convGraph(path, 1))
+    
+    torch.save(dataset, "dataset.pt")
