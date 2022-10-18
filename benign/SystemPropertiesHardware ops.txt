@@ -1,0 +1,4 @@
+int3,int3,int3,int3,int3,
+int3,int3,int3,dec,sub,
+dec,lea,dec,call,
+nop,xor,dec,add,

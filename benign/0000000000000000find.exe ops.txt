@@ -1,0 +1,4 @@
+int3,int3,int3,int3,int3,
+int3,int3,int3,mov,dec,
+add,neg,dec,sbb,dec,
+and,

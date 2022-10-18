@@ -1,0 +1,17 @@
+int3,int3,int3,int3,int3,
+int3,int3,int3,dec,mov,
+cmp,je,
+mov,ret,int3,dec,mov,
+
+dec,mov,dec,jmp,
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,dec,sub,call,
+dec,or,xor,dec,add,
+ret,int3,int3,int3,int3,
+
+int3,int3,int3,int3,dec,
+lea,

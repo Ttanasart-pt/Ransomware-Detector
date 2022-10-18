@@ -1,0 +1,6771 @@
+===== Assembly blocks =====
+
+=== CODE BLOCK ADDRESS 0x1000 ===
+  0x1000	int3   	
+  0x1001	int3   	
+  0x1002	int3   	
+  0x1003	int3   	
+  0x1004	int3   	
+  === BLOCK LINK ===
+    0x1005
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1005 ===
+  0x1005	int3   	
+  0x1006	int3   	
+  0x1007	int3   	
+  === BLOCK LINK ===
+    0x1008
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100b ===
+  0x100b	dec    	ecx
+  0x100c	mov    	dword ptr [ebx + 0x10], edx
+  0x100f	dec    	ebp
+  0x1010	mov    	dword ptr [ebx + 0x18], eax
+  0x1013	dec    	ebp
+  === BLOCK LINK ===
+    0x1014
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1014 ===
+  0x1014	mov    	dword ptr [ebx + 0x20], ecx
+  0x1017	push   	ebx
+  0x1018	dec    	eax
+  0x1019	sub    	esp, 0x840
+  0x101f	dec    	eax
+  === BLOCK LINK ===
+    0x1020
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1020 ===
+  0x1020	mov    	eax, dword ptr [0x3fe2]
+  0x1026	dec    	eax
+  0x1027	xor    	eax, esp
+  0x1029	dec    	eax
+  0x102a	mov    	dword ptr [esp + 0x830], eax
+  === BLOCK LINK ===
+    0x1031
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1031 ===
+  0x1031	mov    	ebx, ecx
+  0x1033	dec    	ebp
+  0x1034	lea    	ecx, [ebx + 0x18]
+  0x1037	dec    	esp
+  0x1038	mov    	eax, edx
+  === BLOCK LINK ===
+    0x103a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x103a ===
+  0x103a	dec    	eax
+  0x103b	lea    	ecx, [esp + 0x20]
+  0x103f	mov    	edx, 0x401
+  0x1044	dec    	eax
+  0x1045	call   	dword ptr [0x2225]
+  === BLOCK LINK ===
+    0x104b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x104b ===
+  0x104b	nop    	dword ptr [eax + eax]
+  0x1050	xor    	ecx, ecx
+  0x1052	test   	eax, eax
+  0x1054	js     	0x1060
+  === BLOCK LINK ===
+    0x1056
+    0x1060
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1056 ===
+  0x1056	dec    	eax
+  0x1057	cwde   	
+  0x1058	dec    	eax
+  0x1059	cmp    	eax, 0x401
+  0x105e	jb     	0x1068
+  === BLOCK LINK ===
+    0x1060
+    0x1068
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1060 ===
+  0x1060	mov    	word ptr [esp + 0x822], cx
+  === BLOCK LINK ===
+    0x1068
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1070 ===
+  0x1070	lea    	eax, [0x234a]
+  0x1076	mov    	ecx, 2
+  0x107b	dec    	eax
+  0x107c	call   	dword ptr [0x2266]
+  === BLOCK LINK ===
+    0x1082
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1082 ===
+  0x1082	nop    	dword ptr [eax + eax]
+  0x1087	dec    	eax
+  0x1088	mov    	ecx, dword ptr [esp + 0x830]
+  0x108f	dec    	eax
+  0x1090	xor    	ecx, esp
+  === BLOCK LINK ===
+    0x1092
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1092 ===
+  0x1092	call   	0x2160
+  === BLOCK LINK ===
+    0x1097
+    0x2160
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1097 ===
+  0x1097	dec    	eax
+  0x1098	add    	esp, 0x840
+  0x109e	pop    	ebx
+  0x109f	ret    	
+  0x10a0	int3   	
+  === BLOCK LINK ===
+    0x10a1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10a1 ===
+  0x10a1	int3   	
+  0x10a2	int3   	
+  0x10a3	int3   	
+  0x10a4	int3   	
+  0x10a5	int3   	
+  === BLOCK LINK ===
+    0x10a6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10a6 ===
+  0x10a6	int3   	
+  0x10a7	int3   	
+  === BLOCK LINK ===
+    0x10a8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10ae ===
+  0x10ae	mov    	dword ptr [esp + 0x10], ebp
+  0x10b2	dec    	eax
+  0x10b3	mov    	dword ptr [esp + 0x18], esi
+  0x10b7	push   	edi
+  0x10b8	inc    	ecx
+  === BLOCK LINK ===
+    0x10b9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10b9 ===
+  0x10b9	push   	esp
+  0x10ba	inc    	ecx
+  0x10bb	push   	esi
+  0x10bc	dec    	eax
+  0x10bd	sub    	esp, 0x20
+  === BLOCK LINK ===
+    0x10c0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10c0 ===
+  0x10c0	xor    	ebp, ebp
+  0x10c2	inc    	ebp
+  0x10c3	xor    	esi, esi
+  0x10c5	xor    	edi, edi
+  0x10c7	dec    	eax
+  === BLOCK LINK ===
+    0x10c8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10c8 ===
+  0x10c8	mov    	esi, edx
+  0x10ca	cmp    	ecx, 7
+  0x10cd	jne    	0x119a
+  === BLOCK LINK ===
+    0x10d3
+    0x119a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10d3 ===
+  0x10d3	inc    	esp
+  0x10d4	lea    	esp, [ebp + 1]
+  0x10d7	inc    	ecx
+  0x10d8	mov    	ebx, esp
+  0x10da	test   	ebp, ebp
+  === BLOCK LINK ===
+    0x10dc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10dc ===
+  0x10dc	je     	0x10ed
+  === BLOCK LINK ===
+    0x10de
+    0x10ed
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10de ===
+  0x10de	dec    	eax
+  0x10df	mov    	eax, dword ptr [esi + ebx*8]
+  0x10e2	xor    	ebp, ebp
+  0x10e4	dec    	eax
+  0x10e5	mov    	dword ptr [0x4515], eax
+  === BLOCK LINK ===
+    0x10eb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10eb ===
+  0x10eb	jmp    	0x116a
+  === BLOCK LINK ===
+    0x10ed
+    0x116a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10ed ===
+  0x10ed	dec    	eax
+  0x10ee	mov    	ecx, dword ptr [esi + ebx*8]
+  0x10f1	inc    	ebp
+  0x10f2	test   	esi, esi
+  0x10f4	je     	0x1102
+  === BLOCK LINK ===
+    0x10f6
+    0x1102
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10f6 ===
+  0x10f6	inc    	ebp
+  0x10f7	xor    	esi, esi
+  0x10f9	dec    	eax
+  0x10fa	mov    	dword ptr [0x4510], ecx
+  0x1100	jmp    	0x116a
+  === BLOCK LINK ===
+    0x1102
+    0x116a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1102 ===
+  0x1102	test   	edi, edi
+  0x1104	je     	0x1111
+  === BLOCK LINK ===
+    0x1106
+    0x1111
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1106 ===
+  0x1106	xor    	edi, edi
+  0x1108	dec    	eax
+  0x1109	mov    	dword ptr [0x44f9], ecx
+  0x110f	jmp    	0x116a
+  === BLOCK LINK ===
+    0x1111
+    0x116a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1111 ===
+  0x1111	dec    	eax
+  0x1112	lea    	edx, [0x22b0]
+  0x1118	dec    	eax
+  0x1119	call   	dword ptr [0x2149]
+  === BLOCK LINK ===
+    0x111f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x111f ===
+  0x111f	nop    	dword ptr [eax + eax]
+  0x1124	test   	eax, eax
+  0x1126	jne    	0x112d
+  === BLOCK LINK ===
+    0x1128
+    0x112d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1128 ===
+  0x1128	inc    	ecx
+  0x1129	mov    	ebp, esp
+  0x112b	jmp    	0x116a
+  === BLOCK LINK ===
+    0x112d
+    0x116a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x112d ===
+  0x112d	dec    	eax
+  0x112e	mov    	ecx, dword ptr [esi + ebx*8]
+  0x1131	dec    	eax
+  0x1132	lea    	edx, [0x22a8]
+  0x1138	dec    	eax
+  === BLOCK LINK ===
+    0x1139
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1139 ===
+  0x1139	call   	dword ptr [0x2129]
+  === BLOCK LINK ===
+    0x113f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x113f ===
+  0x113f	nop    	dword ptr [eax + eax]
+  0x1144	test   	eax, eax
+  0x1146	jne    	0x114d
+  === BLOCK LINK ===
+    0x1148
+    0x114d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1148 ===
+  0x1148	inc    	ebp
+  0x1149	mov    	esi, esp
+  0x114b	jmp    	0x116a
+  === BLOCK LINK ===
+    0x114d
+    0x116a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x114d ===
+  0x114d	dec    	eax
+  0x114e	mov    	ecx, dword ptr [esi + ebx*8]
+  0x1151	dec    	eax
+  0x1152	lea    	edx, [0x22a8]
+  0x1158	dec    	eax
+  === BLOCK LINK ===
+    0x1159
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1159 ===
+  0x1159	call   	dword ptr [0x2109]
+  === BLOCK LINK ===
+    0x115f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x115f ===
+  0x115f	nop    	dword ptr [eax + eax]
+  0x1164	test   	eax, eax
+  0x1166	inc    	ecx
+  0x1167	cmove  	edi, esp
+  0x116a	dec    	ecx
+  === BLOCK LINK ===
+    0x116b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x116b ===
+  0x116b	add    	ebx, esp
+  0x116d	dec    	eax
+  0x116e	cmp    	ebx, 7
+  0x1171	jl     	0x10da
+  === BLOCK LINK ===
+    0x1177
+    0x10da
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1177 ===
+  0x1177	dec    	eax
+  0x1178	cmp    	dword ptr [0x4489], 0
+  0x117f	je     	0x119a
+  === BLOCK LINK ===
+    0x1181
+    0x119a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1181 ===
+  0x1181	dec    	eax
+  0x1182	cmp    	dword ptr [0x4487], 0
+  0x1189	je     	0x119a
+  === BLOCK LINK ===
+    0x118b
+    0x119a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x118b ===
+  0x118b	dec    	eax
+  0x118c	cmp    	dword ptr [0x446d], 0
+  0x1193	je     	0x119a
+  === BLOCK LINK ===
+    0x1195
+    0x119a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1195 ===
+  0x1195	inc    	ecx
+  0x1196	mov    	eax, esp
+  0x1198	jmp    	0x119c
+  === BLOCK LINK ===
+    0x119a
+    0x119c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x119a ===
+  0x119a	xor    	eax, eax
+  === BLOCK LINK ===
+    0x119c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11a6 ===
+  0x11a6	dec    	eax
+  0x11a7	mov    	esi, dword ptr [esp + 0x50]
+  0x11ab	dec    	eax
+  0x11ac	add    	esp, 0x20
+  0x11af	inc    	ecx
+  === BLOCK LINK ===
+    0x11b0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11b0 ===
+  0x11b0	pop    	esi
+  0x11b1	inc    	ecx
+  0x11b2	pop    	esp
+  0x11b3	pop    	edi
+  0x11b4	ret    	
+  === BLOCK LINK ===
+    0x11b5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1068 ===
+  0x1068	dec    	esp
+  0x1069	lea    	ecx, [esp + 0x20]
+  0x106d	mov    	edx, ebx
+  0x106f	dec    	esp
+  === BLOCK LINK ===
+    0x1070
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11b5 ===
+  0x11b5	int3   	
+  0x11b6	int3   	
+  0x11b7	int3   	
+  0x11b8	int3   	
+  0x11b9	int3   	
+  === BLOCK LINK ===
+    0x11ba
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11ba ===
+  0x11ba	int3   	
+  0x11bb	int3   	
+  0x11bc	dec    	eax
+  0x11bd	mov    	dword ptr [esp + 0x10], esi
+  0x11c1	dec    	eax
+  === BLOCK LINK ===
+    0x11c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11c2 ===
+  0x11c2	mov    	dword ptr [esp + 0x18], edi
+  0x11c6	push   	ebp
+  0x11c7	inc    	ecx
+  0x11c8	push   	esp
+  0x11c9	inc    	ecx
+  === BLOCK LINK ===
+    0x11ca
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11ca ===
+  0x11ca	push   	ebp
+  0x11cb	inc    	ecx
+  0x11cc	push   	esi
+  0x11cd	inc    	ecx
+  0x11ce	push   	edi
+  === BLOCK LINK ===
+    0x11cf
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11cf ===
+  0x11cf	dec    	eax
+  0x11d0	lea    	ebp, [esp - 0xf90]
+  0x11d7	mov    	eax, 0x1090
+  0x11dc	call   	0x27e0
+  === BLOCK LINK ===
+    0x11e1
+    0x27e0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11e1 ===
+  0x11e1	dec    	eax
+  0x11e2	sub    	esp, eax
+  0x11e4	dec    	eax
+  0x11e5	mov    	eax, dword ptr [0x3e1d]
+  0x11eb	dec    	eax
+  === BLOCK LINK ===
+    0x11ec
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11ec ===
+  0x11ec	xor    	eax, esp
+  0x11ee	dec    	eax
+  0x11ef	mov    	dword ptr [ebp + 0xf80], eax
+  0x11f5	inc    	ebp
+  0x11f6	xor    	ebp, ebp
+  === BLOCK LINK ===
+    0x11f8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x11f8 ===
+  0x11f8	mov    	dword ptr [esp + 0x30], ecx
+  0x11fc	inc    	ecx
+  0x11fd	mov    	esi, ebp
+  0x11ff	inc    	ebp
+  0x1200	mov    	esi, ebp
+  === BLOCK LINK ===
+    0x1202
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1202 ===
+  0x1202	inc    	ecx
+  0x1203	mov    	edi, ebp
+  0x1205	dec    	eax
+  0x1206	call   	dword ptr [0x1f24]
+  === BLOCK LINK ===
+    0x120c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x120c ===
+  0x120c	nop    	dword ptr [eax + eax]
+  0x1211	dec    	eax
+  0x1212	mov    	ecx, eax
+  0x1214	dec    	eax
+  0x1215	lea    	edx, [esp + 0x30]
+  === BLOCK LINK ===
+    0x1219
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1219 ===
+  0x1219	dec    	eax
+  0x121a	call   	dword ptr [0x1fe8]
+  === BLOCK LINK ===
+    0x1220
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1220 ===
+  0x1220	nop    	dword ptr [eax + eax]
+  0x1225	dec    	eax
+  0x1226	test   	eax, eax
+  0x1228	jne    	0x123d
+  === BLOCK LINK ===
+    0x122a
+    0x123d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x122a ===
+  0x122a	dec    	eax
+  0x122b	lea    	edx, [0x21f7]
+  0x1231	xor    	ecx, ecx
+  0x1233	call   	0x1008
+  === BLOCK LINK ===
+    0x1238
+    0x1008
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1238 ===
+  0x1238	jmp    	0x1577
+  === BLOCK LINK ===
+    0x123d
+    0x1577
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x123d ===
+  0x123d	mov    	ecx, dword ptr [esp + 0x30]
+  0x1241	dec    	eax
+  0x1242	mov    	edx, eax
+  0x1244	call   	0x10a8
+  === BLOCK LINK ===
+    0x1249
+    0x10a8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1249 ===
+  0x1249	test   	eax, eax
+  0x124b	jne    	0x12b8
+  === BLOCK LINK ===
+    0x124d
+    0x12b8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x124d ===
+  0x124d	dec    	eax
+  0x124e	lea    	edx, [0x2204]
+  0x1254	xor    	ecx, ecx
+  0x1256	call   	0x1008
+  === BLOCK LINK ===
+    0x125b
+    0x1008
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x125b ===
+  0x125b	xor    	ecx, ecx
+  0x125d	dec    	eax
+  0x125e	call   	dword ptr [0x1f24]
+  === BLOCK LINK ===
+    0x1264
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1264 ===
+  0x1264	nop    	dword ptr [eax + eax]
+  0x1269	inc    	ecx
+  0x126a	mov    	ecx, 0x800
+  0x126f	dec    	esp
+  0x1270	lea    	eax, [ebp - 0x80]
+  === BLOCK LINK ===
+    0x1273
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1273 ===
+  0x1273	dec    	eax
+  0x1274	mov    	ecx, eax
+  0x1276	mov    	edx, 1
+  0x127b	dec    	eax
+  0x127c	call   	dword ptr [0x1fae]
+  === BLOCK LINK ===
+    0x1282
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1282 ===
+  0x1282	nop    	dword ptr [eax + eax]
+  0x1287	test   	eax, eax
+  0x1289	je     	0x1577
+  === BLOCK LINK ===
+    0x128f
+    0x1577
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x128f ===
+  0x128f	mov    	ecx, 2
+  0x1294	call   	0x2668
+  === BLOCK LINK ===
+    0x1299
+    0x2668
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1299 ===
+  0x1299	dec    	eax
+  0x129a	mov    	ecx, eax
+  0x129c	dec    	esp
+  0x129d	lea    	eax, [ebp - 0x80]
+  0x12a0	dec    	eax
+  === BLOCK LINK ===
+    0x12a1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12a1 ===
+  0x12a1	lea    	edx, [0x2179]
+  0x12a7	dec    	eax
+  0x12a8	call   	dword ptr [0x2012]
+  === BLOCK LINK ===
+    0x12ae
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12ae ===
+  0x12ae	nop    	dword ptr [eax + eax]
+  0x12b3	jmp    	0x1577
+  === BLOCK LINK ===
+    0x12b8
+    0x1577
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12b8 ===
+  0x12b8	dec    	esp
+  0x12b9	mov    	eax, dword ptr [0x4341]
+  0x12bf	xor    	edx, edx
+  0x12c1	lea    	ecx, [edx + 6]
+  0x12c4	dec    	eax
+  === BLOCK LINK ===
+    0x12c5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12c5 ===
+  0x12c5	call   	dword ptr [0x1e75]
+  === BLOCK LINK ===
+    0x12cb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12cb ===
+  0x12cb	nop    	dword ptr [eax + eax]
+  0x12d0	dec    	esp
+  0x12d1	mov    	esp, eax
+  0x12d3	dec    	eax
+  0x12d4	test   	eax, eax
+  === BLOCK LINK ===
+    0x12d6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12d6 ===
+  0x12d6	jne    	0x1301
+  === BLOCK LINK ===
+    0x12d8
+    0x1301
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12d8 ===
+  0x12d8	dec    	eax
+  0x12d9	call   	dword ptr [0x1e71]
+  === BLOCK LINK ===
+    0x12df
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12df ===
+  0x12df	nop    	dword ptr [eax + eax]
+  0x12e4	dec    	esp
+  0x12e5	mov    	eax, dword ptr [0x4315]
+  0x12eb	dec    	eax
+  0x12ec	lea    	edx, [0x219e]
+  === BLOCK LINK ===
+    0x12f2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12f2 ===
+  0x12f2	inc    	esp
+  0x12f3	mov    	ecx, eax
+  0x12f5	xor    	ecx, ecx
+  0x12f7	call   	0x1008
+  === BLOCK LINK ===
+    0x12fc
+    0x1008
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x12fc ===
+  0x12fc	jmp    	0x1577
+  === BLOCK LINK ===
+    0x1301
+    0x1577
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1301 ===
+  0x1301	inc    	ebp
+  0x1302	xor    	ecx, ecx
+  0x1304	dec    	esp
+  0x1305	mov    	dword ptr [esp + 0x20], ebp
+  0x1309	inc    	ebp
+  === BLOCK LINK ===
+    0x130a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x130a ===
+  0x130a	xor    	eax, eax
+  0x130c	dec    	ecx
+  0x130d	mov    	ecx, esp
+  0x130f	inc    	ecx
+  0x1310	lea    	edx, [ecx + 6]
+  === BLOCK LINK ===
+    0x1313
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1313 ===
+  0x1313	dec    	eax
+  0x1314	call   	dword ptr [0x1e7e]
+  === BLOCK LINK ===
+    0x131a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x131a ===
+  0x131a	nop    	dword ptr [eax + eax]
+  0x131f	dec    	esp
+  0x1320	mov    	edi, eax
+  0x1322	dec    	eax
+  0x1323	test   	eax, eax
+  === BLOCK LINK ===
+    0x1325
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1325 ===
+  0x1325	jne    	0x1349
+  === BLOCK LINK ===
+    0x1327
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1327 ===
+  0x1327	dec    	eax
+  0x1328	call   	dword ptr [0x1e22]
+  === BLOCK LINK ===
+    0x132e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x132e ===
+  0x132e	nop    	dword ptr [eax + eax]
+  0x1333	dec    	eax
+  0x1334	lea    	edx, [0x21b6]
+  0x133a	xor    	ecx, ecx
+  0x133c	inc    	esp
+  === BLOCK LINK ===
+    0x133d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x133d ===
+  0x133d	mov    	eax, eax
+  0x133f	call   	0x1008
+  === BLOCK LINK ===
+    0x1344
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1344 ===
+  0x1344	jmp    	0x1540
+  === BLOCK LINK ===
+    0x1349
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1349 ===
+  0x1349	dec    	esp
+  0x134a	mov    	eax, dword ptr [0x42c0]
+  0x1350	xor    	edx, edx
+  0x1352	mov    	ecx, 0x100002
+  0x1357	dec    	eax
+  === BLOCK LINK ===
+    0x1358
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1358 ===
+  0x1358	call   	dword ptr [0x1dda]
+  === BLOCK LINK ===
+    0x135e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x135e ===
+  0x135e	nop    	dword ptr [eax + eax]
+  0x1363	dec    	eax
+  0x1364	mov    	esi, eax
+  0x1366	dec    	eax
+  0x1367	test   	eax, eax
+  === BLOCK LINK ===
+    0x1369
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1369 ===
+  0x1369	jne    	0x1394
+  === BLOCK LINK ===
+    0x136b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x136b ===
+  0x136b	dec    	eax
+  0x136c	call   	dword ptr [0x1dde]
+  === BLOCK LINK ===
+    0x1372
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1372 ===
+  0x1372	nop    	dword ptr [eax + eax]
+  0x1377	dec    	esp
+  0x1378	mov    	eax, dword ptr [0x4292]
+  0x137e	inc    	esp
+  0x137f	mov    	ecx, eax
+  === BLOCK LINK ===
+    0x1381
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1381 ===
+  0x1381	dec    	eax
+  0x1382	lea    	edx, [0x21c8]
+  0x1388	xor    	ecx, ecx
+  0x138a	call   	0x1008
+  === BLOCK LINK ===
+    0x138f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x138f ===
+  0x138f	jmp    	0x1531
+  === BLOCK LINK ===
+    0x1394
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1394 ===
+  0x1394	dec    	esp
+  0x1395	mov    	eax, dword ptr [0x426d]
+  0x139b	xor    	edx, edx
+  0x139d	mov    	ecx, 0x100002
+  0x13a2	dec    	eax
+  === BLOCK LINK ===
+    0x13a3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13a3 ===
+  0x13a3	call   	dword ptr [0x1d8f]
+  === BLOCK LINK ===
+    0x13a9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13a9 ===
+  0x13a9	nop    	dword ptr [eax + eax]
+  0x13ae	dec    	esp
+  0x13af	mov    	esi, eax
+  0x13b1	dec    	eax
+  0x13b2	test   	eax, eax
+  === BLOCK LINK ===
+    0x13b4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13b4 ===
+  0x13b4	jne    	0x13cb
+  === BLOCK LINK ===
+    0x13b6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13b6 ===
+  0x13b6	dec    	eax
+  0x13b7	call   	dword ptr [0x1d93]
+  === BLOCK LINK ===
+    0x13bd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13bd ===
+  0x13bd	nop    	dword ptr [eax + eax]
+  0x13c2	dec    	esp
+  0x13c3	mov    	eax, dword ptr [0x423f]
+  0x13c9	jmp    	0x137e
+  === BLOCK LINK ===
+    0x13cb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13cb ===
+  0x13cb	dec    	eax
+  0x13cc	mov    	dword ptr [esp + 0x40], esi
+  0x13d0	inc    	ecx
+  0x13d1	mov    	ecx, 0x1cff
+  0x13d6	mov    	dword ptr [esp + 0x20], 6
+  === BLOCK LINK ===
+    0x13de
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13de ===
+  0x13de	inc    	ecx
+  0x13df	mov    	eax, 0xea60
+  0x13e4	dec    	eax
+  0x13e5	lea    	edx, [esp + 0x40]
+  0x13e9	mov    	ecx, 1
+  === BLOCK LINK ===
+    0x13ee
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13ee ===
+  0x13ee	dec    	eax
+  0x13ef	call   	dword ptr [0x1e23]
+  === BLOCK LINK ===
+    0x13f5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13f5 ===
+  0x13f5	nop    	dword ptr [eax + eax]
+  0x13fa	mov    	edi, eax
+  0x13fc	cmp    	eax, 1
+  0x13ff	jne    	0x1469
+  === BLOCK LINK ===
+    0x1401
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1401 ===
+  0x1401	inc    	ebp
+  0x1402	xor    	ecx, ecx
+  0x1404	mov    	dword ptr [esp + 0x20], eax
+  0x1408	inc    	ebp
+  0x1409	xor    	eax, eax
+  === BLOCK LINK ===
+    0x140b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x140b ===
+  0x140b	dec    	eax
+  0x140c	lea    	ecx, [esp + 0x48]
+  0x1410	xor    	edx, edx
+  0x1412	dec    	eax
+  0x1413	call   	dword ptr [0x1e07]
+  === BLOCK LINK ===
+    0x1419
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1419 ===
+  0x1419	nop    	dword ptr [eax + eax]
+  0x141e	test   	eax, eax
+  0x1420	je     	0x13d0
+  === BLOCK LINK ===
+    0x1422
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1422 ===
+  0x1422	dec    	eax
+  0x1423	lea    	ecx, [esp + 0x48]
+  0x1427	dec    	eax
+  0x1428	call   	dword ptr [0x1e0a]
+  === BLOCK LINK ===
+    0x142e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x142e ===
+  0x142e	nop    	dword ptr [eax + eax]
+  0x1433	dec    	eax
+  0x1434	lea    	ecx, [esp + 0x48]
+  0x1438	dec    	eax
+  0x1439	call   	dword ptr [0x1de9]
+  === BLOCK LINK ===
+    0x143f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x143f ===
+  0x143f	nop    	dword ptr [eax + eax]
+  0x1444	inc    	ebp
+  0x1445	xor    	ecx, ecx
+  0x1447	mov    	dword ptr [esp + 0x20], 1
+  0x144f	inc    	ebp
+  === BLOCK LINK ===
+    0x1450
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1450 ===
+  0x1450	xor    	eax, eax
+  0x1452	dec    	eax
+  0x1453	lea    	ecx, [esp + 0x48]
+  0x1457	xor    	edx, edx
+  0x1459	dec    	eax
+  === BLOCK LINK ===
+    0x145a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x145a ===
+  0x145a	call   	dword ptr [0x1dc0]
+  === BLOCK LINK ===
+    0x1460
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1460 ===
+  0x1460	nop    	dword ptr [eax + eax]
+  0x1465	test   	eax, eax
+  0x1467	jne    	0x1422
+  === BLOCK LINK ===
+    0x1469
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1469 ===
+  0x1469	cmp    	edi, 0x102
+  0x146f	je     	0x14e4
+  === BLOCK LINK ===
+    0x1471
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1471 ===
+  0x1471	test   	edi, edi
+  0x1473	je     	0x147e
+  === BLOCK LINK ===
+    0x1475
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1475 ===
+  0x1475	cmp    	edi, -1
+  0x1478	jne    	0x13d0
+  === BLOCK LINK ===
+    0x147e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x147e ===
+  0x147e	dec    	eax
+  0x147f	mov    	ecx, esi
+  0x1481	dec    	eax
+  0x1482	call   	dword ptr [0x1ce8]
+  === BLOCK LINK ===
+    0x1488
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1488 ===
+  0x1488	nop    	dword ptr [eax + eax]
+  0x148d	dec    	eax
+  0x148e	lea    	edx, [esp + 0x38]
+  0x1492	dec    	ecx
+  0x1493	mov    	ecx, edi
+  === BLOCK LINK ===
+    0x1495
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1495 ===
+  0x1495	call   	0x1bbc
+  === BLOCK LINK ===
+    0x149a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x149a ===
+  0x149a	mov    	edi, eax
+  0x149c	test   	eax, eax
+  0x149e	je     	0x14a5
+  === BLOCK LINK ===
+    0x14a0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14a0 ===
+  0x14a0	inc    	ecx
+  0x14a1	mov    	eax, ebp
+  0x14a3	jmp    	0x14b1
+  === BLOCK LINK ===
+    0x14a5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14a5 ===
+  0x14a5	dec    	eax
+  0x14a6	call   	dword ptr [0x1ca4]
+  === BLOCK LINK ===
+    0x14ac
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14ac ===
+  0x14ac	nop    	dword ptr [eax + eax]
+  0x14b1	inc    	ecx
+  0x14b2	mov    	dword ptr [edi], eax
+  0x14b4	test   	edi, edi
+  0x14b6	mov    	eax, dword ptr [esp + 0x38]
+  === BLOCK LINK ===
+    0x14ba
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14ba ===
+  0x14ba	dec    	ecx
+  0x14bb	mov    	ecx, esi
+  0x14bd	inc    	ecx
+  0x14be	cmovne  	eax, ebp
+  0x14c1	inc    	ecx
+  === BLOCK LINK ===
+    0x14c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14c2 ===
+  0x14c2	mov    	dword ptr [edi + 4], eax
+  0x14c5	dec    	eax
+  0x14c6	call   	dword ptr [0x1c8c]
+  === BLOCK LINK ===
+    0x14cc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14cc ===
+  0x14cc	nop    	dword ptr [eax + eax]
+  0x14d1	test   	edi, edi
+  0x14d3	je     	0x13d0
+  === BLOCK LINK ===
+    0x14d9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14d9 ===
+  0x14d9	inc    	dword ptr [0x40f1]
+  0x14df	jmp    	0x13d0
+  === BLOCK LINK ===
+    0x14e4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14e4 ===
+  0x14e4	inc    	esp
+  0x14e5	cmp    	dword ptr [0x40e5], ebp
+  0x14eb	inc    	ecx
+  0x14ec	mov    	edi, ebp
+  0x14ee	mov    	ecx, 1
+  === BLOCK LINK ===
+    0x14f3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14f3 ===
+  0x14f3	inc    	eax
+  0x14f4	setne  	bh
+  0x14f7	call   	0x2668
+  === BLOCK LINK ===
+    0x14fc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x14fc ===
+  0x14fc	inc    	esp
+  0x14fd	mov    	eax, dword ptr [0x40cd]
+  0x1503	dec    	eax
+  0x1504	lea    	edx, [0x209e]
+  0x150a	dec    	eax
+  === BLOCK LINK ===
+    0x150b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x150b ===
+  0x150b	mov    	ecx, eax
+  0x150d	dec    	eax
+  0x150e	call   	dword ptr [0x1d4c]
+  === BLOCK LINK ===
+    0x1514
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1514 ===
+  0x1514	nop    	dword ptr [eax + eax]
+  0x1519	inc    	esp
+  0x151a	mov    	eax, dword ptr [0x40b0]
+  0x1520	dec    	eax
+  0x1521	lea    	edx, [0x2099]
+  === BLOCK LINK ===
+    0x1527
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1527 ===
+  0x1527	mov    	ecx, 3
+  0x152c	call   	0x1008
+  === BLOCK LINK ===
+    0x1531
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1531 ===
+  0x1531	dec    	ecx
+  0x1532	mov    	ecx, edi
+  0x1534	dec    	eax
+  0x1535	call   	dword ptr [0x1c0d]
+  === BLOCK LINK ===
+    0x153b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x153b ===
+  0x153b	nop    	dword ptr [eax + eax]
+  0x1540	dec    	ecx
+  0x1541	mov    	ecx, esp
+  0x1543	dec    	eax
+  0x1544	call   	dword ptr [0x1c16]
+  === BLOCK LINK ===
+    0x154a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x154a ===
+  0x154a	nop    	dword ptr [eax + eax]
+  0x154f	dec    	eax
+  0x1550	test   	esi, esi
+  0x1552	je     	0x1563
+  === BLOCK LINK ===
+    0x1554
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1554 ===
+  0x1554	dec    	eax
+  0x1555	mov    	ecx, esi
+  0x1557	dec    	eax
+  0x1558	call   	dword ptr [0x1c02]
+  === BLOCK LINK ===
+    0x155e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x155e ===
+  0x155e	nop    	dword ptr [eax + eax]
+  0x1563	dec    	ebp
+  0x1564	test   	esi, esi
+  0x1566	je     	0x1577
+  === BLOCK LINK ===
+    0x1568
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1568 ===
+  0x1568	dec    	ecx
+  0x1569	mov    	ecx, esi
+  0x156b	dec    	eax
+  0x156c	call   	dword ptr [0x1bee]
+  === BLOCK LINK ===
+    0x1572
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1572 ===
+  0x1572	nop    	dword ptr [eax + eax]
+  === BLOCK LINK ===
+    0x1577
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1581 ===
+  0x1581	xor    	ecx, esp
+  0x1583	call   	0x2160
+  === BLOCK LINK ===
+    0x1588
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1588 ===
+  0x1588	dec    	esp
+  0x1589	lea    	ebx, [esp + 0x1090]
+  0x1590	dec    	ecx
+  0x1591	mov    	esi, dword ptr [ebx + 0x38]
+  0x1594	dec    	ecx
+  === BLOCK LINK ===
+    0x1595
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1595 ===
+  0x1595	mov    	edi, dword ptr [ebx + 0x40]
+  0x1598	dec    	ecx
+  0x1599	mov    	esp, ebx
+  0x159b	inc    	ecx
+  0x159c	pop    	edi
+  === BLOCK LINK ===
+    0x159d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x159d ===
+  0x159d	inc    	ecx
+  0x159e	pop    	esi
+  0x159f	inc    	ecx
+  0x15a0	pop    	ebp
+  0x15a1	inc    	ecx
+  === BLOCK LINK ===
+    0x15a2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15a2 ===
+  0x15a2	pop    	esp
+  0x15a3	pop    	ebp
+  0x15a4	ret    	
+  0x15a5	int3   	
+  0x15a6	int3   	
+  === BLOCK LINK ===
+    0x15a7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2160 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15a7 ===
+  0x15a7	int3   	
+  0x15a8	int3   	
+  0x15a9	int3   	
+  0x15aa	int3   	
+  0x15ab	int3   	
+  === BLOCK LINK ===
+    0x15ac
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15ac ===
+  0x15ac	dec    	esp
+  0x15ad	mov    	dword ptr [esp + 0x18], eax
+  0x15b1	dec    	eax
+  0x15b2	mov    	dword ptr [esp + 8], ecx
+  0x15b6	push   	ebx
+  === BLOCK LINK ===
+    0x15b7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15b7 ===
+  0x15b7	push   	esi
+  0x15b8	push   	edi
+  0x15b9	inc    	ecx
+  0x15ba	push   	esp
+  0x15bb	inc    	ecx
+  === BLOCK LINK ===
+    0x15bc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15bc ===
+  0x15bc	push   	esi
+  0x15bd	inc    	ecx
+  0x15be	push   	edi
+  0x15bf	dec    	eax
+  0x15c0	sub    	esp, 0x78
+  === BLOCK LINK ===
+    0x15c3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15c3 ===
+  0x15c3	dec    	ecx
+  0x15c4	mov    	edi, eax
+  0x15c6	dec    	eax
+  0x15c7	mov    	eax, edx
+  0x15c9	dec    	esp
+  === BLOCK LINK ===
+    0x15ca
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15ca ===
+  0x15ca	mov    	esi, ecx
+  0x15cc	xor    	ebx, ebx
+  0x15ce	dec    	eax
+  0x15cf	mov    	dword ptr [esp + 0x48], ebx
+  0x15d3	xor    	esi, esi
+  === BLOCK LINK ===
+    0x15d5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15d5 ===
+  0x15d5	mov    	dword ptr [esp + 0x40], esi
+  0x15d9	inc    	esp
+  0x15da	mov    	esp, dword ptr [ecx + 0xc]
+  0x15dd	inc    	esp
+  0x15de	mov    	dword ptr [esp + 0xb8], esp
+  === BLOCK LINK ===
+    0x15e5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15e5 ===
+  0x15e5	dec    	eax
+  0x15e6	test   	edx, edx
+  0x15e8	jne    	0x15f6
+  === BLOCK LINK ===
+    0x15ea
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15ea ===
+  0x15ea	inc    	ecx
+  0x15eb	or     	dword ptr [eax], 0xffffffff
+  0x15ee	lea    	eax, [edx + 0x57]
+  0x15f1	jmp    	0x1686
+  === BLOCK LINK ===
+    0x15f6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x15f6 ===
+  0x15f6	dec    	eax
+  0x15f7	mov    	dword ptr [esp + 0x50], ebx
+  0x15fb	dec    	eax
+  0x15fc	lea    	edx, [0x2006]
+  0x1602	dec    	eax
+  === BLOCK LINK ===
+    0x1603
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1603 ===
+  0x1603	mov    	ecx, eax
+  0x1605	dec    	eax
+  0x1606	call   	dword ptr [0x1b74]
+  === BLOCK LINK ===
+    0x160c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x160c ===
+  0x160c	nop    	dword ptr [eax + eax]
+  0x1611	dec    	esp
+  0x1612	mov    	edi, eax
+  0x1614	dec    	eax
+  0x1615	mov    	dword ptr [esp + 0x50], eax
+  === BLOCK LINK ===
+    0x1619
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1619 ===
+  0x1619	jmp    	0x1641
+  === BLOCK LINK ===
+    0x161b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x161b ===
+  0x161b	dec    	eax
+  0x161c	mov    	edi, dword ptr [esp + 0xc0]
+  0x1623	dec    	esp
+  0x1624	mov    	esi, dword ptr [esp + 0xb0]
+  0x162b	dec    	eax
+  === BLOCK LINK ===
+    0x162c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x162c ===
+  0x162c	mov    	ebx, dword ptr [esp + 0x48]
+  0x1630	mov    	esi, dword ptr [esp + 0x40]
+  0x1634	inc    	esp
+  0x1635	mov    	esp, dword ptr [esp + 0xb8]
+  0x163c	dec    	esp
+  === BLOCK LINK ===
+    0x163d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x163d ===
+  0x163d	mov    	edi, dword ptr [esp + 0x50]
+  0x1641	dec    	eax
+  0x1642	test   	ebx, ebx
+  0x1644	je     	0x1695
+  === BLOCK LINK ===
+    0x1646
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1646 ===
+  0x1646	dec    	eax
+  0x1647	mov    	eax, dword ptr [ebx]
+  0x1649	mov    	esi, dword ptr [eax]
+  0x164b	inc    	ecx
+  0x164c	mov    	ecx, esp
+  === BLOCK LINK ===
+    0x164e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x164e ===
+  0x164e	dec    	ecx
+  0x164f	mov    	eax, dword ptr [esi]
+  0x1651	dec    	eax
+  0x1652	mov    	dword ptr [esp + 0x20], eax
+  0x1656	dec    	esp
+  === BLOCK LINK ===
+    0x1657
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1657 ===
+  0x1657	lea    	ecx, [0x1fc3]
+  0x165d	mov    	ebx, 2
+  0x1662	inc    	esp
+  0x1663	lea    	eax, [ebx - 1]
+  0x1666	mov    	edx, ebx
+  === BLOCK LINK ===
+    0x1668
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1668 ===
+  0x1668	dec    	eax
+  0x1669	call   	dword ptr [0x1b89]
+  === BLOCK LINK ===
+    0x166f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x166f ===
+  0x166f	nop    	dword ptr [eax + eax]
+  0x1674	dec    	eax
+  0x1675	lea    	edx, [0x1ff5]
+  0x167b	mov    	ecx, ebx
+  0x167d	call   	0x1008
+  === BLOCK LINK ===
+    0x1682
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1682 ===
+  0x1682	mov    	dword ptr [edi], ebx
+  0x1684	mov    	eax, esi
+  0x1686	dec    	eax
+  0x1687	add    	esp, 0x78
+  0x168a	inc    	ecx
+  === BLOCK LINK ===
+    0x168b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x168b ===
+  0x168b	pop    	edi
+  0x168c	inc    	ecx
+  0x168d	pop    	esi
+  0x168e	inc    	ecx
+  0x168f	pop    	esp
+  === BLOCK LINK ===
+    0x1690
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1690 ===
+  0x1690	pop    	edi
+  0x1691	pop    	esi
+  0x1692	pop    	ebx
+  0x1693	ret    	
+  0x1694	int3   	
+  === BLOCK LINK ===
+    0x1695
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1695 ===
+  0x1695	mov    	ebx, 2
+  0x169a	dec    	ebp
+  0x169b	test   	edi, edi
+  0x169d	je     	0x1682
+  === BLOCK LINK ===
+    0x169f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x169f ===
+  0x169f	dec    	eax
+  0x16a0	lea    	edx, [0x2032]
+  0x16a6	mov    	ecx, ebx
+  0x16a8	call   	0x1008
+  === BLOCK LINK ===
+    0x16ad
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16ad ===
+  0x16ad	mov    	dword ptr [edi], 4
+  0x16b3	dec    	ecx
+  0x16b4	mov    	edx, dword ptr [esi + 0x18]
+  0x16b7	inc    	ecx
+  0x16b8	mov    	ecx, dword ptr [esi + 0x10]
+  === BLOCK LINK ===
+    0x16bb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16bb ===
+  0x16bb	dec    	ecx
+  0x16bc	mov    	eax, edi
+  0x16be	call   	dword ptr [0x1c6c]
+  === BLOCK LINK ===
+    0x16c4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16c4 ===
+  0x16c4	mov    	dword ptr [esp + 0xc8], eax
+  0x16cb	dec    	ecx
+  0x16cc	mov    	edx, dword ptr [esi]
+  0x16ce	inc    	ecx
+  0x16cf	mov    	ecx, esp
+  === BLOCK LINK ===
+    0x16d1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16d1 ===
+  0x16d1	test   	eax, eax
+  0x16d3	jns    	0x16e8
+  === BLOCK LINK ===
+    0x16d5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16d5 ===
+  0x16d5	mov    	esi, eax
+  0x16d7	mov    	dword ptr [esp + 0x40], eax
+  0x16db	dec    	esp
+  0x16dc	lea    	ecx, [0x2046]
+  0x16e2	inc    	esp
+  === BLOCK LINK ===
+    0x16e3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16e3 ===
+  0x16e3	lea    	eax, [ebx - 1]
+  0x16e6	jmp    	0x16f4
+  === BLOCK LINK ===
+    0x16e8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16e8 ===
+  0x16e8	je     	0x1719
+  === BLOCK LINK ===
+    0x16ea
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16ea ===
+  0x16ea	dec    	esp
+  0x16eb	lea    	ecx, [0x206f]
+  0x16f1	inc    	esp
+  0x16f2	mov    	eax, ebx
+  0x16f4	mov    	dword ptr [esp + 0x30], eax
+  === BLOCK LINK ===
+    0x16f8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x16f8 ===
+  0x16f8	dec    	eax
+  0x16f9	mov    	dword ptr [esp + 0x28], edx
+  0x16fd	dec    	eax
+  0x16fe	lea    	eax, [0x200c]
+  0x1704	dec    	eax
+  === BLOCK LINK ===
+    0x1705
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1705 ===
+  0x1705	mov    	dword ptr [esp + 0x20], eax
+  0x1709	mov    	edx, ebx
+  0x170b	dec    	eax
+  0x170c	call   	dword ptr [0x1ae6]
+  === BLOCK LINK ===
+    0x1712
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1712 ===
+  0x1712	nop    	dword ptr [eax + eax]
+  0x1717	jmp    	0x1745
+  === BLOCK LINK ===
+    0x1719
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1719 ===
+  0x1719	dec    	eax
+  0x171a	mov    	dword ptr [esp + 0x28], edx
+  0x171e	dec    	eax
+  0x171f	lea    	eax, [0x1feb]
+  0x1725	dec    	eax
+  === BLOCK LINK ===
+    0x1726
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1726 ===
+  0x1726	mov    	dword ptr [esp + 0x20], eax
+  0x172a	dec    	esp
+  0x172b	lea    	ecx, [0x2077]
+  0x1731	inc    	ecx
+  0x1732	mov    	eax, 6
+  === BLOCK LINK ===
+    0x1737
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1737 ===
+  0x1737	mov    	edx, ebx
+  0x1739	dec    	eax
+  0x173a	call   	dword ptr [0x1ab8]
+  === BLOCK LINK ===
+    0x1740
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1740 ===
+  0x1740	nop    	dword ptr [eax + eax]
+  0x1745	jmp    	0x17aa
+  === BLOCK LINK ===
+    0x1747
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1747 ===
+  0x1747	dec    	eax
+  0x1748	mov    	eax, dword ptr [esp + 0x48]
+  0x174c	dec    	eax
+  0x174d	mov    	ecx, dword ptr [eax]
+  0x174f	mov    	esi, dword ptr [ecx]
+  === BLOCK LINK ===
+    0x1751
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1751 ===
+  0x1751	mov    	dword ptr [esp + 0x40], esi
+  0x1755	mov    	ecx, dword ptr [esp + 0xb8]
+  0x175c	dec    	eax
+  0x175d	mov    	eax, dword ptr [esp + 0xb0]
+  0x1764	dec    	eax
+  === BLOCK LINK ===
+    0x1765
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1765 ===
+  0x1765	mov    	edx, dword ptr [eax]
+  0x1767	dec    	eax
+  0x1768	mov    	dword ptr [esp + 0x28], edx
+  0x176c	dec    	eax
+  0x176d	lea    	eax, [0x1f9d]
+  === BLOCK LINK ===
+    0x1773
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1773 ===
+  0x1773	dec    	eax
+  0x1774	mov    	dword ptr [esp + 0x20], eax
+  0x1778	dec    	esp
+  0x1779	lea    	ecx, [0x2059]
+  0x177f	mov    	edx, 2
+  === BLOCK LINK ===
+    0x1784
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1784 ===
+  0x1784	inc    	esp
+  0x1785	lea    	eax, [edx - 1]
+  0x1788	dec    	eax
+  0x1789	call   	dword ptr [0x1a69]
+  === BLOCK LINK ===
+    0x178f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x178f ===
+  0x178f	nop    	dword ptr [eax + eax]
+  0x1794	dec    	eax
+  0x1795	lea    	edx, [0x2075]
+  0x179b	mov    	ecx, 2
+  0x17a0	call   	0x1008
+  === BLOCK LINK ===
+    0x17a5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17a5 ===
+  0x17a5	mov    	ebx, 2
+  0x17aa	dec    	eax
+  0x17ab	lea    	edx, [0x20bf]
+  0x17b1	mov    	ecx, ebx
+  0x17b3	call   	0x1008
+  === BLOCK LINK ===
+    0x17b8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17b8 ===
+  0x17b8	jmp    	0x1684
+  === BLOCK LINK ===
+    0x17bd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17bd ===
+  0x17bd	int3   	
+  0x17be	int3   	
+  0x17bf	int3   	
+  0x17c0	int3   	
+  0x17c1	int3   	
+  === BLOCK LINK ===
+    0x17c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17c2 ===
+  0x17c2	int3   	
+  0x17c3	int3   	
+  0x17c4	dec    	esp
+  0x17c5	mov    	dword ptr [esp + 0x18], eax
+  0x17c9	dec    	eax
+  === BLOCK LINK ===
+    0x17ca
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17ca ===
+  0x17ca	mov    	dword ptr [esp + 8], ecx
+  0x17ce	push   	ebx
+  0x17cf	push   	esi
+  0x17d0	push   	edi
+  0x17d1	inc    	ecx
+  === BLOCK LINK ===
+    0x17d2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17d2 ===
+  0x17d2	push   	esp
+  0x17d3	inc    	ecx
+  0x17d4	push   	esi
+  0x17d5	inc    	ecx
+  0x17d6	push   	edi
+  === BLOCK LINK ===
+    0x17d7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17d7 ===
+  0x17d7	dec    	eax
+  0x17d8	sub    	esp, 0x78
+  0x17db	dec    	ebp
+  0x17dc	mov    	esi, eax
+  0x17de	dec    	eax
+  === BLOCK LINK ===
+    0x17df
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17df ===
+  0x17df	mov    	eax, edx
+  0x17e1	dec    	eax
+  0x17e2	mov    	edi, ecx
+  0x17e4	xor    	ebx, ebx
+  0x17e6	dec    	eax
+  === BLOCK LINK ===
+    0x17e7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17e7 ===
+  0x17e7	mov    	dword ptr [esp + 0x48], ebx
+  0x17eb	xor    	esi, esi
+  0x17ed	mov    	dword ptr [esp + 0x40], esi
+  0x17f1	inc    	esp
+  0x17f2	mov    	esp, dword ptr [ecx + 0xc]
+  === BLOCK LINK ===
+    0x17f5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x17f5 ===
+  0x17f5	inc    	esp
+  0x17f6	mov    	dword ptr [esp + 0xb8], esp
+  0x17fd	dec    	eax
+  0x17fe	test   	edx, edx
+  0x1800	jne    	0x180a
+  === BLOCK LINK ===
+    0x1802
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1802 ===
+  0x1802	lea    	eax, [edx + 0x57]
+  0x1805	jmp    	0x1a5c
+  === BLOCK LINK ===
+    0x180a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x180a ===
+  0x180a	dec    	eax
+  0x180b	mov    	dword ptr [esp + 0x50], ebx
+  0x180f	dec    	eax
+  0x1810	lea    	ecx, [0x208a]
+  0x1816	dec    	eax
+  === BLOCK LINK ===
+    0x1817
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1817 ===
+  0x1817	lea    	edx, [0x209b]
+  0x181d	cmp    	dword ptr [edi + 0x10], 0
+  0x1821	dec    	eax
+  0x1822	cmovne  	edx, ecx
+  0x1825	dec    	eax
+  === BLOCK LINK ===
+    0x1826
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1826 ===
+  0x1826	mov    	ecx, eax
+  0x1828	dec    	eax
+  0x1829	call   	dword ptr [0x1951]
+  === BLOCK LINK ===
+    0x182f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x182f ===
+  0x182f	nop    	dword ptr [eax + eax]
+  0x1834	dec    	esp
+  0x1835	mov    	edi, eax
+  0x1837	dec    	eax
+  0x1838	mov    	dword ptr [esp + 0x50], eax
+  === BLOCK LINK ===
+    0x183c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x183c ===
+  0x183c	jmp    	0x1864
+  === BLOCK LINK ===
+    0x183e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x183e ===
+  0x183e	dec    	esp
+  0x183f	mov    	esi, dword ptr [esp + 0xc0]
+  0x1846	dec    	eax
+  0x1847	mov    	edi, dword ptr [esp + 0xb0]
+  0x184e	dec    	eax
+  === BLOCK LINK ===
+    0x184f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x184f ===
+  0x184f	mov    	ebx, dword ptr [esp + 0x48]
+  0x1853	mov    	esi, dword ptr [esp + 0x40]
+  0x1857	inc    	esp
+  0x1858	mov    	esp, dword ptr [esp + 0xb8]
+  0x185f	dec    	esp
+  === BLOCK LINK ===
+    0x1860
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1860 ===
+  0x1860	mov    	edi, dword ptr [esp + 0x50]
+  0x1864	dec    	eax
+  0x1865	test   	ebx, ebx
+  0x1867	je     	0x18aa
+  === BLOCK LINK ===
+    0x1869
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1869 ===
+  0x1869	dec    	eax
+  0x186a	mov    	eax, dword ptr [ebx]
+  0x186c	mov    	esi, dword ptr [eax]
+  0x186e	inc    	ecx
+  0x186f	mov    	ecx, esp
+  === BLOCK LINK ===
+    0x1871
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1871 ===
+  0x1871	dec    	eax
+  0x1872	mov    	eax, dword ptr [edi]
+  0x1874	dec    	eax
+  0x1875	mov    	dword ptr [esp + 0x20], eax
+  0x1879	dec    	esp
+  === BLOCK LINK ===
+    0x187a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x187a ===
+  0x187a	lea    	ecx, [0x1da0]
+  0x1880	mov    	ebx, 2
+  0x1885	inc    	esp
+  0x1886	lea    	eax, [ebx - 1]
+  0x1889	mov    	edx, ebx
+  === BLOCK LINK ===
+    0x188b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x188b ===
+  0x188b	dec    	eax
+  0x188c	call   	dword ptr [0x1966]
+  === BLOCK LINK ===
+    0x1892
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1892 ===
+  0x1892	nop    	dword ptr [eax + eax]
+  0x1897	dec    	eax
+  0x1898	lea    	edx, [0x1dd2]
+  0x189e	mov    	ecx, ebx
+  0x18a0	call   	0x1008
+  === BLOCK LINK ===
+    0x18a5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18a5 ===
+  0x18a5	jmp    	0x1a57
+  === BLOCK LINK ===
+    0x18aa
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18aa ===
+  0x18aa	dec    	ebp
+  0x18ab	test   	edi, edi
+  0x18ad	je     	0x1a01
+  === BLOCK LINK ===
+    0x18b3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18b3 ===
+  0x18b3	dec    	eax
+  0x18b4	lea    	edx, [0x2016]
+  0x18ba	mov    	ebx, 2
+  0x18bf	mov    	ecx, ebx
+  0x18c1	call   	0x1008
+  === BLOCK LINK ===
+    0x18c6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18c6 ===
+  0x18c6	inc    	ecx
+  0x18c7	mov    	dword ptr [esi], 3
+  0x18cd	dec    	ecx
+  0x18ce	mov    	eax, edi
+  0x18d0	call   	dword ptr [0x1a5a]
+  === BLOCK LINK ===
+    0x18d6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18d6 ===
+  0x18d6	mov    	edx, eax
+  0x18d8	mov    	dword ptr [esp + 0xc8], eax
+  0x18df	dec    	esp
+  0x18e0	mov    	ecx, dword ptr [edi]
+  0x18e2	inc    	ecx
+  === BLOCK LINK ===
+    0x18e3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18e3 ===
+  0x18e3	mov    	ecx, esp
+  0x18e5	inc    	esp
+  0x18e6	mov    	edx, dword ptr [edi + 0x10]
+  0x18e9	dec    	esp
+  0x18ea	lea    	eax, [0x2018]
+  === BLOCK LINK ===
+    0x18f0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18f0 ===
+  0x18f0	test   	eax, eax
+  0x18f2	dec    	eax
+  0x18f3	lea    	eax, [0x2037]
+  0x18f9	jns    	0x191e
+  === BLOCK LINK ===
+    0x18fb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x18fb ===
+  0x18fb	mov    	esi, edx
+  0x18fd	mov    	dword ptr [esp + 0x40], edx
+  0x1901	inc    	ebp
+  0x1902	test   	edx, edx
+  0x1904	dec    	ecx
+  === BLOCK LINK ===
+    0x1905
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1905 ===
+  0x1905	cmovne  	eax, eax
+  0x1908	mov    	dword ptr [esp + 0x30], edx
+  0x190c	dec    	esp
+  0x190d	mov    	dword ptr [esp + 0x28], ecx
+  0x1911	dec    	esp
+  === BLOCK LINK ===
+    0x1912
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1912 ===
+  0x1912	lea    	ecx, [0x2040]
+  0x1918	inc    	esp
+  0x1919	lea    	eax, [ebx - 1]
+  0x191c	jmp    	0x193c
+  === BLOCK LINK ===
+    0x191e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x191e ===
+  0x191e	test   	edx, edx
+  0x1920	je     	0x1951
+  === BLOCK LINK ===
+    0x1922
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1922 ===
+  0x1922	inc    	ebp
+  0x1923	test   	edx, edx
+  0x1925	dec    	ecx
+  0x1926	cmovne  	eax, eax
+  0x1929	mov    	dword ptr [esp + 0x30], edx
+  === BLOCK LINK ===
+    0x192d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x192d ===
+  0x192d	dec    	esp
+  0x192e	mov    	dword ptr [esp + 0x28], ecx
+  0x1932	dec    	esp
+  0x1933	lea    	ecx, [0x1e27]
+  0x1939	inc    	esp
+  === BLOCK LINK ===
+    0x193a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x193a ===
+  0x193a	mov    	eax, ebx
+  0x193c	dec    	eax
+  0x193d	mov    	dword ptr [esp + 0x20], eax
+  0x1941	mov    	edx, ebx
+  0x1943	dec    	eax
+  === BLOCK LINK ===
+    0x1944
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1944 ===
+  0x1944	call   	dword ptr [0x18ae]
+  === BLOCK LINK ===
+    0x194a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x194a ===
+  0x194a	nop    	dword ptr [eax + eax]
+  0x194f	jmp    	0x197d
+  === BLOCK LINK ===
+    0x1951
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1951 ===
+  0x1951	inc    	ebp
+  0x1952	test   	edx, edx
+  0x1954	dec    	ecx
+  0x1955	cmovne  	eax, eax
+  0x1958	dec    	esp
+  === BLOCK LINK ===
+    0x1959
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1959 ===
+  0x1959	mov    	dword ptr [esp + 0x28], ecx
+  0x195d	dec    	eax
+  0x195e	mov    	dword ptr [esp + 0x20], eax
+  0x1962	dec    	esp
+  0x1963	lea    	ecx, [0x1e3f]
+  === BLOCK LINK ===
+    0x1969
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1969 ===
+  0x1969	inc    	ecx
+  0x196a	mov    	eax, 6
+  0x196f	mov    	edx, ebx
+  0x1971	dec    	eax
+  0x1972	call   	dword ptr [0x1880]
+  === BLOCK LINK ===
+    0x1978
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1978 ===
+  0x1978	nop    	dword ptr [eax + eax]
+  0x197d	jmp    	0x19f1
+  === BLOCK LINK ===
+    0x197f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x197f ===
+  0x197f	dec    	eax
+  0x1980	mov    	eax, dword ptr [esp + 0x48]
+  0x1984	dec    	eax
+  0x1985	mov    	ecx, dword ptr [eax]
+  0x1987	mov    	esi, dword ptr [ecx]
+  === BLOCK LINK ===
+    0x1989
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1989 ===
+  0x1989	mov    	dword ptr [esp + 0x40], esi
+  0x198d	dec    	eax
+  0x198e	mov    	eax, dword ptr [esp + 0xb0]
+  0x1995	dec    	eax
+  0x1996	lea    	ecx, [0x1f6c]
+  === BLOCK LINK ===
+    0x199c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x199c ===
+  0x199c	dec    	eax
+  0x199d	lea    	edx, [0x1f8d]
+  0x19a3	cmp    	dword ptr [eax + 0x10], 0
+  0x19a7	dec    	eax
+  0x19a8	cmovne  	edx, ecx
+  === BLOCK LINK ===
+    0x19ab
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19ab ===
+  0x19ab	mov    	ecx, dword ptr [esp + 0xb8]
+  0x19b2	dec    	eax
+  0x19b3	mov    	eax, dword ptr [eax]
+  0x19b5	dec    	eax
+  0x19b6	mov    	dword ptr [esp + 0x28], eax
+  === BLOCK LINK ===
+    0x19ba
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19ba ===
+  0x19ba	dec    	eax
+  0x19bb	mov    	dword ptr [esp + 0x20], edx
+  0x19bf	dec    	esp
+  0x19c0	lea    	ecx, [0x1e12]
+  0x19c6	mov    	edx, 2
+  === BLOCK LINK ===
+    0x19cb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19cb ===
+  0x19cb	inc    	esp
+  0x19cc	lea    	eax, [edx - 1]
+  0x19cf	dec    	eax
+  0x19d0	call   	dword ptr [0x1822]
+  === BLOCK LINK ===
+    0x19d6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19d6 ===
+  0x19d6	nop    	dword ptr [eax + eax]
+  0x19db	dec    	eax
+  0x19dc	lea    	edx, [0x1fae]
+  0x19e2	mov    	ecx, 2
+  0x19e7	call   	0x1008
+  === BLOCK LINK ===
+    0x19ec
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19ec ===
+  0x19ec	mov    	ebx, 2
+  0x19f1	dec    	eax
+  0x19f2	lea    	edx, [0x2008]
+  0x19f8	mov    	ecx, ebx
+  0x19fa	call   	0x1008
+  === BLOCK LINK ===
+    0x19ff
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x19ff ===
+  0x19ff	jmp    	0x1a5a
+  === BLOCK LINK ===
+    0x1a01
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a01 ===
+  0x1a01	dec    	eax
+  0x1a02	call   	dword ptr [0x1748]
+  === BLOCK LINK ===
+    0x1a08
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a08 ===
+  0x1a08	nop    	dword ptr [eax + eax]
+  0x1a0d	mov    	esi, eax
+  0x1a0f	dec    	esp
+  0x1a10	lea    	eax, [0x1ef2]
+  0x1a16	dec    	eax
+  === BLOCK LINK ===
+    0x1a17
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a17 ===
+  0x1a17	lea    	eax, [0x1f13]
+  0x1a1d	cmp    	dword ptr [edi + 0x10], 0
+  0x1a21	dec    	ecx
+  0x1a22	cmovne  	eax, eax
+  0x1a25	inc    	ecx
+  === BLOCK LINK ===
+    0x1a26
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a26 ===
+  0x1a26	mov    	ecx, esp
+  0x1a28	mov    	dword ptr [esp + 0x30], esi
+  0x1a2c	dec    	eax
+  0x1a2d	mov    	edx, dword ptr [edi]
+  0x1a2f	dec    	eax
+  === BLOCK LINK ===
+    0x1a30
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a30 ===
+  0x1a30	mov    	dword ptr [esp + 0x28], edx
+  0x1a34	dec    	eax
+  0x1a35	mov    	dword ptr [esp + 0x20], eax
+  0x1a39	dec    	esp
+  0x1a3a	lea    	ecx, [0x1ff8]
+  === BLOCK LINK ===
+    0x1a40
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a40 ===
+  0x1a40	mov    	ebx, 2
+  0x1a45	inc    	esp
+  0x1a46	lea    	eax, [ebx - 1]
+  0x1a49	mov    	edx, ebx
+  0x1a4b	dec    	eax
+  === BLOCK LINK ===
+    0x1a4c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a4c ===
+  0x1a4c	call   	dword ptr [0x17a6]
+  === BLOCK LINK ===
+    0x1a52
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a52 ===
+  0x1a52	nop    	dword ptr [eax + eax]
+  0x1a57	inc    	ecx
+  0x1a58	mov    	dword ptr [esi], ebx
+  0x1a5a	mov    	eax, esi
+  0x1a5c	dec    	eax
+  === BLOCK LINK ===
+    0x1a5d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a5d ===
+  0x1a5d	add    	esp, 0x78
+  0x1a60	inc    	ecx
+  0x1a61	pop    	edi
+  0x1a62	inc    	ecx
+  0x1a63	pop    	esi
+  === BLOCK LINK ===
+    0x1a64
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a64 ===
+  0x1a64	inc    	ecx
+  0x1a65	pop    	esp
+  0x1a66	pop    	edi
+  0x1a67	pop    	esi
+  0x1a68	pop    	ebx
+  === BLOCK LINK ===
+    0x1a69
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a69 ===
+  0x1a69	ret    	
+  0x1a6a	int3   	
+  0x1a6b	int3   	
+  0x1a6c	int3   	
+  0x1a6d	int3   	
+  === BLOCK LINK ===
+    0x1a6e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a6e ===
+  0x1a6e	int3   	
+  0x1a6f	int3   	
+  0x1a70	int3   	
+  0x1a71	int3   	
+  0x1a72	int3   	
+  === BLOCK LINK ===
+    0x1a73
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a73 ===
+  0x1a73	int3   	
+  0x1a74	dec    	eax
+  0x1a75	mov    	dword ptr [esp + 0x10], edx
+  0x1a79	dec    	eax
+  0x1a7a	mov    	dword ptr [esp + 8], ecx
+  === BLOCK LINK ===
+    0x1a7e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a7e ===
+  0x1a7e	push   	ebx
+  0x1a7f	push   	esi
+  0x1a80	inc    	ecx
+  0x1a81	push   	esp
+  0x1a82	inc    	ecx
+  === BLOCK LINK ===
+    0x1a83
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a83 ===
+  0x1a83	push   	esi
+  0x1a84	inc    	ecx
+  0x1a85	push   	edi
+  0x1a86	dec    	eax
+  0x1a87	sub    	esp, 0x40
+  === BLOCK LINK ===
+    0x1a8a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a8a ===
+  0x1a8a	dec    	esp
+  0x1a8b	mov    	esi, edx
+  0x1a8d	dec    	eax
+  0x1a8e	mov    	esi, ecx
+  0x1a90	inc    	ebp
+  === BLOCK LINK ===
+    0x1a91
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1a91 ===
+  0x1a91	xor    	edi, edi
+  0x1a93	dec    	esp
+  0x1a94	mov    	dword ptr [esp + 0x30], edi
+  0x1a98	xor    	ebx, ebx
+  0x1a9a	mov    	dword ptr [esp + 0x80], ebx
+  === BLOCK LINK ===
+    0x1aa1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1aa1 ===
+  0x1aa1	inc    	esp
+  0x1aa2	mov    	esp, dword ptr [ecx + 0xc]
+  0x1aa5	inc    	esp
+  0x1aa6	mov    	dword ptr [esp + 0x88], esp
+  0x1aad	dec    	eax
+  === BLOCK LINK ===
+    0x1aae
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1aae ===
+  0x1aae	lea    	edx, [0x1fc4]
+  0x1ab4	lea    	ecx, [ebx + 2]
+  0x1ab7	call   	0x1008
+  === BLOCK LINK ===
+    0x1abc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1abc ===
+  0x1abc	nop    	
+  0x1abd	dec    	eax
+  0x1abe	mov    	ecx, dword ptr [esi]
+  0x1ac0	dec    	eax
+  0x1ac1	call   	dword ptr [0x16a1]
+  === BLOCK LINK ===
+    0x1ac7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ac7 ===
+  0x1ac7	nop    	dword ptr [eax + eax]
+  0x1acc	dec    	ecx
+  0x1acd	mov    	dword ptr [esi], eax
+  0x1acf	jmp    	0x1aef
+  === BLOCK LINK ===
+    0x1ad1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ad1 ===
+  0x1ad1	dec    	esp
+  0x1ad2	mov    	esi, dword ptr [esp + 0x78]
+  0x1ad6	dec    	eax
+  0x1ad7	mov    	esi, dword ptr [esp + 0x70]
+  0x1adb	dec    	esp
+  === BLOCK LINK ===
+    0x1adc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1adc ===
+  0x1adc	mov    	edi, dword ptr [esp + 0x30]
+  0x1ae0	mov    	ebx, dword ptr [esp + 0x80]
+  0x1ae7	inc    	esp
+  0x1ae8	mov    	esp, dword ptr [esp + 0x88]
+  0x1aef	dec    	ebp
+  === BLOCK LINK ===
+    0x1af0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1af0 ===
+  0x1af0	test   	edi, edi
+  0x1af2	je     	0x1b33
+  === BLOCK LINK ===
+    0x1af4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1af4 ===
+  0x1af4	inc    	ecx
+  0x1af5	mov    	ecx, esp
+  0x1af7	dec    	eax
+  0x1af8	mov    	eax, dword ptr [esi]
+  0x1afa	dec    	eax
+  === BLOCK LINK ===
+    0x1afb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1afb ===
+  0x1afb	mov    	dword ptr [esp + 0x20], eax
+  0x1aff	dec    	esp
+  0x1b00	lea    	ecx, [0x1faa]
+  0x1b06	mov    	edx, 2
+  0x1b0b	inc    	esp
+  === BLOCK LINK ===
+    0x1b0c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b0c ===
+  0x1b0c	lea    	eax, [edx - 1]
+  0x1b0f	dec    	eax
+  0x1b10	call   	dword ptr [0x16e2]
+  === BLOCK LINK ===
+    0x1b16
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b16 ===
+  0x1b16	nop    	dword ptr [eax + eax]
+  0x1b1b	dec    	eax
+  0x1b1c	lea    	edx, [0x1fce]
+  0x1b22	mov    	ecx, 2
+  0x1b27	call   	0x1008
+  === BLOCK LINK ===
+    0x1b2c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b2c ===
+  0x1b2c	dec    	ecx
+  0x1b2d	mov    	eax, dword ptr [edi]
+  0x1b2f	mov    	ebx, dword ptr [eax]
+  0x1b31	jmp    	0x1ba5
+  === BLOCK LINK ===
+    0x1b33
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b33 ===
+  0x1b33	dec    	ecx
+  0x1b34	cmp    	dword ptr [esi], 0
+  0x1b37	jne    	0x1b94
+  === BLOCK LINK ===
+    0x1b39
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b39 ===
+  0x1b39	dec    	eax
+  0x1b3a	call   	dword ptr [0x1610]
+  === BLOCK LINK ===
+    0x1b40
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b40 ===
+  0x1b40	nop    	dword ptr [eax + eax]
+  0x1b45	dec    	eax
+  0x1b46	call   	dword ptr [0x1604]
+  === BLOCK LINK ===
+    0x1b4c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b4c ===
+  0x1b4c	nop    	dword ptr [eax + eax]
+  0x1b51	mov    	ebx, eax
+  0x1b53	inc    	esp
+  0x1b54	mov    	eax, eax
+  0x1b56	dec    	eax
+  === BLOCK LINK ===
+    0x1b57
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b57 ===
+  0x1b57	lea    	edx, [0x1ff3]
+  0x1b5d	mov    	ecx, 2
+  0x1b62	call   	0x1008
+  === BLOCK LINK ===
+    0x1b67
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b67 ===
+  0x1b67	inc    	ecx
+  0x1b68	mov    	ecx, esp
+  0x1b6a	mov    	dword ptr [esp + 0x28], ebx
+  0x1b6e	dec    	eax
+  0x1b6f	mov    	edx, dword ptr [esi]
+  === BLOCK LINK ===
+    0x1b71
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b71 ===
+  0x1b71	dec    	eax
+  0x1b72	mov    	dword ptr [esp + 0x20], edx
+  0x1b76	dec    	esp
+  0x1b77	lea    	ecx, [0x201b]
+  0x1b7d	mov    	edx, 2
+  === BLOCK LINK ===
+    0x1b82
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b82 ===
+  0x1b82	inc    	esp
+  0x1b83	lea    	eax, [edx - 1]
+  0x1b86	dec    	eax
+  0x1b87	call   	dword ptr [0x166b]
+  === BLOCK LINK ===
+    0x1b8d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b8d ===
+  0x1b8d	nop    	dword ptr [eax + eax]
+  0x1b92	jmp    	0x1ba5
+  === BLOCK LINK ===
+    0x1b94
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1b94 ===
+  0x1b94	dec    	eax
+  0x1b95	lea    	edx, [0x202d]
+  0x1b9b	mov    	ecx, 2
+  0x1ba0	call   	0x1008
+  === BLOCK LINK ===
+    0x1ba5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ba5 ===
+  0x1ba5	mov    	eax, ebx
+  0x1ba7	dec    	eax
+  0x1ba8	add    	esp, 0x40
+  0x1bab	inc    	ecx
+  0x1bac	pop    	edi
+  === BLOCK LINK ===
+    0x1bad
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bad ===
+  0x1bad	inc    	ecx
+  0x1bae	pop    	esi
+  0x1baf	inc    	ecx
+  0x1bb0	pop    	esp
+  0x1bb1	pop    	esi
+  === BLOCK LINK ===
+    0x1bb2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bb2 ===
+  0x1bb2	pop    	ebx
+  0x1bb3	ret    	
+  0x1bb4	int3   	
+  0x1bb5	int3   	
+  0x1bb6	int3   	
+  === BLOCK LINK ===
+    0x1bb7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x116a ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bb7 ===
+  0x1bb7	int3   	
+  0x1bb8	int3   	
+  0x1bb9	int3   	
+  0x1bba	int3   	
+  0x1bbb	int3   	
+  === BLOCK LINK ===
+    0x1bbc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bbc ===
+  0x1bbc	dec    	eax
+  0x1bbd	mov    	dword ptr [esp + 0x18], ebx
+  0x1bc1	dec    	eax
+  0x1bc2	mov    	dword ptr [esp + 0x20], esi
+  0x1bc6	push   	edi
+  === BLOCK LINK ===
+    0x1bc7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bc7 ===
+  0x1bc7	inc    	ecx
+  0x1bc8	push   	esi
+  0x1bc9	inc    	ecx
+  0x1bca	push   	edi
+  0x1bcb	dec    	eax
+  === BLOCK LINK ===
+    0x1bcc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bcc ===
+  0x1bcc	sub    	esp, 0x280
+  0x1bd2	dec    	eax
+  0x1bd3	mov    	eax, dword ptr [0x342f]
+  0x1bd9	dec    	eax
+  0x1bda	xor    	eax, esp
+  === BLOCK LINK ===
+    0x1bdc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bdc ===
+  0x1bdc	dec    	eax
+  0x1bdd	mov    	dword ptr [esp + 0x270], eax
+  0x1be4	dec    	eax
+  0x1be5	mov    	esi, edx
+  0x1be7	dec    	eax
+  === BLOCK LINK ===
+    0x1be8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1be8 ===
+  0x1be8	mov    	ebx, ecx
+  0x1bea	dec    	eax
+  0x1beb	mov    	dword ptr [esp + 0x50], edx
+  0x1bef	xor    	edi, edi
+  0x1bf1	dec    	eax
+  === BLOCK LINK ===
+    0x1bf2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1bf2 ===
+  0x1bf2	mov    	dword ptr [esp + 0x28], edi
+  0x1bf6	dec    	eax
+  0x1bf7	lea    	edx, [0x2003]
+  0x1bfd	lea    	ecx, [edi + 2]
+  0x1c00	call   	0x1008
+  === BLOCK LINK ===
+    0x1c05
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c05 ===
+  0x1c05	dec    	eax
+  0x1c06	mov    	dword ptr [esp + 0x30], ebx
+  0x1c0a	dec    	eax
+  0x1c0b	lea    	eax, [ebx + 0x208]
+  0x1c11	dec    	eax
+  === BLOCK LINK ===
+    0x1c12
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c12 ===
+  0x1c12	mov    	dword ptr [esp + 0x48], eax
+  0x1c16	mov    	dword ptr [esp + 0x3c], 2
+  0x1c1e	inc    	esp
+  0x1c1f	mov    	edi, dword ptr [ebx + 0x414]
+  0x1c25	inc    	esp
+  === BLOCK LINK ===
+    0x1c26
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c26 ===
+  0x1c26	mov    	dword ptr [esp + 0x40], edi
+  0x1c2a	inc    	esp
+  0x1c2b	mov    	esi, dword ptr [ebx + 0x410]
+  0x1c31	inc    	esp
+  0x1c32	mov    	dword ptr [esp + 0x38], esi
+  === BLOCK LINK ===
+    0x1c36
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c36 ===
+  0x1c36	mov    	edx, 0x104
+  0x1c3b	dec    	eax
+  0x1c3c	lea    	ecx, [esp + 0x60]
+  0x1c40	dec    	eax
+  0x1c41	lea    	eax, [esp + 0x60]
+  === BLOCK LINK ===
+    0x1c45
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c45 ===
+  0x1c45	dec    	eax
+  0x1c46	sub    	ebx, eax
+  0x1c48	dec    	eax
+  0x1c49	lea    	eax, [edx + 0x7ffffefa]
+  0x1c4f	dec    	eax
+  === BLOCK LINK ===
+    0x1c50
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c50 ===
+  0x1c50	test   	eax, eax
+  0x1c52	je     	0x1c6a
+  === BLOCK LINK ===
+    0x1c54
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c54 ===
+  0x1c54	movzx  	eax, word ptr [ebx + ecx]
+  0x1c58	test   	ax, ax
+  0x1c5b	je     	0x1c6a
+  === BLOCK LINK ===
+    0x1c5d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c5d ===
+  0x1c5d	mov    	word ptr [ecx], ax
+  0x1c60	dec    	eax
+  0x1c61	add    	ecx, 2
+  0x1c64	dec    	eax
+  0x1c65	sub    	edx, 1
+  === BLOCK LINK ===
+    0x1c68
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c68 ===
+  0x1c68	jne    	0x1c48
+  === BLOCK LINK ===
+    0x1c6a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c6a ===
+  0x1c6a	dec    	eax
+  0x1c6b	lea    	eax, [ecx - 2]
+  0x1c6e	dec    	eax
+  0x1c6f	test   	edx, edx
+  0x1c71	dec    	eax
+  === BLOCK LINK ===
+    0x1c72
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c72 ===
+  0x1c72	cmovne  	eax, ecx
+  0x1c75	mov    	word ptr [eax], di
+  0x1c78	mov    	edx, 0x5c
+  0x1c7d	dec    	eax
+  0x1c7e	lea    	ecx, [esp + 0x60]
+  === BLOCK LINK ===
+    0x1c82
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c82 ===
+  0x1c82	dec    	eax
+  0x1c83	call   	dword ptr [0x15cf]
+  === BLOCK LINK ===
+    0x1c89
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c89 ===
+  0x1c89	nop    	dword ptr [eax + eax]
+  0x1c8e	dec    	eax
+  0x1c8f	test   	eax, eax
+  0x1c91	je     	0x1c96
+  === BLOCK LINK ===
+    0x1c93
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1c93 ===
+  0x1c93	mov    	word ptr [eax], di
+  0x1c96	dec    	eax
+  0x1c97	lea    	ecx, [esp + 0x60]
+  0x1c9b	dec    	eax
+  0x1c9c	call   	dword ptr [0x14d6]
+  === BLOCK LINK ===
+    0x1ca2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ca2 ===
+  0x1ca2	nop    	dword ptr [eax + eax]
+  0x1ca7	xor    	ecx, ecx
+  0x1ca9	dec    	eax
+  0x1caa	call   	dword ptr [0x1660]
+  === BLOCK LINK ===
+    0x1cb0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cb0 ===
+  0x1cb0	nop    	dword ptr [eax + eax]
+  0x1cb5	mov    	ebx, eax
+  0x1cb7	test   	eax, eax
+  0x1cb9	je     	0x1cd4
+  === BLOCK LINK ===
+    0x1cbb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cbb ===
+  0x1cbb	or     	dword ptr [esi], 0xffffffff
+  0x1cbe	inc    	esp
+  0x1cbf	mov    	eax, eax
+  0x1cc1	dec    	eax
+  0x1cc2	lea    	edx, [0x1f88]
+  === BLOCK LINK ===
+    0x1cc8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cc8 ===
+  0x1cc8	xor    	ecx, ecx
+  0x1cca	call   	0x1008
+  === BLOCK LINK ===
+    0x1ccf
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ccf ===
+  0x1ccf	jmp    	0x1dd9
+  === BLOCK LINK ===
+    0x1cd4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cd4 ===
+  0x1cd4	dec    	eax
+  0x1cd5	lea    	edx, [0x1fd5]
+  0x1cdb	mov    	ecx, 2
+  0x1ce0	call   	0x1008
+  === BLOCK LINK ===
+    0x1ce5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ce5 ===
+  0x1ce5	nop    	
+  0x1ce6	dec    	eax
+  0x1ce7	lea    	edx, [esp + 0x28]
+  0x1ceb	dec    	eax
+  0x1cec	lea    	ecx, [esp + 0x30]
+  === BLOCK LINK ===
+    0x1cf0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cf0 ===
+  0x1cf0	call   	0x1a74
+  === BLOCK LINK ===
+    0x1cf5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1cf5 ===
+  0x1cf5	mov    	ebx, eax
+  0x1cf7	mov    	dword ptr [esp + 0x20], eax
+  0x1cfb	test   	eax, eax
+  0x1cfd	jne    	0x1d86
+  === BLOCK LINK ===
+    0x1d03
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d03 ===
+  0x1d03	inc    	ebp
+  0x1d04	test   	edi, edi
+  0x1d06	je     	0x1d44
+  === BLOCK LINK ===
+    0x1d08
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d08 ===
+  0x1d08	inc    	ecx
+  0x1d09	test   	dh, 1
+  0x1d0c	je     	0x1d26
+  === BLOCK LINK ===
+    0x1d0e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d0e ===
+  0x1d0e	dec    	esp
+  0x1d0f	mov    	eax, esi
+  0x1d11	dec    	eax
+  0x1d12	mov    	edx, dword ptr [esp + 0x28]
+  0x1d16	dec    	eax
+  === BLOCK LINK ===
+    0x1d17
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d17 ===
+  0x1d17	lea    	ecx, [esp + 0x30]
+  0x1d1b	call   	0x17c4
+  === BLOCK LINK ===
+    0x1d20
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d20 ===
+  0x1d20	mov    	ebx, eax
+  0x1d22	mov    	dword ptr [esp + 0x20], eax
+  0x1d26	inc    	ecx
+  0x1d27	test   	dh, 2
+  0x1d2a	je     	0x1d91
+  === BLOCK LINK ===
+    0x1d2c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d2c ===
+  0x1d2c	test   	ebx, ebx
+  0x1d2e	jne    	0x1d91
+  === BLOCK LINK ===
+    0x1d30
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d30 ===
+  0x1d30	dec    	esp
+  0x1d31	mov    	eax, esi
+  0x1d33	dec    	eax
+  0x1d34	mov    	edx, dword ptr [esp + 0x28]
+  0x1d38	dec    	eax
+  === BLOCK LINK ===
+    0x1d39
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d39 ===
+  0x1d39	lea    	ecx, [esp + 0x30]
+  0x1d3d	call   	0x15ac
+  === BLOCK LINK ===
+    0x1d42
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d42 ===
+  0x1d42	jmp    	0x1d7e
+  === BLOCK LINK ===
+    0x1d44
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d44 ===
+  0x1d44	inc    	ecx
+  0x1d45	test   	dh, 2
+  0x1d48	je     	0x1d62
+  === BLOCK LINK ===
+    0x1d4a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d4a ===
+  0x1d4a	dec    	esp
+  0x1d4b	mov    	eax, esi
+  0x1d4d	dec    	eax
+  0x1d4e	mov    	edx, dword ptr [esp + 0x28]
+  0x1d52	dec    	eax
+  === BLOCK LINK ===
+    0x1d53
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d53 ===
+  0x1d53	lea    	ecx, [esp + 0x30]
+  0x1d57	call   	0x15ac
+  === BLOCK LINK ===
+    0x1d5c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d5c ===
+  0x1d5c	mov    	ebx, eax
+  0x1d5e	mov    	dword ptr [esp + 0x20], eax
+  0x1d62	inc    	ecx
+  0x1d63	test   	dh, 1
+  0x1d66	je     	0x1d91
+  === BLOCK LINK ===
+    0x1d68
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d68 ===
+  0x1d68	test   	ebx, ebx
+  0x1d6a	jne    	0x1d91
+  === BLOCK LINK ===
+    0x1d6c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d6c ===
+  0x1d6c	dec    	esp
+  0x1d6d	mov    	eax, esi
+  0x1d6f	dec    	eax
+  0x1d70	mov    	edx, dword ptr [esp + 0x28]
+  0x1d74	dec    	eax
+  === BLOCK LINK ===
+    0x1d75
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d75 ===
+  0x1d75	lea    	ecx, [esp + 0x30]
+  0x1d79	call   	0x17c4
+  === BLOCK LINK ===
+    0x1d7e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d7e ===
+  0x1d7e	mov    	ebx, eax
+  0x1d80	mov    	dword ptr [esp + 0x20], eax
+  0x1d84	jmp    	0x1d91
+  === BLOCK LINK ===
+    0x1d86
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d86 ===
+  0x1d86	dec    	eax
+  0x1d87	mov    	dword ptr [esp + 0x28], edi
+  0x1d8b	mov    	dword ptr [esi], 1
+  0x1d91	jmp    	0x1da6
+  === BLOCK LINK ===
+    0x1d93
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1d93 ===
+  0x1d93	mov    	ebx, 0xd
+  0x1d98	mov    	dword ptr [esp + 0x20], ebx
+  0x1d9c	dec    	eax
+  0x1d9d	mov    	esi, dword ptr [esp + 0x50]
+  0x1da1	or     	dword ptr [esi], 0xffffffff
+  === BLOCK LINK ===
+    0x1da4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1da4 ===
+  0x1da4	xor    	edi, edi
+  0x1da6	dec    	eax
+  0x1da7	mov    	ecx, dword ptr [esp + 0x28]
+  0x1dab	dec    	eax
+  0x1dac	test   	ecx, ecx
+  === BLOCK LINK ===
+    0x1dae
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1dae ===
+  0x1dae	je     	0x1dbc
+  === BLOCK LINK ===
+    0x1db0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1db0 ===
+  0x1db0	dec    	eax
+  0x1db1	call   	dword ptr [0x13d9]
+  === BLOCK LINK ===
+    0x1db7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1db7 ===
+  0x1db7	nop    	dword ptr [eax + eax]
+  0x1dbc	dec    	eax
+  0x1dbd	call   	dword ptr [0x1555]
+  === BLOCK LINK ===
+    0x1dc3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1dc3 ===
+  0x1dc3	nop    	dword ptr [eax + eax]
+  0x1dc8	dec    	eax
+  0x1dc9	lea    	edx, [0x1f31]
+  0x1dcf	mov    	ecx, 2
+  0x1dd4	call   	0x1008
+  === BLOCK LINK ===
+    0x1dd9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1dd9 ===
+  0x1dd9	test   	ebx, ebx
+  0x1ddb	jne    	0x1ddf
+  === BLOCK LINK ===
+    0x1ddd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ddd ===
+  0x1ddd	mov    	dword ptr [esi], edi
+  0x1ddf	mov    	ecx, ebx
+  0x1de1	dec    	eax
+  0x1de2	call   	dword ptr [0x1340]
+  === BLOCK LINK ===
+    0x1de8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1de8 ===
+  0x1de8	nop    	dword ptr [eax + eax]
+  0x1ded	test   	ebx, ebx
+  0x1def	inc    	eax
+  0x1df0	sete   	bh
+  0x1df3	mov    	eax, edi
+  === BLOCK LINK ===
+    0x1df5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1df5 ===
+  0x1df5	dec    	eax
+  0x1df6	mov    	ecx, dword ptr [esp + 0x270]
+  0x1dfd	dec    	eax
+  0x1dfe	xor    	ecx, esp
+  0x1e00	call   	0x2160
+  === BLOCK LINK ===
+    0x1e05
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e05 ===
+  0x1e05	dec    	esp
+  0x1e06	lea    	ebx, [esp + 0x280]
+  0x1e0d	dec    	ecx
+  0x1e0e	mov    	ebx, dword ptr [ebx + 0x30]
+  0x1e11	dec    	ecx
+  === BLOCK LINK ===
+    0x1e12
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e12 ===
+  0x1e12	mov    	esi, dword ptr [ebx + 0x38]
+  0x1e15	dec    	ecx
+  0x1e16	mov    	esp, ebx
+  0x1e18	inc    	ecx
+  0x1e19	pop    	edi
+  === BLOCK LINK ===
+    0x1e1a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e1a ===
+  0x1e1a	inc    	ecx
+  0x1e1b	pop    	esi
+  0x1e1c	pop    	edi
+  0x1e1d	ret    	
+  0x1e1e	int3   	
+  === BLOCK LINK ===
+    0x1e1f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e1f ===
+  0x1e1f	int3   	
+  0x1e20	int3   	
+  0x1e21	int3   	
+  0x1e22	int3   	
+  0x1e23	int3   	
+  === BLOCK LINK ===
+    0x1e24
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e24 ===
+  0x1e24	int3   	
+  0x1e25	int3   	
+  0x1e26	int3   	
+  0x1e27	int3   	
+  0x1e28	int3   	
+  === BLOCK LINK ===
+    0x1e29
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e29 ===
+  0x1e29	int3   	
+  0x1e2a	int3   	
+  0x1e2b	int3   	
+  0x1e2c	int3   	
+  0x1e2d	int3   	
+  === BLOCK LINK ===
+    0x1e2e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e2e ===
+  0x1e2e	int3   	
+  0x1e2f	int3   	
+  0x1e30	dec    	eax
+  0x1e31	sub    	esp, 0x28
+  0x1e34	mov    	eax, 0x5a4d
+  === BLOCK LINK ===
+    0x1e39
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e39 ===
+  0x1e39	cmp    	word ptr [0xffffe1c0], ax
+  0x1e40	je     	0x1e46
+  === BLOCK LINK ===
+    0x1e42
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e42 ===
+  0x1e42	xor    	eax, eax
+  0x1e44	jmp    	0x1e99
+  === BLOCK LINK ===
+    0x1e46
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e46 ===
+  0x1e46	dec    	eax
+  0x1e47	arpl   	word ptr [0xffffe1ef], cx
+  0x1e4d	dec    	eax
+  0x1e4e	lea    	eax, [0xffffe1ac]
+  0x1e54	dec    	eax
+  === BLOCK LINK ===
+    0x1e55
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e55 ===
+  0x1e55	add    	ecx, eax
+  0x1e57	cmp    	dword ptr [ecx], 0x4550
+  0x1e5d	jne    	0x1e42
+  === BLOCK LINK ===
+    0x1e5f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e5f ===
+  0x1e5f	mov    	eax, 0x10b
+  0x1e64	cmp    	word ptr [ecx + 0x18], ax
+  0x1e68	je     	0x1e88
+  === BLOCK LINK ===
+    0x1e6a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e6a ===
+  0x1e6a	mov    	eax, 0x20b
+  0x1e6f	cmp    	word ptr [ecx + 0x18], ax
+  0x1e73	jne    	0x1e42
+  === BLOCK LINK ===
+    0x1e75
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e75 ===
+  0x1e75	xor    	eax, eax
+  0x1e77	cmp    	dword ptr [ecx + 0x84], 0xe
+  0x1e7e	jbe    	0x1e99
+  === BLOCK LINK ===
+    0x1e80
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e80 ===
+  0x1e80	cmp    	dword ptr [ecx + 0xf8], eax
+  0x1e86	jmp    	0x1e96
+  === BLOCK LINK ===
+    0x1e88
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e88 ===
+  0x1e88	xor    	eax, eax
+  0x1e8a	cmp    	dword ptr [ecx + 0x74], 0xe
+  0x1e8e	jbe    	0x1e99
+  === BLOCK LINK ===
+    0x1e90
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1e90 ===
+  0x1e90	cmp    	dword ptr [ecx + 0xe8], eax
+  0x1e96	setne  	al
+  0x1e99	mov    	ecx, 1
+  0x1e9e	mov    	dword ptr [0x319c], eax
+  0x1ea4	call   	0x2258
+  === BLOCK LINK ===
+    0x1ea9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ea9 ===
+  0x1ea9	mov    	ecx, eax
+  0x1eab	call   	dword ptr [0x1417]
+  === BLOCK LINK ===
+    0x1eb1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1eb1 ===
+  0x1eb1	dec    	eax
+  0x1eb2	mov    	ecx, dword ptr [0x13d8]
+  0x1eb8	dec    	eax
+  0x1eb9	or     	eax, 0xffffffff
+  0x1ebc	dec    	eax
+  === BLOCK LINK ===
+    0x1ebd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ebd ===
+  0x1ebd	mov    	dword ptr [0x3715], eax
+  0x1ec3	dec    	eax
+  0x1ec4	mov    	dword ptr [0x3716], eax
+  0x1eca	mov    	eax, dword ptr [0x3184]
+  0x1ed0	mov    	dword ptr [ecx], eax
+  === BLOCK LINK ===
+    0x1ed2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ed2 ===
+  0x1ed2	dec    	eax
+  0x1ed3	mov    	ecx, dword ptr [0x13af]
+  0x1ed9	mov    	eax, dword ptr [0x3169]
+  0x1edf	mov    	dword ptr [ecx], eax
+  0x1ee1	call   	0x22b0
+  === BLOCK LINK ===
+    0x1ee6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ee6 ===
+  0x1ee6	cmp    	dword ptr [0x3113], 0
+  0x1eed	jne    	0x1efc
+  === BLOCK LINK ===
+    0x1eef
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1eef ===
+  0x1eef	dec    	eax
+  0x1ef0	lea    	ecx, [0x3ba]
+  0x1ef6	call   	dword ptr [0x13d4]
+  === BLOCK LINK ===
+    0x1efc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1efc ===
+  0x1efc	xor    	eax, eax
+  0x1efe	dec    	eax
+  0x1eff	add    	esp, 0x28
+  0x1f02	ret    	
+  0x1f03	int3   	
+  === BLOCK LINK ===
+    0x1f04
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f04 ===
+  0x1f04	int3   	
+  0x1f05	int3   	
+  0x1f06	int3   	
+  0x1f07	int3   	
+  0x1f08	int3   	
+  === BLOCK LINK ===
+    0x1f09
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f09 ===
+  0x1f09	int3   	
+  0x1f0a	int3   	
+  0x1f0b	int3   	
+  0x1f0c	int3   	
+  0x1f0d	int3   	
+  === BLOCK LINK ===
+    0x1f0e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f0e ===
+  0x1f0e	int3   	
+  0x1f0f	int3   	
+  0x1f10	dec    	eax
+  0x1f11	sub    	esp, 0x38
+  0x1f14	mov    	eax, dword ptr [0x3136]
+  === BLOCK LINK ===
+    0x1f1a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f1a ===
+  0x1f1a	dec    	esp
+  0x1f1b	lea    	eax, [0x3117]
+  0x1f21	inc    	esp
+  0x1f22	mov    	ecx, dword ptr [0x3124]
+  0x1f28	dec    	eax
+  === BLOCK LINK ===
+    0x1f29
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f29 ===
+  0x1f29	lea    	edx, [0x3101]
+  0x1f2f	mov    	dword ptr [0x310f], eax
+  0x1f35	dec    	eax
+  0x1f36	lea    	ecx, [0x30ec]
+  0x1f3c	dec    	eax
+  === BLOCK LINK ===
+    0x1f3d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f3d ===
+  0x1f3d	lea    	eax, [0x3101]
+  0x1f43	dec    	eax
+  0x1f44	mov    	dword ptr [esp + 0x20], eax
+  0x1f48	call   	dword ptr [0x1352]
+  === BLOCK LINK ===
+    0x1f4e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f4e ===
+  0x1f4e	mov    	dword ptr [0x30d8], eax
+  0x1f54	dec    	eax
+  0x1f55	add    	esp, 0x38
+  0x1f58	ret    	
+  0x1f59	int3   	
+  === BLOCK LINK ===
+    0x1f5a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f5a ===
+  0x1f5a	int3   	
+  0x1f5b	int3   	
+  0x1f5c	int3   	
+  0x1f5d	int3   	
+  0x1f5e	int3   	
+  === BLOCK LINK ===
+    0x1f5f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f5f ===
+  0x1f5f	int3   	
+  0x1f60	dec    	eax
+  0x1f61	mov    	dword ptr [esp + 8], ebx
+  0x1f65	dec    	eax
+  0x1f66	mov    	dword ptr [esp + 0x10], esi
+  === BLOCK LINK ===
+    0x1f6a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f6a ===
+  0x1f6a	dec    	eax
+  0x1f6b	mov    	dword ptr [esp + 0x18], edi
+  0x1f6f	inc    	ecx
+  0x1f70	push   	edi
+  0x1f71	dec    	eax
+  === BLOCK LINK ===
+    0x1f72
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f72 ===
+  0x1f72	sub    	esp, 0x30
+  0x1f75	dec    	eax
+  0x1f77	mov    	eax, dword ptr [0x30]
+  0x1f7e	dec    	eax
+  0x1f7f	mov    	ebx, dword ptr [eax + 8]
+  === BLOCK LINK ===
+    0x1f82
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f82 ===
+  0x1f82	xor    	esi, esi
+  0x1f84	xor    	eax, eax
+  0x1f86	.byte  	0xf0
+  0x1f87	dec    	eax
+  0x1f88	cmpxchg  	dword ptr [0x3659], ebx
+  === BLOCK LINK ===
+    0x1f8f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f8f ===
+  0x1f8f	je     	0x1fac
+  === BLOCK LINK ===
+    0x1f91
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f91 ===
+  0x1f91	dec    	eax
+  0x1f92	cmp    	eax, ebx
+  0x1f94	jne    	0x1f9f
+  === BLOCK LINK ===
+    0x1f96
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f96 ===
+  0x1f96	mov    	ebx, 1
+  0x1f9b	mov    	esi, ebx
+  0x1f9d	jmp    	0x1fb1
+  === BLOCK LINK ===
+    0x1f9f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1f9f ===
+  0x1f9f	mov    	ecx, 0x3e8
+  0x1fa4	call   	dword ptr [0x123e]
+  === BLOCK LINK ===
+    0x1faa
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1faa ===
+  0x1faa	jmp    	0x1f84
+  === BLOCK LINK ===
+    0x1fac
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fac ===
+  0x1fac	mov    	ebx, 1
+  0x1fb1	mov    	eax, dword ptr [0x3639]
+  0x1fb7	cmp    	eax, ebx
+  0x1fb9	jne    	0x1fc7
+  === BLOCK LINK ===
+    0x1fbb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fbb ===
+  0x1fbb	mov    	ecx, 0x1f
+  0x1fc0	call   	0x22a3
+  === BLOCK LINK ===
+    0x1fc5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fc5 ===
+  0x1fc5	jmp    	0x202c
+  === BLOCK LINK ===
+    0x1fc7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fc7 ===
+  0x1fc7	mov    	eax, dword ptr [0x3623]
+  0x1fcd	test   	eax, eax
+  0x1fcf	jne    	0x2026
+  === BLOCK LINK ===
+    0x1fd1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fd1 ===
+  0x1fd1	mov    	dword ptr [0x3619], ebx
+  0x1fd7	dec    	esp
+  0x1fd8	lea    	edi, [0x138a]
+  0x1fde	dec    	eax
+  0x1fdf	lea    	edi, [0x136b]
+  === BLOCK LINK ===
+    0x1fe5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1fe5 ===
+  0x1fe5	dec    	eax
+  0x1fe6	mov    	dword ptr [esp + 0x28], edi
+  0x1fea	mov    	dword ptr [esp + 0x20], eax
+  0x1fee	dec    	ecx
+  0x1fef	cmp    	edi, edi
+  === BLOCK LINK ===
+    0x1ff1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ff1 ===
+  0x1ff1	jae    	0x2018
+  === BLOCK LINK ===
+    0x1ff3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ff3 ===
+  0x1ff3	test   	eax, eax
+  0x1ff5	jne    	0x201c
+  === BLOCK LINK ===
+    0x1ff7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ff7 ===
+  0x1ff7	dec    	eax
+  0x1ff8	cmp    	dword ptr [edi], 0
+  0x1ffb	je     	0x200d
+  === BLOCK LINK ===
+    0x1ffd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1ffd ===
+  0x1ffd	dec    	eax
+  0x1ffe	mov    	eax, dword ptr [edi]
+  0x2000	dec    	eax
+  0x2001	mov    	ecx, dword ptr [0x1329]
+  0x2007	call   	ecx
+  === BLOCK LINK ===
+    0x2009
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2009 ===
+  0x2009	mov    	dword ptr [esp + 0x20], eax
+  0x200d	dec    	eax
+  0x200e	add    	edi, 8
+  0x2011	dec    	eax
+  0x2012	mov    	dword ptr [esp + 0x28], edi
+  === BLOCK LINK ===
+    0x2016
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2016 ===
+  0x2016	jmp    	0x1fee
+  === BLOCK LINK ===
+    0x2018
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2018 ===
+  0x2018	test   	eax, eax
+  0x201a	je     	0x202c
+  === BLOCK LINK ===
+    0x201c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x201c ===
+  0x201c	mov    	eax, 0xff
+  0x2021	jmp    	0x2108
+  === BLOCK LINK ===
+    0x2026
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2026 ===
+  0x2026	mov    	dword ptr [0x2ff8], ebx
+  0x202c	mov    	eax, dword ptr [0x35be]
+  0x2032	cmp    	eax, ebx
+  0x2034	jne    	0x2053
+  === BLOCK LINK ===
+    0x2036
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2036 ===
+  0x2036	dec    	eax
+  0x2037	lea    	edx, [0x130b]
+  0x203d	dec    	eax
+  0x203e	lea    	ecx, [0x12f4]
+  0x2044	call   	0x247e
+  === BLOCK LINK ===
+    0x2049
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2049 ===
+  0x2049	mov    	dword ptr [0x359d], 2
+  0x2053	test   	esi, esi
+  0x2055	jne    	0x2060
+  === BLOCK LINK ===
+    0x2057
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2057 ===
+  0x2057	xor    	eax, eax
+  0x2059	dec    	eax
+  0x205a	xchg   	dword ptr [0x3588], eax
+  0x2060	dec    	eax
+  0x2061	cmp    	dword ptr [0x3590], 0
+  === BLOCK LINK ===
+    0x2068
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2068 ===
+  0x2068	je     	0x2094
+  === BLOCK LINK ===
+    0x206a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x206a ===
+  0x206a	dec    	eax
+  0x206b	lea    	ecx, [0x3587]
+  0x2071	call   	0x2310
+  === BLOCK LINK ===
+    0x2076
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2076 ===
+  0x2076	test   	eax, eax
+  0x2078	je     	0x2094
+  === BLOCK LINK ===
+    0x207a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x207a ===
+  0x207a	inc    	ebp
+  0x207b	xor    	eax, eax
+  0x207d	inc    	ecx
+  0x207e	lea    	edx, [eax + 2]
+  0x2081	xor    	ecx, ecx
+  === BLOCK LINK ===
+    0x2083
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2083 ===
+  0x2083	dec    	eax
+  0x2084	mov    	eax, dword ptr [0x356e]
+  0x208a	dec    	esp
+  0x208b	mov    	ecx, dword ptr [0x129f]
+  0x2091	inc    	ecx
+  === BLOCK LINK ===
+    0x2092
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2092 ===
+  0x2092	call   	ecx
+  === BLOCK LINK ===
+    0x2094
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2094 ===
+  0x2094	dec    	esp
+  0x2095	mov    	eax, dword ptr [0x2f9d]
+  0x209b	dec    	eax
+  0x209c	mov    	edx, dword ptr [0x2f8e]
+  0x20a2	mov    	ecx, dword ptr [0x2f80]
+  === BLOCK LINK ===
+    0x20a8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20a8 ===
+  0x20a8	call   	0x11bc
+  === BLOCK LINK ===
+    0x20ad
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20ad ===
+  0x20ad	mov    	dword ptr [0x2f6d], eax
+  0x20b3	cmp    	dword ptr [0x2f86], 0
+  0x20ba	jne    	0x20c4
+  === BLOCK LINK ===
+    0x20bc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20bc ===
+  0x20bc	mov    	ecx, eax
+  0x20be	call   	dword ptr [0x11f4]
+  === BLOCK LINK ===
+    0x20c4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20c4 ===
+  0x20c4	cmp    	dword ptr [0x2f59], 0
+  0x20cb	jne    	0x20d9
+  === BLOCK LINK ===
+    0x20cd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20cd ===
+  0x20cd	call   	dword ptr [0x11d5]
+  === BLOCK LINK ===
+    0x20d3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20d3 ===
+  0x20d3	mov    	eax, dword ptr [0x2f47]
+  0x20d9	jmp    	0x2108
+  === BLOCK LINK ===
+    0x20db
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20db ===
+  0x20db	mov    	dword ptr [0x2f3f], eax
+  0x20e1	cmp    	dword ptr [0x2f58], 0
+  0x20e8	jne    	0x20f3
+  === BLOCK LINK ===
+    0x20ea
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20ea ===
+  0x20ea	mov    	ecx, eax
+  0x20ec	call   	dword ptr [0x11be]
+  === BLOCK LINK ===
+    0x20f2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20f2 ===
+  0x20f2	int3   	
+  0x20f3	cmp    	dword ptr [0x2f2a], 0
+  0x20fa	jne    	0x2108
+  === BLOCK LINK ===
+    0x20fc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x20fc ===
+  0x20fc	call   	dword ptr [0x11a6]
+  === BLOCK LINK ===
+    0x2102
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2102 ===
+  0x2102	mov    	eax, dword ptr [0x2f18]
+  0x2108	dec    	eax
+  0x2109	mov    	ebx, dword ptr [esp + 0x40]
+  0x210d	dec    	eax
+  0x210e	mov    	esi, dword ptr [esp + 0x48]
+  === BLOCK LINK ===
+    0x2112
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2112 ===
+  0x2112	dec    	eax
+  0x2113	mov    	edi, dword ptr [esp + 0x50]
+  0x2117	dec    	eax
+  0x2118	add    	esp, 0x30
+  0x211b	inc    	ecx
+  === BLOCK LINK ===
+    0x211c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x211c ===
+  0x211c	pop    	edi
+  0x211d	ret    	
+  0x211e	int3   	
+  0x211f	int3   	
+  0x2120	int3   	
+  === BLOCK LINK ===
+    0x2121
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2121 ===
+  0x2121	int3   	
+  0x2122	int3   	
+  0x2123	int3   	
+  0x2124	int3   	
+  0x2125	int3   	
+  === BLOCK LINK ===
+    0x2126
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2126 ===
+  0x2126	int3   	
+  0x2127	int3   	
+  0x2128	int3   	
+  0x2129	int3   	
+  0x212a	int3   	
+  === BLOCK LINK ===
+    0x212b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x212b ===
+  0x212b	int3   	
+  0x212c	int3   	
+  0x212d	int3   	
+  0x212e	int3   	
+  0x212f	int3   	
+  === BLOCK LINK ===
+    0x2130
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2130 ===
+  0x2130	dec    	eax
+  0x2131	sub    	esp, 0x28
+  0x2134	call   	0x23a4
+  === BLOCK LINK ===
+    0x2139
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2139 ===
+  0x2139	dec    	eax
+  0x213a	add    	esp, 0x28
+  0x213d	jmp    	0x1f60
+  === BLOCK LINK ===
+    0x2142
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2142 ===
+  0x2142	int3   	
+  0x2143	int3   	
+  0x2144	int3   	
+  0x2145	int3   	
+  0x2146	int3   	
+  === BLOCK LINK ===
+    0x2147
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2147 ===
+  0x2147	int3   	
+  0x2148	jmp    	dword ptr [0x112a]
+  === BLOCK LINK ===
+    0x214e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x214e ===
+  0x214e	int3   	
+  0x214f	int3   	
+  0x2150	int3   	
+  0x2151	int3   	
+  0x2152	int3   	
+  === BLOCK LINK ===
+    0x2153
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2153 ===
+  0x2153	int3   	
+  0x2154	int3   	
+  0x2155	int3   	
+  0x2156	nop    	word ptr [eax + eax]
+  0x2160	dec    	eax
+  === BLOCK LINK ===
+    0x2161
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2161 ===
+  0x2161	cmp    	ecx, dword ptr [0x2ea1]
+  0x2167	jne    	0x2179
+  === BLOCK LINK ===
+    0x2169
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2169 ===
+  0x2169	dec    	eax
+  0x216a	rol    	ecx, 0x10
+  0x216d	test   	cx, 0xffff
+  0x2172	jne    	0x2175
+  === BLOCK LINK ===
+    0x2174
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2174 ===
+  0x2174	ret    	
+  0x2175	dec    	eax
+  0x2176	ror    	ecx, 0x10
+  0x2179	jmp    	0x24e0
+  === BLOCK LINK ===
+    0x217e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x217e ===
+  0x217e	int3   	
+  0x217f	int3   	
+  0x2180	int3   	
+  0x2181	int3   	
+  0x2182	int3   	
+  === BLOCK LINK ===
+    0x2183
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2183 ===
+  0x2183	int3   	
+  0x2184	int3   	
+  0x2185	int3   	
+  0x2186	int3   	
+  0x2187	int3   	
+  === BLOCK LINK ===
+    0x2188
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2188 ===
+  0x2188	int3   	
+  0x2189	int3   	
+  0x218a	int3   	
+  0x218b	int3   	
+  0x218c	int3   	
+  === BLOCK LINK ===
+    0x218d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x218d ===
+  0x218d	int3   	
+  0x218e	int3   	
+  0x218f	int3   	
+  0x2190	dec    	eax
+  0x2191	sub    	esp, 0x28
+  === BLOCK LINK ===
+    0x2194
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2194 ===
+  0x2194	dec    	eax
+  0x2195	mov    	eax, dword ptr [ecx]
+  0x2197	cmp    	dword ptr [eax], 0xe06d7363
+  0x219d	jne    	0x21c2
+  === BLOCK LINK ===
+    0x219f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x219f ===
+  0x219f	cmp    	dword ptr [eax + 0x18], 4
+  0x21a3	jne    	0x21c2
+  === BLOCK LINK ===
+    0x21a5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21a5 ===
+  0x21a5	mov    	ecx, dword ptr [eax + 0x20]
+  0x21a8	lea    	eax, [ecx - 0x19930520]
+  0x21ae	cmp    	eax, 2
+  0x21b1	jbe    	0x21bb
+  === BLOCK LINK ===
+    0x21b3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21b3 ===
+  0x21b3	cmp    	ecx, 0x1994000
+  0x21b9	jne    	0x21c2
+  === BLOCK LINK ===
+    0x21bb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21bb ===
+  0x21bb	call   	dword ptr [0x10bf]
+  === BLOCK LINK ===
+    0x21c1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21c1 ===
+  0x21c1	int3   	
+  0x21c2	xor    	eax, eax
+  0x21c4	dec    	eax
+  0x21c5	add    	esp, 0x28
+  0x21c8	ret    	
+  === BLOCK LINK ===
+    0x21c9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21c9 ===
+  0x21c9	int3   	
+  0x21ca	int3   	
+  0x21cb	int3   	
+  0x21cc	int3   	
+  0x21cd	int3   	
+  === BLOCK LINK ===
+    0x21ce
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21ce ===
+  0x21ce	int3   	
+  0x21cf	int3   	
+  0x21d0	dec    	eax
+  0x21d1	sub    	esp, 0x28
+  0x21d4	dec    	eax
+  === BLOCK LINK ===
+    0x21d5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21d5 ===
+  0x21d5	lea    	ecx, [0xffffffb5]
+  0x21db	call   	dword ptr [0xfbf]
+  === BLOCK LINK ===
+    0x21e1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21e1 ===
+  0x21e1	xor    	eax, eax
+  0x21e3	dec    	eax
+  0x21e4	add    	esp, 0x28
+  0x21e7	ret    	
+  0x21e8	int3   	
+  === BLOCK LINK ===
+    0x21e9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21e9 ===
+  0x21e9	int3   	
+  0x21ea	int3   	
+  0x21eb	int3   	
+  0x21ec	int3   	
+  0x21ed	int3   	
+  === BLOCK LINK ===
+    0x21ee
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21ee ===
+  0x21ee	jmp    	dword ptr [0x105c]
+  === BLOCK LINK ===
+    0x21f4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21f4 ===
+  0x21f4	int3   	
+  0x21f5	int3   	
+  0x21f6	int3   	
+  0x21f7	int3   	
+  0x21f8	int3   	
+  === BLOCK LINK ===
+    0x21f9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x21f9 ===
+  0x21f9	int3   	
+  0x21fa	int3   	
+  0x21fb	int3   	
+  0x21fc	dec    	eax
+  0x21fd	sub    	esp, 0x18
+  === BLOCK LINK ===
+    0x2200
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2200 ===
+  0x2200	xor    	edx, edx
+  0x2202	dec    	eax
+  0x2203	lea    	eax, [ecx - 1]
+  0x2206	dec    	eax
+  0x2207	cmp    	eax, -3
+  === BLOCK LINK ===
+    0x220a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x220a ===
+  0x220a	ja     	0x2248
+  === BLOCK LINK ===
+    0x220c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x220c ===
+  0x220c	mov    	eax, 0x5a4d
+  0x2211	cmp    	word ptr [ecx], ax
+  0x2214	jne    	0x2240
+  === BLOCK LINK ===
+    0x2216
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2216 ===
+  0x2216	cmp    	dword ptr [ecx + 0x3c], edx
+  0x2219	jl     	0x2240
+  === BLOCK LINK ===
+    0x221b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x221b ===
+  0x221b	cmp    	dword ptr [ecx + 0x3c], 0x10000000
+  0x2222	jae    	0x2240
+  === BLOCK LINK ===
+    0x2224
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2224 ===
+  0x2224	dec    	eax
+  0x2225	arpl   	word ptr [ecx + 0x3c], ax
+  0x2228	dec    	eax
+  0x2229	add    	eax, ecx
+  0x222b	dec    	eax
+  === BLOCK LINK ===
+    0x222c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x222c ===
+  0x222c	mov    	dword ptr [esp], eax
+  0x222f	cmp    	dword ptr [eax], 0x4550
+  0x2235	dec    	eax
+  0x2236	cmovne  	eax, edx
+  0x2239	dec    	eax
+  === BLOCK LINK ===
+    0x223a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x223a ===
+  0x223a	mov    	edx, eax
+  0x223c	dec    	eax
+  0x223d	mov    	dword ptr [esp], eax
+  0x2240	jmp    	0x2248
+  === BLOCK LINK ===
+    0x2242
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2242 ===
+  0x2242	xor    	edx, edx
+  0x2244	dec    	eax
+  0x2245	mov    	dword ptr [esp], edx
+  0x2248	dec    	eax
+  0x2249	mov    	eax, edx
+  === BLOCK LINK ===
+    0x224b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x224b ===
+  0x224b	dec    	eax
+  0x224c	add    	esp, 0x18
+  0x224f	ret    	
+  0x2250	int3   	
+  0x2251	int3   	
+  === BLOCK LINK ===
+    0x2252
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2252 ===
+  0x2252	int3   	
+  0x2253	int3   	
+  0x2254	int3   	
+  0x2255	int3   	
+  0x2256	int3   	
+  === BLOCK LINK ===
+    0x2257
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2257 ===
+  0x2257	int3   	
+  0x2258	inc    	eax
+  0x2259	push   	ebx
+  0x225a	dec    	eax
+  0x225b	sub    	esp, 0x20
+  === BLOCK LINK ===
+    0x225e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x225e ===
+  0x225e	mov    	ebx, ecx
+  0x2260	xor    	ecx, ecx
+  0x2262	call   	dword ptr [0xf20]
+  === BLOCK LINK ===
+    0x2268
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2268 ===
+  0x2268	dec    	eax
+  0x2269	test   	eax, eax
+  0x226b	je     	0x2295
+  === BLOCK LINK ===
+    0x226d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x226d ===
+  0x226d	dec    	eax
+  0x226e	mov    	ecx, eax
+  0x2270	call   	0x21fc
+  === BLOCK LINK ===
+    0x2275
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2275 ===
+  0x2275	dec    	eax
+  0x2276	test   	eax, eax
+  0x2278	je     	0x2295
+  === BLOCK LINK ===
+    0x227a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x227a ===
+  0x227a	mov    	ecx, 2
+  0x227f	cmp    	word ptr [eax + 0x5c], cx
+  0x2283	jne    	0x2289
+  === BLOCK LINK ===
+    0x2285
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2285 ===
+  0x2285	mov    	eax, ecx
+  0x2287	jmp    	0x2297
+  === BLOCK LINK ===
+    0x2289
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2289 ===
+  0x2289	cmp    	word ptr [eax + 0x5c], 3
+  0x228e	mov    	eax, 1
+  0x2293	je     	0x2297
+  === BLOCK LINK ===
+    0x2295
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2295 ===
+  0x2295	mov    	eax, ebx
+  0x2297	dec    	eax
+  0x2298	add    	esp, 0x20
+  0x229b	pop    	ebx
+  0x229c	ret    	
+  === BLOCK LINK ===
+    0x229d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10da ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x229d ===
+  0x229d	int3   	
+  0x229e	int3   	
+  0x229f	int3   	
+  0x22a0	int3   	
+  0x22a1	int3   	
+  === BLOCK LINK ===
+    0x22a2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22a2 ===
+  0x22a2	int3   	
+  0x22a3	jmp    	dword ptr [0xf9f]
+  === BLOCK LINK ===
+    0x22a9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22a9 ===
+  0x22a9	int3   	
+  0x22aa	int3   	
+  0x22ab	int3   	
+  0x22ac	int3   	
+  0x22ad	int3   	
+  === BLOCK LINK ===
+    0x22ae
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22ae ===
+  0x22ae	int3   	
+  0x22af	int3   	
+  0x22b0	xor    	eax, eax
+  0x22b2	ret    	
+  0x22b3	int3   	
+  === BLOCK LINK ===
+    0x22b4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22b4 ===
+  0x22b4	int3   	
+  0x22b5	int3   	
+  0x22b6	int3   	
+  0x22b7	int3   	
+  0x22b8	int3   	
+  === BLOCK LINK ===
+    0x22b9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22b9 ===
+  0x22b9	int3   	
+  0x22ba	int3   	
+  0x22bb	int3   	
+  0x22bc	int3   	
+  0x22bd	int3   	
+  === BLOCK LINK ===
+    0x22be
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22be ===
+  0x22be	int3   	
+  0x22bf	int3   	
+  0x22c0	dec    	esp
+  0x22c1	arpl   	word ptr [ecx + 0x3c], ax
+  0x22c4	inc    	ebp
+  === BLOCK LINK ===
+    0x22c5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22c5 ===
+  0x22c5	xor    	ecx, ecx
+  0x22c7	dec    	esp
+  0x22c8	add    	eax, ecx
+  0x22ca	dec    	esp
+  0x22cb	mov    	edx, edx
+  === BLOCK LINK ===
+    0x22cd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22cd ===
+  0x22cd	inc    	ecx
+  0x22ce	movzx  	eax, word ptr [eax + 0x14]
+  0x22d2	inc    	ebp
+  0x22d3	movzx  	ebx, word ptr [eax + 6]
+  0x22d7	dec    	eax
+  === BLOCK LINK ===
+    0x22d8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22d8 ===
+  0x22d8	add    	eax, 0x18
+  0x22db	dec    	ecx
+  0x22dc	add    	eax, eax
+  0x22de	inc    	ebp
+  0x22df	test   	ebx, ebx
+  === BLOCK LINK ===
+    0x22e1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22e1 ===
+  0x22e1	je     	0x2301
+  === BLOCK LINK ===
+    0x22e3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22e3 ===
+  0x22e3	mov    	edx, dword ptr [eax + 0xc]
+  0x22e6	dec    	esp
+  0x22e7	cmp    	edx, edx
+  0x22e9	jb     	0x22f5
+  === BLOCK LINK ===
+    0x22eb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22eb ===
+  0x22eb	mov    	ecx, dword ptr [eax + 8]
+  0x22ee	add    	ecx, edx
+  0x22f0	dec    	esp
+  0x22f1	cmp    	edx, ecx
+  0x22f3	jb     	0x2303
+  === BLOCK LINK ===
+    0x22f5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22f5 ===
+  0x22f5	inc    	ecx
+  0x22f6	inc    	ecx
+  0x22f8	dec    	eax
+  0x22f9	add    	eax, 0x28
+  0x22fc	inc    	ebp
+  === BLOCK LINK ===
+    0x22fd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x22fd ===
+  0x22fd	cmp    	ecx, ebx
+  0x22ff	jb     	0x22e3
+  === BLOCK LINK ===
+    0x2301
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2301 ===
+  0x2301	xor    	eax, eax
+  0x2303	ret    	
+  0x2304	int3   	
+  0x2305	int3   	
+  0x2306	int3   	
+  === BLOCK LINK ===
+    0x2307
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2307 ===
+  0x2307	int3   	
+  0x2308	int3   	
+  0x2309	int3   	
+  0x230a	int3   	
+  0x230b	int3   	
+  === BLOCK LINK ===
+    0x230c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x230c ===
+  0x230c	int3   	
+  0x230d	int3   	
+  0x230e	int3   	
+  0x230f	int3   	
+  0x2310	dec    	eax
+  === BLOCK LINK ===
+    0x2311
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2311 ===
+  0x2311	mov    	dword ptr [esp + 8], ebx
+  0x2315	push   	edi
+  0x2316	dec    	eax
+  0x2317	sub    	esp, 0x20
+  0x231a	dec    	eax
+  === BLOCK LINK ===
+    0x231b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x231b ===
+  0x231b	mov    	ebx, ecx
+  0x231d	dec    	eax
+  0x231e	lea    	edi, [0xffffdcdc]
+  0x2324	dec    	eax
+  0x2325	mov    	ecx, edi
+  === BLOCK LINK ===
+    0x2327
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2327 ===
+  0x2327	call   	0x2370
+  === BLOCK LINK ===
+    0x232c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x232c ===
+  0x232c	test   	eax, eax
+  0x232e	je     	0x2352
+  === BLOCK LINK ===
+    0x2330
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2330 ===
+  0x2330	dec    	eax
+  0x2331	sub    	ebx, edi
+  0x2333	dec    	eax
+  0x2334	mov    	edx, ebx
+  0x2336	dec    	eax
+  === BLOCK LINK ===
+    0x2337
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2337 ===
+  0x2337	mov    	ecx, edi
+  0x2339	call   	0x22c0
+  === BLOCK LINK ===
+    0x233e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x233e ===
+  0x233e	dec    	eax
+  0x233f	test   	eax, eax
+  0x2341	je     	0x2352
+  === BLOCK LINK ===
+    0x2343
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2343 ===
+  0x2343	mov    	eax, dword ptr [eax + 0x24]
+  0x2346	shr    	eax, 0x1f
+  0x2349	not    	eax
+  0x234b	and    	eax, 1
+  0x234e	jmp    	0x2352
+  === BLOCK LINK ===
+    0x2350
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2350 ===
+  0x2350	xor    	eax, eax
+  0x2352	dec    	eax
+  0x2353	mov    	ebx, dword ptr [esp + 0x30]
+  0x2357	dec    	eax
+  0x2358	add    	esp, 0x20
+  === BLOCK LINK ===
+    0x235b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x235b ===
+  0x235b	pop    	edi
+  0x235c	ret    	
+  0x235d	int3   	
+  0x235e	int3   	
+  0x235f	int3   	
+  === BLOCK LINK ===
+    0x2360
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2360 ===
+  0x2360	int3   	
+  0x2361	int3   	
+  0x2362	int3   	
+  0x2363	int3   	
+  0x2364	int3   	
+  === BLOCK LINK ===
+    0x2365
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2365 ===
+  0x2365	int3   	
+  0x2366	int3   	
+  0x2367	int3   	
+  0x2368	int3   	
+  0x2369	int3   	
+  === BLOCK LINK ===
+    0x236a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x236a ===
+  0x236a	int3   	
+  0x236b	int3   	
+  0x236c	int3   	
+  0x236d	int3   	
+  0x236e	int3   	
+  === BLOCK LINK ===
+    0x236f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x236f ===
+  0x236f	int3   	
+  0x2370	mov    	eax, 0x5a4d
+  0x2375	cmp    	word ptr [ecx], ax
+  0x2378	jne    	0x239a
+  === BLOCK LINK ===
+    0x237a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x237a ===
+  0x237a	dec    	eax
+  0x237b	arpl   	word ptr [ecx + 0x3c], ax
+  0x237e	dec    	eax
+  0x237f	add    	eax, ecx
+  0x2381	cmp    	dword ptr [eax], 0x4550
+  === BLOCK LINK ===
+    0x2387
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2387 ===
+  0x2387	jne    	0x239a
+  === BLOCK LINK ===
+    0x2389
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2389 ===
+  0x2389	mov    	ecx, 0x20b
+  0x238e	cmp    	word ptr [eax + 0x18], cx
+  0x2392	jne    	0x239a
+  === BLOCK LINK ===
+    0x2394
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2394 ===
+  0x2394	mov    	eax, 1
+  0x2399	ret    	
+  0x239a	xor    	eax, eax
+  0x239c	ret    	
+  0x239d	int3   	
+  === BLOCK LINK ===
+    0x239e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x119c ===
+  0x119c	dec    	eax
+  0x119d	mov    	ebx, dword ptr [esp + 0x40]
+  0x11a1	dec    	eax
+  0x11a2	mov    	ebp, dword ptr [esp + 0x48]
+  === BLOCK LINK ===
+    0x11a6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27e0 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x239e ===
+  0x239e	int3   	
+  0x239f	int3   	
+  0x23a0	int3   	
+  0x23a1	int3   	
+  0x23a2	int3   	
+  === BLOCK LINK ===
+    0x23a3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23a3 ===
+  0x23a3	int3   	
+  0x23a4	dec    	eax
+  0x23a5	mov    	dword ptr [esp + 0x20], ebx
+  0x23a9	push   	ebp
+  0x23aa	dec    	eax
+  === BLOCK LINK ===
+    0x23ab
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23ab ===
+  0x23ab	mov    	ebp, esp
+  0x23ad	dec    	eax
+  0x23ae	sub    	esp, 0x20
+  0x23b1	dec    	eax
+  0x23b2	and    	dword ptr [ebp + 0x18], 0
+  === BLOCK LINK ===
+    0x23b6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23b6 ===
+  0x23b6	dec    	eax
+  0x23b7	mov    	ebx, 0x2ddfa232
+  0x23bc	cdq    	
+  0x23bd	sub    	eax, dword ptr [eax]
+  0x23bf	add    	byte ptr [eax - 0x75], cl
+  === BLOCK LINK ===
+    0x23c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23c2 ===
+  0x23c2	add    	eax, 0x2c41
+  0x23c7	dec    	eax
+  0x23c8	cmp    	eax, ebx
+  0x23ca	jne    	0x2463
+  === BLOCK LINK ===
+    0x23d0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23d0 ===
+  0x23d0	dec    	eax
+  0x23d1	lea    	ecx, [ebp + 0x18]
+  0x23d4	call   	dword ptr [0xde6]
+  === BLOCK LINK ===
+    0x23da
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23da ===
+  0x23da	dec    	eax
+  0x23db	mov    	eax, dword ptr [ebp + 0x18]
+  0x23de	dec    	eax
+  0x23df	mov    	dword ptr [ebp + 0x10], eax
+  0x23e2	call   	dword ptr [0xdc8]
+  === BLOCK LINK ===
+    0x23e8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23e8 ===
+  0x23e8	mov    	eax, eax
+  0x23ea	dec    	eax
+  0x23eb	xor    	dword ptr [ebp + 0x10], eax
+  0x23ee	call   	dword ptr [0xdc4]
+  === BLOCK LINK ===
+    0x23f4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x23f4 ===
+  0x23f4	mov    	eax, eax
+  0x23f6	dec    	eax
+  0x23f7	xor    	dword ptr [ebp + 0x10], eax
+  0x23fa	call   	dword ptr [0xdc8]
+  === BLOCK LINK ===
+    0x2400
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2400 ===
+  0x2400	mov    	eax, eax
+  0x2402	dec    	eax
+  0x2403	shl    	eax, 0x18
+  0x2406	dec    	eax
+  0x2407	xor    	dword ptr [ebp + 0x10], eax
+  === BLOCK LINK ===
+    0x240a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x240a ===
+  0x240a	call   	dword ptr [0xdb8]
+  === BLOCK LINK ===
+    0x2410
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2410 ===
+  0x2410	mov    	eax, eax
+  0x2412	dec    	eax
+  0x2413	lea    	ecx, [ebp + 0x10]
+  0x2416	dec    	eax
+  0x2417	xor    	eax, dword ptr [ebp + 0x10]
+  === BLOCK LINK ===
+    0x241a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x241a ===
+  0x241a	dec    	eax
+  0x241b	xor    	eax, ecx
+  0x241d	dec    	eax
+  0x241e	lea    	ecx, [ebp + 0x20]
+  0x2421	dec    	eax
+  === BLOCK LINK ===
+    0x2422
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2422 ===
+  0x2422	mov    	dword ptr [ebp + 0x10], eax
+  0x2425	call   	dword ptr [0xd7d]
+  === BLOCK LINK ===
+    0x242b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x242b ===
+  0x242b	mov    	eax, dword ptr [ebp + 0x20]
+  0x242e	dec    	eax
+  0x242f	mov    	ecx, 0xffffffff
+  0x2434	.byte  	0xff
+  0x2435	inc    	dword ptr [eax]
+  === BLOCK LINK ===
+    0x2437
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2437 ===
+  0x2437	add    	byte ptr [eax - 0x3f], cl
+  0x243a	loopne  	0x245c
+  === BLOCK LINK ===
+    0x243c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x243c ===
+  0x243c	dec    	eax
+  0x243d	xor    	eax, dword ptr [ebp + 0x20]
+  0x2440	dec    	eax
+  0x2441	xor    	eax, dword ptr [ebp + 0x10]
+  0x2444	dec    	eax
+  === BLOCK LINK ===
+    0x2445
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2445 ===
+  0x2445	and    	eax, ecx
+  0x2447	dec    	eax
+  0x2448	mov    	ecx, eax
+  0x244a	dec    	eax
+  0x244b	cmp    	eax, ebx
+  === BLOCK LINK ===
+    0x244d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x244d ===
+  0x244d	jne    	0x245c
+  === BLOCK LINK ===
+    0x244f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x244f ===
+  0x244f	dec    	eax
+  0x2450	mov    	eax, 0x2ddfa233
+  0x2455	cdq    	
+  0x2456	sub    	eax, dword ptr [eax]
+  0x2458	add    	byte ptr [eax - 0x75], cl
+  === BLOCK LINK ===
+    0x245b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x245b ===
+  0x245b	enter  	-0x76b8, 0xd
+  0x245f	movsd  	dword ptr es:[edi], dword ptr [esi]
+  0x2460	sub    	eax, dword ptr [eax]
+  0x2462	add    	byte ptr [eax - 0x75], cl
+  0x2465	pop    	esp
+  === BLOCK LINK ===
+    0x2466
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2466 ===
+  0x2466	and    	al, 0x48
+  0x2468	dec    	eax
+  0x2469	not    	eax
+  0x246b	dec    	eax
+  0x246c	mov    	dword ptr [0x2b9e], eax
+  === BLOCK LINK ===
+    0x2472
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2472 ===
+  0x2472	dec    	eax
+  0x2473	add    	esp, 0x20
+  0x2476	pop    	ebp
+  0x2477	ret    	
+  0x2478	int3   	
+  === BLOCK LINK ===
+    0x2479
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2479 ===
+  0x2479	int3   	
+  0x247a	int3   	
+  0x247b	int3   	
+  0x247c	int3   	
+  0x247d	int3   	
+  === BLOCK LINK ===
+    0x247e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x247e ===
+  0x247e	jmp    	dword ptr [0xe14]
+  === BLOCK LINK ===
+    0x2484
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2484 ===
+  0x2484	int3   	
+  0x2485	int3   	
+  0x2486	int3   	
+  0x2487	int3   	
+  0x2488	int3   	
+  === BLOCK LINK ===
+    0x2489
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2489 ===
+  0x2489	int3   	
+  0x248a	int3   	
+  0x248b	int3   	
+  0x248c	int3   	
+  0x248d	int3   	
+  === BLOCK LINK ===
+    0x248e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x248e ===
+  0x248e	int3   	
+  0x248f	int3   	
+  0x2490	ret    	0
+  0x2493	int3   	
+  0x2494	int3   	
+  === BLOCK LINK ===
+    0x2495
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1008 ===
+  0x1008	dec    	esp
+  0x1009	mov    	ebx, esp
+  === BLOCK LINK ===
+    0x100b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2495 ===
+  0x2495	int3   	
+  0x2496	int3   	
+  0x2497	int3   	
+  0x2498	int3   	
+  0x2499	int3   	
+  === BLOCK LINK ===
+    0x249a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x249a ===
+  0x249a	int3   	
+  0x249b	int3   	
+  0x249c	inc    	eax
+  0x249d	push   	ebx
+  0x249e	dec    	eax
+  === BLOCK LINK ===
+    0x249f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x249f ===
+  0x249f	sub    	esp, 0x20
+  0x24a2	dec    	eax
+  0x24a3	mov    	ebx, ecx
+  0x24a5	xor    	ecx, ecx
+  0x24a7	call   	dword ptr [0xcf3]
+  === BLOCK LINK ===
+    0x24ad
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24ad ===
+  0x24ad	dec    	eax
+  0x24ae	mov    	ecx, ebx
+  0x24b0	call   	dword ptr [0xd1a]
+  === BLOCK LINK ===
+    0x24b6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24b6 ===
+  0x24b6	call   	dword ptr [0xd1c]
+  === BLOCK LINK ===
+    0x24bc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24bc ===
+  0x24bc	dec    	eax
+  0x24bd	mov    	ecx, eax
+  0x24bf	mov    	edx, 0xc0000409
+  0x24c4	dec    	eax
+  0x24c5	add    	esp, 0x20
+  === BLOCK LINK ===
+    0x24c8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24c8 ===
+  0x24c8	pop    	ebx
+  0x24c9	dec    	eax
+  0x24ca	jmp    	dword ptr [0xd10]
+  === BLOCK LINK ===
+    0x24d0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24d0 ===
+  0x24d0	int3   	
+  0x24d1	int3   	
+  0x24d2	int3   	
+  0x24d3	int3   	
+  0x24d4	int3   	
+  === BLOCK LINK ===
+    0x24d5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24d5 ===
+  0x24d5	int3   	
+  0x24d6	int3   	
+  0x24d7	int3   	
+  0x24d8	int3   	
+  0x24d9	int3   	
+  === BLOCK LINK ===
+    0x24da
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24da ===
+  0x24da	int3   	
+  0x24db	int3   	
+  0x24dc	int3   	
+  0x24dd	int3   	
+  0x24de	int3   	
+  === BLOCK LINK ===
+    0x24df
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24df ===
+  0x24df	int3   	
+  0x24e0	dec    	eax
+  0x24e1	mov    	dword ptr [esp + 8], ecx
+  0x24e5	dec    	eax
+  0x24e6	sub    	esp, 0x88
+  === BLOCK LINK ===
+    0x24ec
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24ec ===
+  0x24ec	dec    	eax
+  0x24ed	lea    	ecx, [0x2c0d]
+  0x24f3	call   	dword ptr [0xdf7]
+  === BLOCK LINK ===
+    0x24f9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x24f9 ===
+  0x24f9	dec    	eax
+  0x24fa	mov    	eax, dword ptr [0x2cf8]
+  0x2500	dec    	eax
+  0x2501	mov    	dword ptr [esp + 0x48], eax
+  0x2505	inc    	ebp
+  === BLOCK LINK ===
+    0x2506
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2506 ===
+  0x2506	xor    	eax, eax
+  0x2508	dec    	eax
+  0x2509	lea    	edx, [esp + 0x50]
+  0x250d	dec    	eax
+  0x250e	mov    	ecx, dword ptr [esp + 0x48]
+  === BLOCK LINK ===
+    0x2512
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2512 ===
+  0x2512	call   	dword ptr [0xde8]
+  === BLOCK LINK ===
+    0x2518
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2518 ===
+  0x2518	dec    	eax
+  0x2519	mov    	dword ptr [esp + 0x40], eax
+  0x251d	dec    	eax
+  0x251e	cmp    	dword ptr [esp + 0x40], 0
+  0x2523	je     	0x2567
+  === BLOCK LINK ===
+    0x2525
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2525 ===
+  0x2525	dec    	eax
+  0x2526	mov    	dword ptr [esp + 0x38], 0
+  0x252e	dec    	eax
+  0x252f	lea    	eax, [esp + 0x58]
+  0x2533	dec    	eax
+  === BLOCK LINK ===
+    0x2534
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2534 ===
+  0x2534	mov    	dword ptr [esp + 0x30], eax
+  0x2538	dec    	eax
+  0x2539	lea    	eax, [esp + 0x60]
+  0x253d	dec    	eax
+  0x253e	mov    	dword ptr [esp + 0x28], eax
+  === BLOCK LINK ===
+    0x2542
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2542 ===
+  0x2542	dec    	eax
+  0x2543	lea    	eax, [0x2bb7]
+  0x2549	dec    	eax
+  0x254a	mov    	dword ptr [esp + 0x20], eax
+  0x254e	dec    	esp
+  === BLOCK LINK ===
+    0x254f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x254f ===
+  0x254f	mov    	ecx, dword ptr [esp + 0x40]
+  0x2553	dec    	esp
+  0x2554	mov    	eax, dword ptr [esp + 0x48]
+  0x2558	dec    	eax
+  0x2559	mov    	edx, dword ptr [esp + 0x50]
+  === BLOCK LINK ===
+    0x255d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x255d ===
+  0x255d	xor    	ecx, ecx
+  0x255f	call   	dword ptr [0xd93]
+  === BLOCK LINK ===
+    0x2565
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2565 ===
+  0x2565	jmp    	0x258a
+  === BLOCK LINK ===
+    0x2567
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2567 ===
+  0x2567	dec    	eax
+  0x2568	mov    	eax, dword ptr [0x2c2a]
+  0x256e	dec    	eax
+  0x256f	mov    	eax, dword ptr [eax]
+  0x2571	dec    	eax
+  === BLOCK LINK ===
+    0x2572
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2572 ===
+  0x2572	mov    	dword ptr [0x2c80], eax
+  0x2578	dec    	eax
+  0x2579	mov    	eax, dword ptr [0x2c19]
+  0x257f	dec    	eax
+  0x2580	add    	eax, 8
+  === BLOCK LINK ===
+    0x2583
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2583 ===
+  0x2583	dec    	eax
+  0x2584	mov    	dword ptr [0x2c0e], eax
+  0x258a	dec    	eax
+  0x258b	mov    	eax, dword ptr [0x2c67]
+  0x2591	dec    	eax
+  === BLOCK LINK ===
+    0x2592
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2592 ===
+  0x2592	mov    	dword ptr [0x2ad8], eax
+  0x2598	dec    	eax
+  0x2599	mov    	eax, dword ptr [esp + 0x90]
+  0x25a0	dec    	eax
+  0x25a1	mov    	dword ptr [0x2bd9], eax
+  === BLOCK LINK ===
+    0x25a7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x25a7 ===
+  0x25a7	mov    	dword ptr [0x2aaf], 0xc0000409
+  0x25b1	mov    	dword ptr [0x2aa9], 1
+  0x25bb	mov    	dword ptr [0x2ab3], 3
+  0x25c5	mov    	eax, 8
+  0x25ca	dec    	eax
+  === BLOCK LINK ===
+    0x25cb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x25cb ===
+  0x25cb	imul   	eax, eax, 0
+  0x25ce	dec    	eax
+  0x25cf	lea    	ecx, [0x2aab]
+  0x25d5	dec    	eax
+  0x25d6	mov    	dword ptr [ecx + eax], 2
+  === BLOCK LINK ===
+    0x25dd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x25dd ===
+  0x25dd	mov    	eax, 8
+  0x25e2	dec    	eax
+  0x25e3	imul   	eax, eax, 1
+  0x25e6	dec    	eax
+  0x25e7	lea    	ecx, [0x2a93]
+  === BLOCK LINK ===
+    0x25ed
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x25ed ===
+  0x25ed	dec    	eax
+  0x25ee	mov    	edx, dword ptr [0x2a14]
+  0x25f4	dec    	eax
+  0x25f5	mov    	dword ptr [ecx + eax], edx
+  0x25f8	mov    	eax, 8
+  === BLOCK LINK ===
+    0x25fd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x25fd ===
+  0x25fd	dec    	eax
+  0x25fe	imul   	eax, eax, 2
+  0x2601	dec    	eax
+  0x2602	lea    	ecx, [0x2a78]
+  0x2608	dec    	eax
+  === BLOCK LINK ===
+    0x2609
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2609 ===
+  0x2609	mov    	edx, dword ptr [0x2a01]
+  0x260f	dec    	eax
+  0x2610	mov    	dword ptr [ecx + eax], edx
+  0x2613	mov    	eax, 8
+  0x2618	dec    	eax
+  === BLOCK LINK ===
+    0x2619
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2619 ===
+  0x2619	imul   	eax, eax, 0
+  0x261c	dec    	eax
+  0x261d	mov    	ecx, dword ptr [0x29e5]
+  0x2623	dec    	eax
+  0x2624	mov    	dword ptr [esp + eax + 0x68], ecx
+  === BLOCK LINK ===
+    0x2628
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2628 ===
+  0x2628	mov    	eax, 8
+  0x262d	dec    	eax
+  0x262e	imul   	eax, eax, 1
+  0x2631	dec    	eax
+  0x2632	mov    	ecx, dword ptr [0x29d8]
+  === BLOCK LINK ===
+    0x2638
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2638 ===
+  0x2638	dec    	eax
+  0x2639	mov    	dword ptr [esp + eax + 0x68], ecx
+  0x263d	dec    	eax
+  0x263e	lea    	ecx, [0x9bc]
+  0x2644	call   	0x249c
+  === BLOCK LINK ===
+    0x2649
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2649 ===
+  0x2649	dec    	eax
+  0x264a	add    	esp, 0x88
+  0x2650	ret    	
+  0x2651	int3   	
+  0x2652	int3   	
+  === BLOCK LINK ===
+    0x2653
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1577 ===
+  0x1577	mov    	eax, edi
+  0x1579	dec    	eax
+  0x157a	mov    	ecx, dword ptr [ebp + 0xf80]
+  0x1580	dec    	eax
+  === BLOCK LINK ===
+    0x1581
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2653 ===
+  0x2653	int3   	
+  0x2654	int3   	
+  0x2655	int3   	
+  0x2656	int3   	
+  0x2657	int3   	
+  === BLOCK LINK ===
+    0x2658
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2658 ===
+  0x2658	int3   	
+  0x2659	int3   	
+  0x265a	int3   	
+  0x265b	int3   	
+  0x265c	int3   	
+  === BLOCK LINK ===
+    0x265d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x265d ===
+  0x265d	int3   	
+  0x265e	int3   	
+  0x265f	int3   	
+  0x2660	int3   	
+  0x2661	int3   	
+  === BLOCK LINK ===
+    0x2662
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2662 ===
+  0x2662	int3   	
+  0x2663	int3   	
+  0x2664	int3   	
+  0x2665	int3   	
+  0x2666	int3   	
+  === BLOCK LINK ===
+    0x2667
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2667 ===
+  0x2667	int3   	
+  === BLOCK LINK ===
+    0x2668
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x266e ===
+  0x266e	mov    	ebx, ecx
+  0x2670	call   	0x268c
+  === BLOCK LINK ===
+    0x2675
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2675 ===
+  0x2675	dec    	eax
+  0x2676	lea    	edx, [ebx + ebx*2]
+  0x2679	dec    	eax
+  0x267a	shl    	edx, 4
+  0x267d	dec    	eax
+  === BLOCK LINK ===
+    0x267e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x267e ===
+  0x267e	add    	eax, edx
+  0x2680	dec    	eax
+  0x2681	add    	esp, 0x20
+  0x2684	pop    	ebx
+  0x2685	ret    	
+  === BLOCK LINK ===
+    0x2686
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10a8 ===
+  0x10a8	dec    	eax
+  0x10a9	mov    	dword ptr [esp + 8], ebx
+  0x10ad	dec    	eax
+  === BLOCK LINK ===
+    0x10ae
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2686 ===
+  0x2686	int3   	
+  0x2687	int3   	
+  0x2688	int3   	
+  0x2689	int3   	
+  0x268a	int3   	
+  === BLOCK LINK ===
+    0x268b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x268b ===
+  0x268b	int3   	
+  0x268c	jmp    	dword ptr [0xc46]
+  === BLOCK LINK ===
+    0x2692
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2692 ===
+  0x2692	int3   	
+  0x2693	int3   	
+  0x2694	int3   	
+  0x2695	int3   	
+  0x2696	int3   	
+  === BLOCK LINK ===
+    0x2697
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2697 ===
+  0x2697	int3   	
+  0x2698	dec    	eax
+  0x2699	sub    	esp, 0x28
+  0x269c	dec    	ebp
+  0x269d	mov    	eax, dword ptr [ecx + 0x38]
+  === BLOCK LINK ===
+    0x26a0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26a0 ===
+  0x26a0	dec    	eax
+  0x26a1	mov    	ecx, edx
+  0x26a3	dec    	ecx
+  0x26a4	mov    	edx, ecx
+  0x26a6	call   	0x26bc
+  === BLOCK LINK ===
+    0x26ab
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26ab ===
+  0x26ab	mov    	eax, 1
+  0x26b0	dec    	eax
+  0x26b1	add    	esp, 0x28
+  0x26b4	ret    	
+  0x26b5	int3   	
+  === BLOCK LINK ===
+    0x26b6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26b6 ===
+  0x26b6	int3   	
+  0x26b7	int3   	
+  0x26b8	int3   	
+  0x26b9	int3   	
+  0x26ba	int3   	
+  === BLOCK LINK ===
+    0x26bb
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26bb ===
+  0x26bb	int3   	
+  0x26bc	inc    	eax
+  0x26bd	push   	ebx
+  0x26be	inc    	ebp
+  0x26bf	mov    	ebx, dword ptr [eax]
+  === BLOCK LINK ===
+    0x26c1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26c1 ===
+  0x26c1	dec    	eax
+  0x26c2	mov    	ebx, edx
+  0x26c4	inc    	ecx
+  0x26c5	and    	ebx, 0xfffffff8
+  0x26c8	dec    	esp
+  === BLOCK LINK ===
+    0x26c9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26c9 ===
+  0x26c9	mov    	ecx, ecx
+  0x26cb	inc    	ecx
+  0x26cc	test   	byte ptr [eax], 4
+  0x26cf	dec    	esp
+  0x26d0	mov    	edx, ecx
+  === BLOCK LINK ===
+    0x26d2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26d2 ===
+  0x26d2	je     	0x26e7
+  === BLOCK LINK ===
+    0x26d4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26d4 ===
+  0x26d4	inc    	ecx
+  0x26d5	mov    	eax, dword ptr [eax + 8]
+  0x26d8	dec    	ebp
+  0x26d9	arpl   	word ptr [eax + 4], dx
+  0x26dc	neg    	eax
+  === BLOCK LINK ===
+    0x26de
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26de ===
+  0x26de	dec    	esp
+  0x26df	add    	edx, ecx
+  0x26e1	dec    	eax
+  0x26e2	arpl   	ax, cx
+  0x26e4	dec    	esp
+  === BLOCK LINK ===
+    0x26e5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26e5 ===
+  0x26e5	and    	edx, ecx
+  0x26e7	dec    	ecx
+  0x26e8	arpl   	bx, ax
+  0x26ea	dec    	edx
+  0x26eb	mov    	edx, dword ptr [eax + edx]
+  === BLOCK LINK ===
+    0x26ee
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26ee ===
+  0x26ee	dec    	eax
+  0x26ef	mov    	eax, dword ptr [ebx + 0x10]
+  0x26f2	mov    	ecx, dword ptr [eax + 8]
+  0x26f5	dec    	eax
+  0x26f6	mov    	eax, dword ptr [ebx + 8]
+  === BLOCK LINK ===
+    0x26f9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x26f9 ===
+  0x26f9	test   	byte ptr [ecx + eax + 3], 0xf
+  0x26fe	je     	0x270b
+  === BLOCK LINK ===
+    0x2700
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2700 ===
+  0x2700	movzx  	eax, byte ptr [ecx + eax + 3]
+  0x2705	and    	eax, 0xfffffff0
+  0x2708	dec    	esp
+  0x2709	add    	ecx, eax
+  0x270b	dec    	esp
+  === BLOCK LINK ===
+    0x270c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x270c ===
+  0x270c	xor    	ecx, edx
+  0x270e	dec    	ecx
+  0x270f	mov    	ecx, ecx
+  0x2711	pop    	ebx
+  0x2712	jmp    	0x2160
+  === BLOCK LINK ===
+    0x2717
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2717 ===
+  0x2717	int3   	
+  0x2718	int3   	
+  0x2719	int3   	
+  0x271a	int3   	
+  0x271b	int3   	
+  === BLOCK LINK ===
+    0x271c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x271c ===
+  0x271c	int3   	
+  0x271d	int3   	
+  0x271e	int3   	
+  0x271f	int3   	
+  0x2720	dec    	eax
+  === BLOCK LINK ===
+    0x2721
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2721 ===
+  0x2721	mov    	eax, esp
+  0x2723	dec    	eax
+  0x2724	mov    	dword ptr [eax + 8], ebx
+  0x2727	dec    	eax
+  0x2728	mov    	dword ptr [eax + 0x10], ebp
+  === BLOCK LINK ===
+    0x272b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x272b ===
+  0x272b	dec    	eax
+  0x272c	mov    	dword ptr [eax + 0x18], esi
+  0x272f	dec    	eax
+  0x2730	mov    	dword ptr [eax + 0x20], edi
+  0x2733	inc    	ecx
+  === BLOCK LINK ===
+    0x2734
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2734 ===
+  0x2734	push   	esi
+  0x2735	dec    	eax
+  0x2736	sub    	esp, 0x20
+  0x2739	dec    	ebp
+  0x273a	mov    	edx, dword ptr [ecx + 0x38]
+  === BLOCK LINK ===
+    0x273d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x273d ===
+  0x273d	dec    	eax
+  0x273e	mov    	esi, edx
+  0x2740	dec    	ebp
+  0x2741	mov    	esi, eax
+  0x2743	dec    	eax
+  === BLOCK LINK ===
+    0x2744
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2744 ===
+  0x2744	mov    	ebp, ecx
+  0x2746	dec    	ecx
+  0x2747	mov    	edx, ecx
+  0x2749	dec    	eax
+  0x274a	mov    	ecx, esi
+  === BLOCK LINK ===
+    0x274c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x274c ===
+  0x274c	dec    	ecx
+  0x274d	mov    	edi, ecx
+  0x274f	inc    	ecx
+  0x2750	mov    	ebx, dword ptr [edx]
+  0x2752	dec    	eax
+  === BLOCK LINK ===
+    0x2753
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2753 ===
+  0x2753	shl    	ebx, 4
+  0x2756	dec    	ecx
+  0x2757	add    	ebx, edx
+  0x2759	dec    	esp
+  0x275a	lea    	eax, [ebx + 4]
+  === BLOCK LINK ===
+    0x275d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x275d ===
+  0x275d	call   	0x26bc
+  === BLOCK LINK ===
+    0x2762
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2762 ===
+  0x2762	mov    	eax, dword ptr [ebp + 4]
+  0x2765	and    	al, 0x66
+  0x2767	neg    	al
+  0x2769	mov    	eax, 1
+  0x276e	sbb    	edx, edx
+  === BLOCK LINK ===
+    0x2770
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2770 ===
+  0x2770	neg    	edx
+  0x2772	add    	edx, eax
+  0x2774	test   	dword ptr [ebx + 4], edx
+  0x2777	je     	0x278b
+  === BLOCK LINK ===
+    0x2779
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2779 ===
+  0x2779	dec    	esp
+  0x277a	mov    	ecx, edi
+  0x277c	dec    	ebp
+  0x277d	mov    	eax, esi
+  0x277f	dec    	eax
+  === BLOCK LINK ===
+    0x2780
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2780 ===
+  0x2780	mov    	edx, esi
+  0x2782	dec    	eax
+  0x2783	mov    	ecx, ebp
+  0x2785	call   	dword ptr [0xaed]
+  === BLOCK LINK ===
+    0x278b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x278b ===
+  0x278b	dec    	eax
+  0x278c	mov    	ebx, dword ptr [esp + 0x30]
+  0x2790	dec    	eax
+  0x2791	mov    	ebp, dword ptr [esp + 0x38]
+  0x2795	dec    	eax
+  === BLOCK LINK ===
+    0x2796
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2796 ===
+  0x2796	mov    	esi, dword ptr [esp + 0x40]
+  0x279a	dec    	eax
+  0x279b	mov    	edi, dword ptr [esp + 0x48]
+  0x279f	dec    	eax
+  0x27a0	add    	esp, 0x20
+  === BLOCK LINK ===
+    0x27a3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27a3 ===
+  0x27a3	inc    	ecx
+  0x27a4	pop    	esi
+  0x27a5	ret    	
+  0x27a6	int3   	
+  0x27a7	int3   	
+  === BLOCK LINK ===
+    0x27a8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27a8 ===
+  0x27a8	int3   	
+  0x27a9	int3   	
+  0x27aa	int3   	
+  0x27ab	int3   	
+  0x27ac	int3   	
+  === BLOCK LINK ===
+    0x27ad
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27ad ===
+  0x27ad	int3   	
+  0x27ae	int3   	
+  0x27af	int3   	
+  0x27b0	int3   	
+  0x27b1	int3   	
+  === BLOCK LINK ===
+    0x27b2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27b2 ===
+  0x27b2	int3   	
+  0x27b3	int3   	
+  0x27b4	int3   	
+  0x27b5	int3   	
+  0x27b6	nop    	word ptr [eax + eax]
+  === BLOCK LINK ===
+    0x27c0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27c0 ===
+  0x27c0	jmp    	eax
+  === BLOCK LINK ===
+    0x27c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27c2 ===
+  0x27c2	int3   	
+  0x27c3	int3   	
+  0x27c4	int3   	
+  0x27c5	int3   	
+  0x27c6	int3   	
+  === BLOCK LINK ===
+    0x27c7
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27c7 ===
+  0x27c7	int3   	
+  0x27c8	int3   	
+  0x27c9	int3   	
+  0x27ca	int3   	
+  0x27cb	int3   	
+  === BLOCK LINK ===
+    0x27cc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27cc ===
+  0x27cc	int3   	
+  0x27cd	int3   	
+  0x27ce	int3   	
+  0x27cf	int3   	
+  0x27d0	int3   	
+  === BLOCK LINK ===
+    0x27d1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27d1 ===
+  0x27d1	int3   	
+  0x27d2	int3   	
+  0x27d3	int3   	
+  0x27d4	int3   	
+  0x27d5	int3   	
+  === BLOCK LINK ===
+    0x27d6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27d6 ===
+  0x27d6	nop    	word ptr [eax + eax]
+  0x27e0	dec    	eax
+  0x27e1	sub    	esp, 0x10
+  0x27e4	dec    	esp
+  0x27e5	mov    	dword ptr [esp], edx
+  === BLOCK LINK ===
+    0x27e8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27e8 ===
+  0x27e8	dec    	esp
+  0x27e9	mov    	dword ptr [esp + 8], ebx
+  0x27ed	dec    	ebp
+  0x27ee	xor    	ebx, ebx
+  0x27f0	dec    	esp
+  === BLOCK LINK ===
+    0x27f1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27f1 ===
+  0x27f1	lea    	edx, [esp + 0x18]
+  0x27f5	dec    	esp
+  0x27f6	sub    	edx, eax
+  0x27f8	dec    	ebp
+  0x27f9	cmovb  	edx, ebx
+  === BLOCK LINK ===
+    0x27fc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x27fc ===
+  0x27fc	dec    	esp
+  0x27fe	mov    	ebx, dword ptr [0x10]
+  0x2805	dec    	ebp
+  0x2806	cmp    	edx, ebx
+  0x2808	jae    	0x281f
+  === BLOCK LINK ===
+    0x280a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x280a ===
+  0x280a	inc    	cx
+  0x280c	and    	edx, 0x8d4df000
+  0x2812	wait   	
+  0x2813	add    	al, dh
+  0x2815	.byte  	0xff
+  === BLOCK LINK ===
+    0x2816
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2816 ===
+  0x2816	inc    	dword ptr [ebp - 0x7c]
+  0x2819	sbb    	ecx, dword ptr [ebp + 0x3b]
+  0x281c	sal    	dword ptr [edx - 0xf], cl
+  0x281f	dec    	esp
+  0x2820	mov    	edx, dword ptr [esp]
+  === BLOCK LINK ===
+    0x2823
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2823 ===
+  0x2823	dec    	esp
+  0x2824	mov    	ebx, dword ptr [esp + 8]
+  0x2828	dec    	eax
+  0x2829	add    	esp, 0x10
+  0x282c	ret    	
+  === BLOCK LINK ===
+    0x282d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x282d ===
+  0x282d	int3   	
+  0x282e	int3   	
+  0x282f	int3   	
+  0x2830	int3   	
+  0x2831	int3   	
+  === BLOCK LINK ===
+    0x2832
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2832 ===
+  0x2832	int3   	
+  0x2833	inc    	eax
+  0x2834	push   	ebp
+  0x2835	dec    	eax
+  0x2836	sub    	esp, 0x40
+  === BLOCK LINK ===
+    0x2839
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2839 ===
+  0x2839	dec    	eax
+  0x283a	mov    	ebp, edx
+  0x283c	dec    	eax
+  0x283d	mov    	dword ptr [ebp + 0x58], ecx
+  0x2840	dec    	eax
+  === BLOCK LINK ===
+    0x2841
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2841 ===
+  0x2841	mov    	dword ptr [ebp + 0x48], ecx
+  0x2844	mov    	eax, 1
+  0x2849	dec    	eax
+  0x284a	add    	esp, 0x40
+  0x284d	pop    	ebp
+  === BLOCK LINK ===
+    0x284e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x284e ===
+  0x284e	ret    	
+  0x284f	int3   	
+  0x2850	inc    	eax
+  0x2851	push   	ebp
+  0x2852	dec    	eax
+  === BLOCK LINK ===
+    0x2853
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2668 ===
+  0x2668	inc    	eax
+  0x2669	push   	ebx
+  0x266a	dec    	eax
+  0x266b	sub    	esp, 0x20
+  === BLOCK LINK ===
+    0x266e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2853 ===
+  0x2853	sub    	esp, 0x40
+  0x2856	dec    	eax
+  0x2857	mov    	ebp, edx
+  0x2859	dec    	eax
+  0x285a	mov    	dword ptr [ebp + 0x60], ecx
+  === BLOCK LINK ===
+    0x285d
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x285d ===
+  0x285d	dec    	eax
+  0x285e	mov    	dword ptr [ebp + 0x48], ecx
+  0x2861	mov    	eax, 1
+  0x2866	dec    	eax
+  0x2867	add    	esp, 0x40
+  === BLOCK LINK ===
+    0x286a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x286a ===
+  0x286a	pop    	ebp
+  0x286b	ret    	
+  0x286c	int3   	
+  0x286d	int3   	
+  0x286e	int3   	
+  === BLOCK LINK ===
+    0x286f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x286f ===
+  0x286f	int3   	
+  0x2870	int3   	
+  0x2871	int3   	
+  0x2872	int3   	
+  0x2873	inc    	eax
+  === BLOCK LINK ===
+    0x2874
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2874 ===
+  0x2874	push   	ebp
+  0x2875	dec    	eax
+  0x2876	sub    	esp, 0x30
+  0x2879	dec    	eax
+  0x287a	mov    	ebp, edx
+  === BLOCK LINK ===
+    0x287c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x287c ===
+  0x287c	dec    	eax
+  0x287d	mov    	dword ptr [ebp + 0x38], ecx
+  0x2880	dec    	eax
+  0x2881	mov    	dword ptr [ebp + 0x30], ecx
+  0x2884	mov    	eax, 1
+  === BLOCK LINK ===
+    0x2889
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2889 ===
+  0x2889	dec    	eax
+  0x288a	add    	esp, 0x30
+  0x288d	pop    	ebp
+  0x288e	ret    	
+  0x288f	int3   	
+  === BLOCK LINK ===
+    0x2890
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2890 ===
+  0x2890	int3   	
+  0x2891	int3   	
+  0x2892	int3   	
+  0x2893	int3   	
+  0x2894	int3   	
+  === BLOCK LINK ===
+    0x2895
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2895 ===
+  0x2895	int3   	
+  0x2896	inc    	eax
+  0x2897	push   	ebp
+  0x2898	dec    	eax
+  0x2899	sub    	esp, 0x20
+  === BLOCK LINK ===
+    0x289c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x289c ===
+  0x289c	dec    	eax
+  0x289d	mov    	ebp, edx
+  0x289f	dec    	eax
+  0x28a0	mov    	eax, dword ptr [ecx]
+  0x28a2	dec    	eax
+  === BLOCK LINK ===
+    0x28a3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28a3 ===
+  0x28a3	mov    	edx, ecx
+  0x28a5	mov    	ecx, dword ptr [eax]
+  0x28a7	call   	0x21ee
+  === BLOCK LINK ===
+    0x28ac
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28ac ===
+  0x28ac	nop    	
+  0x28ad	dec    	eax
+  0x28ae	add    	esp, 0x20
+  0x28b1	pop    	ebp
+  0x28b2	ret    	
+  === BLOCK LINK ===
+    0x28b3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28b3 ===
+  0x28b3	int3   	
+  0x28b4	int3   	
+  0x28b5	int3   	
+  0x28b6	int3   	
+  0x28b7	int3   	
+  === BLOCK LINK ===
+    0x28b8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28b8 ===
+  0x28b8	int3   	
+  0x28b9	int3   	
+  0x28ba	int3   	
+  0x28bb	int3   	
+  0x28bc	int3   	
+  === BLOCK LINK ===
+    0x28bd
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28bd ===
+  0x28bd	int3   	
+  0x28be	int3   	
+  0x28bf	int3   	
+  0x28c0	inc    	eax
+  0x28c1	push   	ebp
+  === BLOCK LINK ===
+    0x28c2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28c2 ===
+  0x28c2	dec    	eax
+  0x28c3	sub    	esp, 0x20
+  0x28c6	dec    	eax
+  0x28c7	mov    	ebp, edx
+  0x28c9	dec    	eax
+  === BLOCK LINK ===
+    0x28ca
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28ca ===
+  0x28ca	mov    	eax, dword ptr [ecx]
+  0x28cc	xor    	ecx, ecx
+  0x28ce	cmp    	dword ptr [eax], 0xc0000005
+  0x28d4	sete   	cl
+  0x28d7	mov    	eax, ecx
+  === BLOCK LINK ===
+    0x28d9
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28d9 ===
+  0x28d9	dec    	eax
+  0x28da	add    	esp, 0x20
+  0x28dd	pop    	ebp
+  0x28de	ret    	
+  0x28df	int3   	
+  === BLOCK LINK ===
+    0x28e0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28e0 ===
+  0x28e0	add    	byte ptr [eax], al
+  0x28e2	add    	byte ptr [eax], al
+  0x28e4	add    	byte ptr [eax], al
+  0x28e6	add    	byte ptr [eax], al
+  0x28e8	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x28ea
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28ea ===
+  0x28ea	add    	byte ptr [eax], al
+  0x28ec	add    	byte ptr [eax], al
+  0x28ee	add    	byte ptr [eax], al
+  0x28f0	add    	byte ptr [eax], al
+  0x28f2	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x28f4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28f4 ===
+  0x28f4	add    	byte ptr [eax], al
+  0x28f6	add    	byte ptr [eax], al
+  0x28f8	add    	byte ptr [eax], al
+  0x28fa	add    	byte ptr [eax], al
+  0x28fc	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x28fe
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x28fe ===
+  0x28fe	add    	byte ptr [eax], al
+  0x2900	add    	byte ptr [eax], al
+  0x2902	add    	byte ptr [eax], al
+  0x2904	add    	byte ptr [eax], al
+  0x2906	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2908
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2908 ===
+  0x2908	add    	byte ptr [eax], al
+  0x290a	add    	byte ptr [eax], al
+  0x290c	add    	byte ptr [eax], al
+  0x290e	add    	byte ptr [eax], al
+  0x2910	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2912
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2912 ===
+  0x2912	add    	byte ptr [eax], al
+  0x2914	add    	byte ptr [eax], al
+  0x2916	add    	byte ptr [eax], al
+  0x2918	add    	byte ptr [eax], al
+  0x291a	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x291c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x291c ===
+  0x291c	add    	byte ptr [eax], al
+  0x291e	add    	byte ptr [eax], al
+  0x2920	add    	byte ptr [eax], al
+  0x2922	add    	byte ptr [eax], al
+  0x2924	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2926
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2926 ===
+  0x2926	add    	byte ptr [eax], al
+  0x2928	add    	byte ptr [eax], al
+  0x292a	add    	byte ptr [eax], al
+  0x292c	add    	byte ptr [eax], al
+  0x292e	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2930
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2930 ===
+  0x2930	add    	byte ptr [eax], al
+  0x2932	add    	byte ptr [eax], al
+  0x2934	add    	byte ptr [eax], al
+  0x2936	add    	byte ptr [eax], al
+  0x2938	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x293a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x293a ===
+  0x293a	add    	byte ptr [eax], al
+  0x293c	add    	byte ptr [eax], al
+  0x293e	add    	byte ptr [eax], al
+  0x2940	add    	byte ptr [eax], al
+  0x2942	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2944
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2944 ===
+  0x2944	add    	byte ptr [eax], al
+  0x2946	add    	byte ptr [eax], al
+  0x2948	add    	byte ptr [eax], al
+  0x294a	add    	byte ptr [eax], al
+  0x294c	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x294e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x294e ===
+  0x294e	add    	byte ptr [eax], al
+  0x2950	add    	byte ptr [eax], al
+  0x2952	add    	byte ptr [eax], al
+  0x2954	add    	byte ptr [eax], al
+  0x2956	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2958
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2958 ===
+  0x2958	add    	byte ptr [eax], al
+  0x295a	add    	byte ptr [eax], al
+  0x295c	add    	byte ptr [eax], al
+  0x295e	add    	byte ptr [eax], al
+  0x2960	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2962
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2962 ===
+  0x2962	add    	byte ptr [eax], al
+  0x2964	add    	byte ptr [eax], al
+  0x2966	add    	byte ptr [eax], al
+  0x2968	add    	byte ptr [eax], al
+  0x296a	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x296c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x296c ===
+  0x296c	add    	byte ptr [eax], al
+  0x296e	add    	byte ptr [eax], al
+  0x2970	add    	byte ptr [eax], al
+  0x2972	add    	byte ptr [eax], al
+  0x2974	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2976
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2976 ===
+  0x2976	add    	byte ptr [eax], al
+  0x2978	add    	byte ptr [eax], al
+  0x297a	add    	byte ptr [eax], al
+  0x297c	add    	byte ptr [eax], al
+  0x297e	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2980
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2980 ===
+  0x2980	add    	byte ptr [eax], al
+  0x2982	add    	byte ptr [eax], al
+  0x2984	add    	byte ptr [eax], al
+  0x2986	add    	byte ptr [eax], al
+  0x2988	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x298a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x298a ===
+  0x298a	add    	byte ptr [eax], al
+  0x298c	add    	byte ptr [eax], al
+  0x298e	add    	byte ptr [eax], al
+  0x2990	add    	byte ptr [eax], al
+  0x2992	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x2994
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x2994 ===
+  0x2994	add    	byte ptr [eax], al
+  0x2996	add    	byte ptr [eax], al
+  0x2998	add    	byte ptr [eax], al
+  0x299a	add    	byte ptr [eax], al
+  0x299c	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x299e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x299e ===
+  0x299e	add    	byte ptr [eax], al
+  0x29a0	add    	byte ptr [eax], al
+  0x29a2	add    	byte ptr [eax], al
+  0x29a4	add    	byte ptr [eax], al
+  0x29a6	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29a8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29a8 ===
+  0x29a8	add    	byte ptr [eax], al
+  0x29aa	add    	byte ptr [eax], al
+  0x29ac	add    	byte ptr [eax], al
+  0x29ae	add    	byte ptr [eax], al
+  0x29b0	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29b2
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29b2 ===
+  0x29b2	add    	byte ptr [eax], al
+  0x29b4	add    	byte ptr [eax], al
+  0x29b6	add    	byte ptr [eax], al
+  0x29b8	add    	byte ptr [eax], al
+  0x29ba	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29bc
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29bc ===
+  0x29bc	add    	byte ptr [eax], al
+  0x29be	add    	byte ptr [eax], al
+  0x29c0	add    	byte ptr [eax], al
+  0x29c2	add    	byte ptr [eax], al
+  0x29c4	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29c6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29c6 ===
+  0x29c6	add    	byte ptr [eax], al
+  0x29c8	add    	byte ptr [eax], al
+  0x29ca	add    	byte ptr [eax], al
+  0x29cc	add    	byte ptr [eax], al
+  0x29ce	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29d0
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29d0 ===
+  0x29d0	add    	byte ptr [eax], al
+  0x29d2	add    	byte ptr [eax], al
+  0x29d4	add    	byte ptr [eax], al
+  0x29d6	add    	byte ptr [eax], al
+  0x29d8	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29da
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29da ===
+  0x29da	add    	byte ptr [eax], al
+  0x29dc	add    	byte ptr [eax], al
+  0x29de	add    	byte ptr [eax], al
+  0x29e0	add    	byte ptr [eax], al
+  0x29e2	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29e4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29e4 ===
+  0x29e4	add    	byte ptr [eax], al
+  0x29e6	add    	byte ptr [eax], al
+  0x29e8	add    	byte ptr [eax], al
+  0x29ea	add    	byte ptr [eax], al
+  0x29ec	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29ee
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29ee ===
+  0x29ee	add    	byte ptr [eax], al
+  0x29f0	add    	byte ptr [eax], al
+  0x29f2	add    	byte ptr [eax], al
+  0x29f4	add    	byte ptr [eax], al
+  0x29f6	add    	byte ptr [eax], al
+  === BLOCK LINK ===
+    0x29f8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x29f8 ===
+  0x29f8	add    	byte ptr [eax], al
+  0x29fa	add    	byte ptr [eax], al
+  0x29fc	add    	byte ptr [eax], al
+=== CODE BLOCK END ===
+
+=== DATA BLOCK ADDRESS 0x3000 ===
+  0x3000	60 50 00 40 01 00 00 00 00 51 00 40 01 00 00 00 	`P0@00000Q0@0000
+  0x3010	18 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3020	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3030	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3040	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3050	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3060	00 00 00 00 00 00 00 00 08 50 00 40 01 00 00 00 	000000000P0@0000
+  0x3070	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3080	28 33 00 40 01 00 00 00 30 33 00 40 01 00 00 00 	(30@0000030@0000
+  0x3090	94 33 00 40 01 00 00 00 08 00 00 00 00 00 00 00 	030@000000000000
+  0x30a0	00 75 41 00 00 00 00 00 00 00 00 00 00 00 00 00 	0uA0000000000000
+  0x30b0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x30c0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x30d0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x30e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x30f0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3100	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3110	00 00 00 00 00 00 00 00 70 33 00 40 01 00 00 00 	00000000p30@0000
+  0x3120	09 00 00 00 00 00 00 00 f0 44 00 00 00 00 00 00 	000000000D000000
+  0x3130	00 45 00 00 00 00 00 00 12 45 00 00 00 00 00 00 	0E0000000E000000
+  0x3140	20 45 00 00 00 00 00 00 34 45 00 00 00 00 00 00 	 E0000004E000000
+  0x3150	46 45 00 00 00 00 00 00 56 45 00 00 00 00 00 00 	FE000000VE000000
+  0x3160	62 45 00 00 00 00 00 00 70 45 00 00 00 00 00 00 	bE000000pE000000
+  0x3170	80 45 00 00 00 00 00 00 8e 45 00 00 00 00 00 00 	0E0000000E000000
+  0x3180	a6 45 00 00 00 00 00 00 b8 45 00 00 00 00 00 00 	0E0000000E000000
+  0x3190	cc 45 00 00 00 00 00 00 da 45 00 00 00 00 00 00 	0E0000000E000000
+  0x31a0	3a 48 00 00 00 00 00 00 58 48 00 00 00 00 00 00 	:H000000XH000000
+  0x31b0	72 48 00 00 00 00 00 00 88 48 00 00 00 00 00 00 	rH0000000H000000
+  0x31c0	9e 48 00 00 00 00 00 00 b8 48 00 00 00 00 00 00 	0H0000000H000000
+  0x31d0	c8 48 00 00 00 00 00 00 e4 48 00 00 00 00 00 00 	0H0000000H000000
+  0x31e0	f8 48 00 00 00 00 00 00 32 48 00 00 00 00 00 00 	0H0000002H000000
+  0x31f0	00 00 00 00 00 00 00 00 7e 47 00 00 00 00 00 00 	00000000~G000000
+  0x3200	00 00 00 00 00 00 00 00 a0 47 00 00 00 00 00 00 	000000000G000000
+  0x3210	00 00 00 00 00 00 00 00 d6 47 00 00 00 00 00 00 	000000000G000000
+  0x3220	f4 47 00 00 00 00 00 00 04 48 00 00 00 00 00 00 	0G0000000H000000
+  0x3230	18 48 00 00 00 00 00 00 c2 47 00 00 00 00 00 00 	0H0000000G000000
+  0x3240	00 00 00 00 00 00 00 00 58 46 00 00 00 00 00 00 	00000000XF000000
+  0x3250	4a 46 00 00 00 00 00 00 34 46 00 00 00 00 00 00 	JF0000004F000000
+  0x3260	2a 46 00 00 00 00 00 00 1e 46 00 00 00 00 00 00 	*F0000000F000000
+  0x3270	10 46 00 00 00 00 00 00 f8 45 00 00 00 00 00 00 	0F0000000E000000
+  0x3280	e4 46 00 00 00 00 00 00 cc 46 00 00 00 00 00 00 	0F0000000F000000
+  0x3290	c2 46 00 00 00 00 00 00 b6 46 00 00 00 00 00 00 	0F0000000F000000
+  0x32a0	66 46 00 00 00 00 00 00 98 46 00 00 00 00 00 00 	fF0000000F000000
+  0x32b0	90 46 00 00 00 00 00 00 88 46 00 00 00 00 00 00 	0F0000000F000000
+  0x32c0	3e 46 00 00 00 00 00 00 76 46 00 00 00 00 00 00 	>F000000vF000000
+  0x32d0	a2 46 00 00 00 00 00 00 0c 49 00 00 00 00 00 00 	0F0000000I000000
+  0x32e0	00 00 00 00 00 00 00 00 f8 46 00 00 00 00 00 00 	000000000F000000
+  0x32f0	06 47 00 00 00 00 00 00 34 47 00 00 00 00 00 00 	0G0000004G000000
+  0x3300	1a 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0G00000000000000
+  0x3310	64 47 00 00 00 00 00 00 52 47 00 00 00 00 00 00 	dG000000RG000000
+  0x3320	00 00 00 00 00 00 00 00 90 24 00 40 01 00 00 00 	000000000$0@0000
+  0x3330	c0 27 00 40 01 00 00 00 00 00 00 00 00 00 00 00 	0'0@000000000000
+  0x3340	10 1f 00 40 01 00 00 00 00 00 00 00 00 00 00 00 	000@000000000000
+  0x3350	00 00 00 00 00 00 00 00 30 1e 00 40 01 00 00 00 	00000000000@0000
+  0x3360	d0 21 00 40 01 00 00 00 00 00 00 00 00 00 00 00 	0!0@000000000000
+  0x3370	1b 16 00 00 47 17 00 00 3e 18 00 00 7f 19 00 00 	0000G000>0000000
+  0x3380	d1 1a 00 00 93 1d 00 00 db 20 00 00 42 22 00 00 	000000000 00B"00
+  0x3390	50 23 00 00 30 1e 00 00 10 1f 00 00 30 21 00 00 	P#00000000000!00
+  0x33a0	90 21 00 00 d0 21 00 00 b0 22 00 00 90 24 00 00 	0!000!000"000$00
+  0x33b0	e0 24 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0$00000000000000
+  0x33c0	25 77 73 00 00 00 00 00 2f 00 52 00 65 00 67 00 	%ws00000/0R0e0g0
+  0x33d0	69 00 6f 00 6e 00 4e 00 61 00 6d 00 65 00 00 00 	i0o0n0N0a0m0e000
+  0x33e0	2f 00 53 00 69 00 67 00 6e 00 61 00 6c 00 52 00 	/0S0i0g0n0a0l0R0
+  0x33f0	65 00 61 00 64 00 79 00 00 00 00 00 00 00 00 00 	e0a0d0y000000000
+  0x3400	2f 00 53 00 69 00 67 00 6e 00 61 00 6c 00 43 00 	/0S0i0g0n0a0l0C0
+  0x3410	6f 00 6d 00 70 00 6c 00 65 00 74 00 65 00 00 00 	o0m0p0l0e0t0e000
+  0x3420	25 00 73 00 0a 00 00 00 57 00 4f 00 57 00 52 00 	%0s00000W0O0W0R0
+  0x3430	45 00 47 00 33 00 32 00 3a 00 20 00 4c 00 6f 00 	E0G03020:0 0L0o0
+  0x3440	77 00 20 00 4d 00 65 00 6d 00 6f 00 72 00 79 00 	w0 0M0e0m0o0r0y0
+  0x3450	0a 00 00 00 00 00 00 00 57 00 4f 00 57 00 52 00 	00000000W0O0W0R0
+  0x3460	45 00 47 00 33 00 32 00 3a 00 20 00 49 00 6e 00 	E0G03020:0 0I0n0
+  0x3470	76 00 61 00 6c 00 69 00 64 00 20 00 55 00 73 00 	v0a0l0i0d0 0U0s0
+  0x3480	61 00 67 00 65 00 0a 00 00 00 00 00 00 00 00 00 	a0g0e00000000000
+  0x3490	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x34a0	3a 00 20 00 4f 00 70 00 65 00 6e 00 46 00 69 00 	:0 0O0p0e0n0F0i0
+  0x34b0	6c 00 65 00 4d 00 61 00 70 00 70 00 69 00 6e 00 	l0e0M0a0p0p0i0n0
+  0x34c0	67 00 20 00 28 00 25 00 73 00 29 00 20 00 66 00 	g0 0(0%0s0)0 0f0
+  0x34d0	61 00 69 00 6c 00 65 00 64 00 2c 00 20 00 65 00 	a0i0l0e0d0,0 0e0
+  0x34e0	63 00 20 00 3d 00 20 00 25 00 78 00 0a 00 00 00 	c0 0=0 0%0x00000
+  0x34f0	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3500	3a 00 20 00 4d 00 61 00 70 00 56 00 69 00 65 00 	:0 0M0a0p0V0i0e0
+  0x3510	77 00 4f 00 66 00 46 00 69 00 6c 00 65 00 20 00 	w0O0f0F0i0l0e0 0
+  0x3520	66 00 61 00 69 00 6c 00 65 00 64 00 2c 00 20 00 	f0a0i0l0e0d0,0 0
+  0x3530	65 00 63 00 20 00 3d 00 20 00 25 00 78 00 0a 00 	e0c0 0=0 0%0x000
+  0x3540	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3550	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3560	3a 00 20 00 4f 00 70 00 65 00 6e 00 45 00 76 00 	:0 0O0p0e0n0E0v0
+  0x3570	65 00 6e 00 74 00 20 00 28 00 25 00 73 00 29 00 	e0n0t0 0(0%0s0)0
+  0x3580	20 00 66 00 61 00 69 00 6c 00 65 00 64 00 2c 00 	 0f0a0i0l0e0d0,0
+  0x3590	20 00 65 00 63 00 20 00 3d 00 20 00 25 00 78 00 	 0e0c0 0=0 0%0x0
+  0x35a0	0a 00 00 00 00 00 00 00 52 65 67 69 73 74 65 72 	00000000Register
+  0x35b0	65 64 20 25 64 20 63 6f 6e 74 72 6f 6c 73 0a 00 	ed %d controls00
+  0x35c0	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x35d0	3a 00 20 00 72 00 65 00 67 00 69 00 73 00 74 00 	:0 0r0e0g0i0s0t0
+  0x35e0	65 00 72 00 65 00 64 00 20 00 25 00 64 00 20 00 	e0r0e0d0 0%0d0 0
+  0x35f0	63 00 6f 00 6e 00 74 00 72 00 6f 00 6c 00 73 00 	c0o0n0t0r0o0l0s0
+  0x3600	0a 00 00 00 00 00 00 00 44 6c 6c 49 6e 73 74 61 	00000000DllInsta
+  0x3610	6c 6c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	ll00000000000000
+  0x3620	50 72 6f 63 65 73 73 69 6e 67 20 4f 4c 45 20 43 	Processing OLE C
+  0x3630	6f 6e 74 72 6f 6c 20 27 25 77 73 27 20 63 61 75 	ontrol '%ws' cau
+  0x3640	73 65 64 20 61 6e 20 69 6e 74 65 72 6e 61 6c 20 	sed an internal 
+  0x3650	65 72 72 6f 72 20 28 65 78 63 65 70 74 69 6f 6e 	error (exception
+  0x3660	29 2e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	).00000000000000
+  0x3670	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3680	3a 00 20 00 2e 00 2e 00 2e 00 65 00 78 00 63 00 	:0 0.0.0.0e0x0c0
+  0x3690	65 00 70 00 74 00 69 00 6f 00 6e 00 20 00 69 00 	e0p0t0i0o0n0 0i0
+  0x36a0	6e 00 20 00 47 00 65 00 74 00 50 00 72 00 6f 00 	n0 0G0e0t0P0r0o0
+  0x36b0	63 00 41 00 64 00 64 00 72 00 65 00 73 00 73 00 	c0A0d0d0r0e0s0s0
+  0x36c0	20 00 68 00 61 00 6e 00 64 00 6c 00 65 00 64 00 	 0h0a0n0d0l0e0d0
+  0x36d0	0a 00 00 00 00 00 00 00 57 00 4f 00 57 00 52 00 	00000000W0O0W0R0
+  0x36e0	45 00 47 00 33 00 32 00 3a 00 20 00 69 00 6e 00 	E0G03020:0 0i0n0
+  0x36f0	73 00 74 00 61 00 6c 00 6c 00 69 00 6e 00 67 00 	s0t0a0l0l0i0n0g0
+  0x3700	2e 00 2e 00 2e 00 0a 00 00 00 00 00 00 00 00 00 	.0.0.00000000000
+  0x3710	44 00 6c 00 6c 00 49 00 6e 00 73 00 74 00 61 00 	D0l0l0I0n0s0t0a0
+  0x3720	6c 00 6c 00 00 00 00 00 43 61 6c 6c 69 6e 67 20 	l0l00000Calling 
+  0x3730	27 25 77 73 27 20 69 6e 20 4f 4c 45 20 43 6f 6e 	'%ws' in OLE Con
+  0x3740	74 72 6f 6c 20 27 25 77 73 27 20 66 61 69 6c 65 	trol '%ws' faile
+  0x3750	64 2e 20 25 64 00 00 00 00 00 00 00 00 00 00 00 	d. %d00000000000
+  0x3760	43 61 6c 6c 69 6e 67 20 27 25 77 73 27 20 69 6e 	Calling '%ws' in
+  0x3770	20 4f 4c 45 20 43 6f 6e 74 72 6f 6c 20 27 25 77 	 OLE Control '%w
+  0x3780	73 27 20 73 75 63 63 65 65 64 65 64 20 77 69 74 	s' succeeded wit
+  0x3790	68 20 48 52 45 53 55 4c 54 3d 30 78 25 30 38 78 	h HRESULT=0x%08x
+  0x37a0	2e 00 00 00 00 00 00 00 43 61 6c 6c 69 6e 67 20 	.0000000Calling 
+  0x37b0	27 25 77 73 27 20 69 6e 20 4f 4c 45 20 43 6f 6e 	'%ws' in OLE Con
+  0x37c0	74 72 6f 6c 20 27 25 77 73 27 20 73 75 63 63 65 	trol '%ws' succe
+  0x37d0	65 64 65 64 2e 00 00 00 43 61 6c 6c 69 6e 67 20 	eded.000Calling 
+  0x37e0	27 25 77 73 27 20 69 6e 20 4f 4c 45 20 43 6f 6e 	'%ws' in OLE Con
+  0x37f0	74 72 6f 6c 20 27 25 77 73 27 20 63 61 75 73 65 	trol '%ws' cause
+  0x3800	64 20 61 6e 20 65 78 63 65 70 74 69 6f 6e 2e 00 	d an exception.0
+  0x3810	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3820	3a 00 20 00 2e 00 2e 00 2e 00 65 00 78 00 63 00 	:0 0.0.0.0e0x0c0
+  0x3830	65 00 70 00 74 00 69 00 6f 00 6e 00 20 00 69 00 	e0p0t0i0o0n0 0i0
+  0x3840	6e 00 20 00 44 00 6c 00 6c 00 49 00 6e 00 73 00 	n0 0D0l0l0I0n0s0
+  0x3850	74 00 61 00 6c 00 6c 00 20 00 68 00 61 00 6e 00 	t0a0l0l0 0h0a0n0
+  0x3860	64 00 6c 00 65 00 64 00 0a 00 00 00 00 00 00 00 	d0l0e0d000000000
+  0x3870	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3880	3a 00 20 00 2e 00 2e 00 2e 00 69 00 6e 00 73 00 	:0 0.0.0.0i0n0s0
+  0x3890	74 00 61 00 6c 00 6c 00 65 00 64 00 0a 00 00 00 	t0a0l0l0e0d00000
+  0x38a0	44 6c 6c 52 65 67 69 73 74 65 72 53 65 72 76 65 	DllRegisterServe
+  0x38b0	72 00 00 00 00 00 00 00 44 6c 6c 55 6e 72 65 67 	r0000000DllUnreg
+  0x38c0	69 73 74 65 72 53 65 72 76 65 72 00 00 00 00 00 	isterServer00000
+  0x38d0	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x38e0	3a 00 20 00 72 00 65 00 67 00 69 00 73 00 74 00 	:0 0r0e0g0i0s0t0
+  0x38f0	65 00 72 00 69 00 6e 00 67 00 2e 00 2e 00 2e 00 	e0r0i0n0g0.0.0.0
+  0x3900	0a 00 00 00 00 00 00 00 44 00 6c 00 6c 00 52 00 	00000000D0l0l0R0
+  0x3910	65 00 67 00 69 00 73 00 74 00 65 00 72 00 53 00 	e0g0i0s0t0e0r0S0
+  0x3920	65 00 72 00 76 00 65 00 72 00 00 00 00 00 00 00 	e0r0v0e0r0000000
+  0x3930	44 00 6c 00 6c 00 55 00 6e 00 72 00 65 00 67 00 	D0l0l0U0n0r0e0g0
+  0x3940	69 00 73 00 74 00 65 00 72 00 53 00 65 00 72 00 	i0s0t0e0r0S0e0r0
+  0x3950	76 00 65 00 72 00 00 00 43 61 6c 6c 69 6e 67 20 	v0e0r000Calling 
+  0x3960	27 25 77 73 27 20 69 6e 20 4f 4c 45 20 43 6f 6e 	'%ws' in OLE Con
+  0x3970	74 72 6f 6c 20 27 25 77 73 27 20 66 61 69 6c 65 	trol '%ws' faile
+  0x3980	64 2e 20 25 30 38 78 00 00 00 00 00 00 00 00 00 	d. %08x000000000
+  0x3990	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x39a0	3a 00 20 00 2e 00 2e 00 2e 00 65 00 78 00 63 00 	:0 0.0.0.0e0x0c0
+  0x39b0	65 00 70 00 74 00 69 00 6f 00 6e 00 20 00 69 00 	e0p0t0i0o0n0 0i0
+  0x39c0	6e 00 20 00 44 00 6c 00 6c 00 52 00 65 00 67 00 	n0 0D0l0l0R0e0g0
+  0x39d0	69 00 73 00 74 00 65 00 72 00 53 00 65 00 72 00 	i0s0t0e0r0S0e0r0
+  0x39e0	76 00 65 00 72 00 20 00 68 00 61 00 6e 00 64 00 	v0e0r0 0h0a0n0d0
+  0x39f0	6c 00 65 00 64 00 0a 00 00 00 00 00 00 00 00 00 	l0e0d00000000000
+  0x3a00	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3a10	3a 00 20 00 2e 00 2e 00 2e 00 72 00 65 00 67 00 	:0 0.0.0.0r0e0g0
+  0x3a20	69 00 73 00 74 00 65 00 72 00 65 00 64 00 0a 00 	i0s0t0e0r0e0d000
+  0x3a30	00 00 00 00 00 00 00 00 45 78 70 6f 72 74 65 64 	00000000Exported
+  0x3a40	20 66 75 6e 63 74 69 6f 6e 20 27 25 77 73 27 20 	 function '%ws' 
+  0x3a50	69 6e 20 4f 4c 45 20 43 6f 6e 74 72 6f 6c 20 27 	in OLE Control '
+  0x3a60	25 77 73 27 20 6e 6f 74 20 66 6f 75 6e 64 2e 20 	%ws' not found. 
+  0x3a70	25 30 38 78 00 00 00 00 57 00 4f 00 57 00 52 00 	%08x0000W0O0W0R0
+  0x3a80	45 00 47 00 33 00 32 00 3a 00 20 00 6c 00 6f 00 	E0G03020:0 0l0o0
+  0x3a90	61 00 64 00 69 00 6e 00 67 00 20 00 64 00 6c 00 	a0d0i0n0g0 0d0l0
+  0x3aa0	6c 00 2e 00 2e 00 2e 00 0a 00 00 00 00 00 00 00 	l0.0.0.000000000
+  0x3ab0	41 6e 20 65 78 63 65 70 74 69 6f 6e 20 6f 63 63 	An exception occ
+  0x3ac0	75 72 72 65 64 20 77 68 69 6c 65 20 6c 6f 61 64 	urred while load
+  0x3ad0	69 6e 67 20 74 68 65 20 4f 4c 45 20 43 6f 6e 74 	ing the OLE Cont
+  0x3ae0	72 6f 6c 20 27 25 77 73 27 2e 00 00 00 00 00 00 	rol '%ws'.000000
+  0x3af0	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3b00	3a 00 20 00 2e 00 2e 00 2e 00 65 00 78 00 63 00 	:0 0.0.0.0e0x0c0
+  0x3b10	65 00 70 00 74 00 69 00 6f 00 6e 00 20 00 69 00 	e0p0t0i0o0n0 0i0
+  0x3b20	6e 00 20 00 4c 00 6f 00 61 00 64 00 4c 00 69 00 	n0 0L0o0a0d0L0i0
+  0x3b30	62 00 72 00 61 00 72 00 79 00 20 00 68 00 61 00 	b0r0a0r0y0 0h0a0
+  0x3b40	6e 00 64 00 6c 00 65 00 64 00 0a 00 00 00 00 00 	n0d0l0e0d0000000
+  0x3b50	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3b60	3a 00 20 00 2e 00 2e 00 2e 00 64 00 6c 00 6c 00 	:0 0.0.0.0d0l0l0
+  0x3b70	20 00 6e 00 6f 00 74 00 20 00 6c 00 6f 00 61 00 	 0n0o0t0 0l0o0a0
+  0x3b80	64 00 65 00 64 00 20 00 28 00 25 00 75 00 29 00 	d0e0d0 0(0%0u0)0
+  0x3b90	0a 00 00 00 00 00 00 00 46 61 69 6c 65 64 20 74 	00000000Failed t
+  0x3ba0	6f 20 6c 6f 61 64 20 74 68 65 20 4f 4c 45 20 43 	o load the OLE C
+  0x3bb0	6f 6e 74 72 6f 6c 20 27 25 77 73 27 2e 20 25 30 	ontrol '%ws'. %0
+  0x3bc0	38 78 00 00 00 00 00 00 57 00 4f 00 57 00 52 00 	8x000000W0O0W0R0
+  0x3bd0	45 00 47 00 33 00 32 00 3a 00 20 00 2e 00 2e 00 	E0G03020:0 0.0.0
+  0x3be0	2e 00 64 00 6c 00 6c 00 20 00 6c 00 6f 00 61 00 	.0d0l0l0 0l0o0a0
+  0x3bf0	64 00 65 00 64 00 0a 00 00 00 00 00 00 00 00 00 	d0e0d00000000000
+  0x3c00	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3c10	3a 00 20 00 63 00 61 00 6c 00 6c 00 69 00 6e 00 	:0 0c0a0l0l0i0n0
+  0x3c20	67 00 20 00 4f 00 6c 00 65 00 49 00 6e 00 69 00 	g0 0O0l0e0I0n0i0
+  0x3c30	74 00 69 00 61 00 6c 00 69 00 7a 00 65 00 0a 00 	t0i0a0l0i0z0e000
+  0x3c40	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3c50	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3c60	3a 00 20 00 4f 00 6c 00 65 00 49 00 6e 00 69 00 	:0 0O0l0e0I0n0i0
+  0x3c70	74 00 69 00 61 00 6c 00 69 00 7a 00 65 00 20 00 	t0i0a0l0i0z0e0 0
+  0x3c80	66 00 61 00 69 00 6c 00 65 00 64 00 2c 00 20 00 	f0a0i0l0e0d0,0 0
+  0x3c90	65 00 63 00 20 00 3d 00 20 00 30 00 78 00 25 00 	e0c0 0=0 000x0%0
+  0x3ca0	30 00 38 00 78 00 0a 00 00 00 00 00 00 00 00 00 	0080x00000000000
+  0x3cb0	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3cc0	3a 00 20 00 62 00 61 00 63 00 6b 00 20 00 66 00 	:0 0b0a0c0k0 0f0
+  0x3cd0	72 00 6f 00 6d 00 20 00 4f 00 6c 00 65 00 49 00 	r0o0m0 0O0l0e0I0
+  0x3ce0	6e 00 69 00 74 00 69 00 61 00 6c 00 69 00 7a 00 	n0i0t0i0a0l0i0z0
+  0x3cf0	65 00 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 	e000000000000000
+  0x3d00	57 00 4f 00 57 00 52 00 45 00 47 00 33 00 32 00 	W0O0W0R0E0G03020
+  0x3d10	3a 00 20 00 62 00 61 00 63 00 6b 00 20 00 66 00 	:0 0b0a0c0k0 0f0
+  0x3d20	72 00 6f 00 6d 00 20 00 4f 00 6c 00 65 00 55 00 	r0o0m0 0O0l0e0U0
+  0x3d30	6e 00 69 00 6e 00 69 00 74 00 69 00 61 00 6c 00 	n0i0n0i0t0i0a0l0
+  0x3d40	69 00 7a 00 65 00 2c 00 20 00 65 00 78 00 69 00 	i0z0e0,0 0e0x0i0
+  0x3d50	74 00 20 00 52 00 65 00 67 00 69 00 73 00 74 00 	t0 0R0e0g0i0s0t0
+  0x3d60	65 00 72 00 55 00 6e 00 72 00 65 00 67 00 69 00 	e0r0U0n0r0e0g0i0
+  0x3d70	73 00 74 00 65 00 72 00 44 00 6c 00 6c 00 0a 00 	s0t0e0r0D0l0l000
+  0x3d80	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x3d90	00 00 00 00 0e 17 15 44 00 00 00 00 02 00 00 00 	0000000D00000000
+  0x3da0	25 00 00 00 e4 3d 00 00 e4 2b 00 00 00 00 00 00 	%0000=000+000000
+  0x3db0	0e 17 15 44 00 00 00 00 0d 00 00 00 04 02 00 00 	000D000000000000
+  0x3dc0	0c 3e 00 00 0c 2c 00 00 00 00 00 00 0e 17 15 44 	0>000,000000000D
+  0x3dd0	00 00 00 00 10 00 00 00 24 00 00 00 10 40 00 00 	00000000$0000@00
+  0x3de0	10 2e 00 00 52 53 44 53 bb 2d 81 10 67 df 79 13 	0.00RSDS0-00g0y0
+  0x3df0	6e 89 96 ac 00 52 5d 13 01 00 00 00 77 6f 77 72 	n0000R]00000wowr
+  0x3e00	65 67 33 32 2e 70 64 62 00 00 00 00 47 43 54 4c 	eg32.pdb0000GCTL
+  0x3e10	00 10 00 00 b0 17 00 00 2e 74 65 78 74 24 6d 6e 	00000000.text$mn
+  0x3e20	00 00 00 00 b0 27 00 00 80 00 00 00 2e 74 65 78 	00000'000000.tex
+  0x3e30	74 24 6d 6e 24 30 30 00 30 28 00 00 b0 00 00 00 	t$mn$0000(000000
+  0x3e40	2e 74 65 78 74 24 78 00 00 30 00 00 28 01 00 00 	.text$x00000(000
+  0x3e50	2e 72 64 61 74 61 24 62 72 63 00 00 28 31 00 00 	.rdata$brc00(100
+  0x3e60	00 02 00 00 2e 69 64 61 74 61 24 35 00 00 00 00 	0000.idata$50000
+  0x3e70	28 33 00 00 10 00 00 00 2e 30 30 63 66 67 00 00 	(3000000.00cfg00
+  0x3e80	38 33 00 00 08 00 00 00 2e 43 52 54 24 58 43 41 	83000000.CRT$XCA
+  0x3e90	00 00 00 00 40 33 00 00 08 00 00 00 2e 43 52 54 	0000@3000000.CRT
+  0x3ea0	24 58 43 41 41 00 00 00 48 33 00 00 08 00 00 00 	$XCAA000H3000000
+  0x3eb0	2e 43 52 54 24 58 43 5a 00 00 00 00 50 33 00 00 	.CRT$XCZ0000P300
+  0x3ec0	08 00 00 00 2e 43 52 54 24 58 49 41 00 00 00 00 	0000.CRT$XIA0000
+  0x3ed0	58 33 00 00 08 00 00 00 2e 43 52 54 24 58 49 41 	X3000000.CRT$XIA
+  0x3ee0	41 00 00 00 60 33 00 00 08 00 00 00 2e 43 52 54 	A000`3000000.CRT
+  0x3ef0	24 58 49 59 00 00 00 00 68 33 00 00 08 00 00 00 	$XIY0000h3000000
+  0x3f00	2e 43 52 54 24 58 49 5a 00 00 00 00 70 33 00 00 	.CRT$XIZ0000p300
+  0x3f10	24 00 00 00 2e 67 65 68 63 6f 6e 74 00 00 00 00 	$000.gehcont0000
+  0x3f20	94 33 00 00 2c 00 00 00 2e 67 66 69 64 73 00 00 	0300,000.gfids00
+  0x3f30	c0 33 00 00 24 0a 00 00 2e 72 64 61 74 61 00 00 	0300$000.rdata00
+  0x3f40	e4 3d 00 00 54 02 00 00 2e 72 64 61 74 61 24 7a 	0=00T000.rdata$z
+  0x3f50	7a 7a 64 62 67 00 00 00 38 40 00 00 14 02 00 00 	zzdbg0008@000000
+  0x3f60	2e 78 64 61 74 61 00 00 4c 42 00 00 8c 00 00 00 	.xdata00LB000000
+  0x3f70	2e 69 64 61 74 61 24 32 00 00 00 00 d8 42 00 00 	.idata$200000B00
+  0x3f80	18 00 00 00 2e 69 64 61 74 61 24 33 00 00 00 00 	0000.idata$30000
+  0x3f90	f0 42 00 00 00 02 00 00 2e 69 64 61 74 61 24 34 	0B000000.idata$4
+  0x3fa0	00 00 00 00 f0 44 00 00 2a 04 00 00 2e 69 64 61 	00000D00*000.ida
+  0x3fb0	74 61 24 36 00 00 00 00 00 50 00 00 20 00 00 00 	ta$600000P00 000
+  0x3fc0	2e 64 61 74 61 00 00 00 20 50 00 00 78 06 00 00 	.data000 P00x000
+  0x3fd0	2e 62 73 73 00 00 00 00 00 60 00 00 74 01 00 00 	.bss00000`00t000
+  0x3fe0	2e 70 64 61 74 61 00 00 00 70 00 00 f0 00 00 00 	.pdata000p000000
+  0x3ff0	2e 72 73 72 63 24 30 31 00 00 00 00 f0 70 00 00 	.rsrc$0100000p00
+  0x4000	f0 06 00 00 2e 72 73 72 63 24 30 32 00 00 00 00 	0000.rsrc$020000
+  0x4010	20 00 00 00 bb 2d 81 10 67 df 79 13 6e 89 96 ac 	 0000-00g0y0n000
+  0x4020	00 52 5d 13 f1 f7 7c a5 25 91 f6 15 7f 88 a3 4d 	0R]000|0%000000M
+  0x4030	0e 17 15 44 00 00 00 00 19 29 03 00 17 01 08 01 	000D00000)000000
+  0x4040	10 30 00 00 98 26 00 00 30 08 00 00 01 18 0a 00 	00000&0000000000
+  0x4050	18 64 0a 00 18 54 09 00 18 34 08 00 18 32 14 e0 	0d000T0004000200
+  0x4060	12 c0 10 70 19 39 0b 00 28 74 1a 02 28 64 19 02 	000p0900(t00(d00
+  0x4070	28 01 12 02 13 f0 11 e0 0f d0 0d c0 0b 50 00 00 	(000000000000P00
+  0x4080	98 26 00 00 80 10 00 00 09 17 07 00 17 e2 13 f0 	0&00000000000000
+  0x4090	11 e0 0f c0 0d 70 0c 60 0b 30 00 00 48 21 00 00 	00000p0`0000H!00
+  0x40a0	02 00 00 00 fb 15 00 00 1b 16 00 00 33 28 00 00 	0000000000003(00
+  0x40b0	1b 16 00 00 b3 16 00 00 47 17 00 00 50 28 00 00 	00000000G000P(00
+  0x40c0	47 17 00 00 01 06 02 00 06 72 02 50 09 17 07 00 	G00000000r0P0000
+  0x40d0	17 e2 13 f0 11 e0 0f c0 0d 70 0c 60 0b 30 00 00 	000000000p0`0000
+  0x40e0	48 21 00 00 02 00 00 00 0f 18 00 00 3e 18 00 00 	H!0000000000>000
+  0x40f0	33 28 00 00 3e 18 00 00 cd 18 00 00 7f 19 00 00 	3(00>00000000000
+  0x4100	50 28 00 00 7f 19 00 00 09 16 06 00 16 72 12 f0 	P(00000000000r00
+  0x4110	10 e0 0e c0 0c 60 0b 30 48 21 00 00 01 00 00 00 	00000`00H!000000
+  0x4120	bd 1a 00 00 d1 1a 00 00 73 28 00 00 d1 1a 00 00 	00000000s(000000
+  0x4130	01 06 02 00 06 52 02 50 19 28 09 00 16 64 57 00 	00000R0P0(000dW0
+  0x4140	16 34 56 00 16 01 50 00 0f f0 0d e0 0b 70 00 00 	04V000P000000p00
+  0x4150	20 27 00 00 01 00 00 00 e6 1c 00 00 93 1d 00 00 	 '00000000000000
+  0x4160	01 00 00 00 93 1d 00 00 71 02 00 00 01 04 01 00 	00000000q0000000
+  0x4170	04 42 00 00 01 04 01 00 04 62 00 00 09 15 08 00 	0B0000000b000000
+  0x4180	15 74 0a 00 15 64 09 00 15 34 08 00 15 52 11 f0 	0t000d0004000R00
+  0x4190	48 21 00 00 01 00 00 00 75 1f 00 00 db 20 00 00 	H!000000u0000 00
+  0x41a0	96 28 00 00 db 20 00 00 01 06 02 00 06 32 02 50 	0(000 000000020P
+  0x41b0	01 00 00 00 09 04 01 00 04 22 00 00 48 21 00 00 	000000000"00H!00
+  0x41c0	01 00 00 00 0c 22 00 00 42 22 00 00 01 00 00 00 	00000"00B"000000
+  0x41d0	42 22 00 00 01 06 02 00 06 32 02 30 09 0a 04 00 	B"00000002000000
+  0x41e0	0a 34 06 00 0a 32 06 70 48 21 00 00 01 00 00 00 	0400020pH!000000
+  0x41f0	1d 23 00 00 50 23 00 00 c0 28 00 00 50 23 00 00 	0#00P#000(00P#00
+  0x4200	01 0d 04 00 0d 34 09 00 0d 32 06 50 01 0c 02 00 	00000400020P0000
+  0x4210	0c 01 11 00 00 00 00 00 01 00 00 00 01 02 01 00 	0000000000000000
+  0x4220	02 30 00 00 01 19 0a 00 19 74 09 00 19 64 08 00 	000000000t000d00
+  0x4230	19 54 07 00 19 34 06 00 19 32 15 e0 00 00 00 00 	0T00040002000000
+  0x4240	02 04 03 00 01 16 00 06 04 12 00 00 f0 42 00 00 	0000000000000B00
+  0x4250	00 00 00 00 00 00 00 00 ea 45 00 00 28 31 00 00 	000000000E00(100
+  0x4260	10 44 00 00 00 00 00 00 00 00 00 00 d8 46 00 00 	0D00000000000F00
+  0x4270	48 32 00 00 b0 44 00 00 00 00 00 00 00 00 00 00 	H2000D0000000000
+  0x4280	48 47 00 00 e8 32 00 00 d8 44 00 00 00 00 00 00 	HG0002000D000000
+  0x4290	00 00 00 00 74 47 00 00 10 33 00 00 c0 43 00 00 	0000tG0003000C00
+  0x42a0	00 00 00 00 00 00 00 00 92 47 00 00 f8 31 00 00 	000000000G000100
+  0x42b0	d0 43 00 00 00 00 00 00 00 00 00 00 b6 47 00 00 	0C00000000000G00
+  0x42c0	08 32 00 00 e0 43 00 00 00 00 00 00 00 00 00 00 	02000C0000000000
+  0x42d0	26 48 00 00 18 32 00 00 00 00 00 00 00 00 00 00 	&H00020000000000
+  0x42e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x42f0	f0 44 00 00 00 00 00 00 00 45 00 00 00 00 00 00 	0D0000000E000000
+  0x4300	12 45 00 00 00 00 00 00 20 45 00 00 00 00 00 00 	0E000000 E000000
+  0x4310	34 45 00 00 00 00 00 00 46 45 00 00 00 00 00 00 	4E000000FE000000
+  0x4320	56 45 00 00 00 00 00 00 62 45 00 00 00 00 00 00 	VE000000bE000000
+  0x4330	70 45 00 00 00 00 00 00 80 45 00 00 00 00 00 00 	pE0000000E000000
+  0x4340	8e 45 00 00 00 00 00 00 a6 45 00 00 00 00 00 00 	0E0000000E000000
+  0x4350	b8 45 00 00 00 00 00 00 cc 45 00 00 00 00 00 00 	0E0000000E000000
+  0x4360	da 45 00 00 00 00 00 00 3a 48 00 00 00 00 00 00 	0E000000:H000000
+  0x4370	58 48 00 00 00 00 00 00 72 48 00 00 00 00 00 00 	XH000000rH000000
+  0x4380	88 48 00 00 00 00 00 00 9e 48 00 00 00 00 00 00 	0H0000000H000000
+  0x4390	b8 48 00 00 00 00 00 00 c8 48 00 00 00 00 00 00 	0H0000000H000000
+  0x43a0	e4 48 00 00 00 00 00 00 f8 48 00 00 00 00 00 00 	0H0000000H000000
+  0x43b0	32 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	2H00000000000000
+  0x43c0	7e 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	~G00000000000000
+  0x43d0	a0 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0G00000000000000
+  0x43e0	d6 47 00 00 00 00 00 00 f4 47 00 00 00 00 00 00 	0G0000000G000000
+  0x43f0	04 48 00 00 00 00 00 00 18 48 00 00 00 00 00 00 	0H0000000H000000
+  0x4400	c2 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0G00000000000000
+  0x4410	58 46 00 00 00 00 00 00 4a 46 00 00 00 00 00 00 	XF000000JF000000
+  0x4420	34 46 00 00 00 00 00 00 2a 46 00 00 00 00 00 00 	4F000000*F000000
+  0x4430	1e 46 00 00 00 00 00 00 10 46 00 00 00 00 00 00 	0F0000000F000000
+  0x4440	f8 45 00 00 00 00 00 00 e4 46 00 00 00 00 00 00 	0E0000000F000000
+  0x4450	cc 46 00 00 00 00 00 00 c2 46 00 00 00 00 00 00 	0F0000000F000000
+  0x4460	b6 46 00 00 00 00 00 00 66 46 00 00 00 00 00 00 	0F000000fF000000
+  0x4470	98 46 00 00 00 00 00 00 90 46 00 00 00 00 00 00 	0F0000000F000000
+  0x4480	88 46 00 00 00 00 00 00 3e 46 00 00 00 00 00 00 	0F000000>F000000
+  0x4490	76 46 00 00 00 00 00 00 a2 46 00 00 00 00 00 00 	vF0000000F000000
+  0x44a0	0c 49 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0I00000000000000
+  0x44b0	f8 46 00 00 00 00 00 00 06 47 00 00 00 00 00 00 	0F0000000G000000
+  0x44c0	34 47 00 00 00 00 00 00 1a 47 00 00 00 00 00 00 	4G0000000G000000
+  0x44d0	00 00 00 00 00 00 00 00 64 47 00 00 00 00 00 00 	00000000dG000000
+  0x44e0	52 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	RG00000000000000
+  0x44f0	41 05 53 65 74 4c 61 73 74 45 72 72 6f 72 00 00 	A0SetLastError00
+  0x4500	e0 01 47 65 74 43 6f 6d 6d 61 6e 64 4c 69 6e 65 	00GetCommandLine
+  0x4510	57 00 06 04 4f 70 65 6e 45 76 65 6e 74 57 00 00 	W000OpenEventW00
+  0x4520	0a 04 4f 70 65 6e 46 69 6c 65 4d 61 70 70 69 6e 	00OpenFileMappin
+  0x4530	67 57 00 00 c3 05 55 6e 6d 61 70 56 69 65 77 4f 	gW0000UnmapViewO
+  0x4540	66 46 69 6c 65 00 6a 02 47 65 74 4c 61 73 74 45 	fFile0j0GetLastE
+  0x4550	72 72 6f 72 00 00 26 05 53 65 74 45 76 65 6e 74 	rror00&0SetEvent
+  0x4560	00 00 89 00 43 6c 6f 73 65 48 61 6e 64 6c 65 00 	0000CloseHandle0
+  0x4570	cb 03 4c 6f 61 64 4c 69 62 72 61 72 79 57 00 00 	00LoadLibraryW00
+  0x4580	cc 04 52 65 73 65 74 45 76 65 6e 74 00 00 19 05 	00ResetEvent0000
+  0x4590	53 65 74 43 75 72 72 65 6e 74 44 69 72 65 63 74 	SetCurrentDirect
+  0x45a0	6f 72 79 57 00 00 b8 02 47 65 74 50 72 6f 63 41 	oryW0000GetProcA
+  0x45b0	64 64 72 65 73 73 00 00 81 02 47 65 74 4d 6f 64 	ddress0000GetMod
+  0x45c0	75 6c 65 48 61 6e 64 6c 65 57 00 00 b4 01 46 72 	uleHandleW0000Fr
+  0x45d0	65 65 4c 69 62 72 61 72 79 00 e5 03 4d 61 70 56 	eeLibrary000MapV
+  0x45e0	69 65 77 4f 66 46 69 6c 65 00 4b 45 52 4e 45 4c 	iewOfFile0KERNEL
+  0x45f0	33 32 2e 64 6c 6c 00 00 57 00 5f 5f 43 5f 73 70 	32.dll00W0__C_sp
+  0x4600	65 63 69 66 69 63 5f 68 61 6e 64 6c 65 72 00 00 	ecific_handler00
+  0x4610	69 03 5f 76 73 6e 77 70 72 69 6e 74 66 00 8a 03 	i0_vsnwprintf000
+  0x4620	5f 77 63 73 69 63 6d 70 00 00 45 04 66 70 72 69 	_wcsicmp00E0fpri
+  0x4630	6e 74 66 00 10 05 77 63 73 72 63 68 72 00 55 04 	ntf000wcsrchr0U0
+  0x4640	66 77 70 72 69 6e 74 66 00 00 55 00 5f 58 63 70 	fwprintf00U0_Xcp
+  0x4650	74 46 69 6c 74 65 72 00 ae 00 5f 61 6d 73 67 5f 	tFilter000_amsg_
+  0x4660	65 78 69 74 00 00 7f 00 5f 5f 67 65 74 6d 61 69 	exit0000__getmai
+  0x4670	6e 61 72 67 73 00 8e 00 5f 5f 73 65 74 5f 61 70 	nargs000__set_ap
+  0x4680	70 5f 74 79 70 65 00 00 32 04 65 78 69 74 00 00 	p_type0020exit00
+  0x4690	0e 01 5f 65 78 69 74 00 c1 00 5f 63 65 78 69 74 	00_exit000_cexit
+  0x46a0	00 00 90 00 5f 5f 73 65 74 75 73 65 72 6d 61 74 	0000__setusermat
+  0x46b0	68 65 72 72 00 00 7d 01 5f 69 6e 69 74 74 65 72 	herr00}0_initter
+  0x46c0	6d 00 27 01 5f 66 6d 6f 64 65 00 00 d2 00 5f 63 	m0'0_fmode0000_c
+  0x46d0	6f 6d 6d 6f 64 65 00 00 6d 73 76 63 72 74 2e 64 	ommode00msvcrt.d
+  0x46e0	6c 6c 00 00 2f 00 3f 74 65 72 6d 69 6e 61 74 65 	ll00/0?terminate
+  0x46f0	40 40 59 41 58 58 5a 00 23 00 44 62 67 50 72 69 	@@YAXXZ0#0DbgPri
+  0x4700	6e 74 45 78 00 00 f3 02 52 74 6c 43 61 70 74 75 	ntEx0000RtlCaptu
+  0x4710	72 65 43 6f 6e 74 65 78 74 00 ea 04 52 74 6c 4c 	reContext000RtlL
+  0x4720	6f 6f 6b 75 70 46 75 6e 63 74 69 6f 6e 45 6e 74 	ookupFunctionEnt
+  0x4730	72 79 00 00 29 06 52 74 6c 56 69 72 74 75 61 6c 	ry00)0RtlVirtual
+  0x4740	55 6e 77 69 6e 64 00 00 6e 74 64 6c 6c 2e 64 6c 	Unwind00ntdll.dl
+  0x4750	6c 00 c8 01 4f 6c 65 55 6e 69 6e 69 74 69 61 6c 	l000OleUninitial
+  0x4760	69 7a 65 00 ab 01 4f 6c 65 49 6e 69 74 69 61 6c 	ize000OleInitial
+  0x4770	69 7a 65 00 6f 6c 65 33 32 2e 64 6c 6c 00 52 02 	ize0ole32.dll0R0
+  0x4780	53 65 74 75 70 57 72 69 74 65 54 65 78 74 4c 6f 	SetupWriteTextLo
+  0x4790	67 00 53 45 54 55 50 41 50 49 2e 64 6c 6c 00 00 	g0SETUPAPI.dll00
+  0x47a0	09 00 43 6f 6d 6d 61 6e 64 4c 69 6e 65 54 6f 41 	00CommandLineToA
+  0x47b0	72 67 76 57 00 00 53 48 45 4c 4c 33 32 2e 64 6c 	rgvW00SHELL32.dl
+  0x47c0	6c 00 ad 03 54 72 61 6e 73 6c 61 74 65 4d 65 73 	l000TranslateMes
+  0x47d0	73 61 67 65 00 00 94 02 4d 73 67 57 61 69 74 46 	sage0000MsgWaitF
+  0x47e0	6f 72 4d 75 6c 74 69 70 6c 65 4f 62 6a 65 63 74 	orMultipleObject
+  0x47f0	73 45 78 00 ab 02 50 65 65 6b 4d 65 73 73 61 67 	sEx000PeekMessag
+  0x4800	65 57 00 00 bd 00 44 69 73 70 61 74 63 68 4d 65 	eW0000DispatchMe
+  0x4810	73 73 61 67 65 57 00 00 67 02 4c 6f 61 64 53 74 	ssageW00g0LoadSt
+  0x4820	72 69 6e 67 57 00 55 53 45 52 33 32 2e 64 6c 6c 	ringW0USER32.dll
+  0x4830	00 00 8f 05 53 6c 65 65 70 00 7f 05 53 65 74 55 	0000Sleep000SetU
+  0x4840	6e 68 61 6e 64 6c 65 64 45 78 63 65 70 74 69 6f 	nhandledExceptio
+  0x4850	6e 46 69 6c 74 65 72 00 52 04 51 75 65 72 79 50 	nFilter0R0QueryP
+  0x4860	65 72 66 6f 72 6d 61 6e 63 65 43 6f 75 6e 74 65 	erformanceCounte
+  0x4870	72 00 21 02 47 65 74 43 75 72 72 65 6e 74 50 72 	r0!0GetCurrentPr
+  0x4880	6f 63 65 73 73 49 64 00 25 02 47 65 74 43 75 72 	ocessId0%0GetCur
+  0x4890	72 65 6e 74 54 68 72 65 61 64 49 64 00 00 f3 02 	rentThreadId0000
+  0x48a0	47 65 74 53 79 73 74 65 6d 54 69 6d 65 41 73 46 	GetSystemTimeAsF
+  0x48b0	69 6c 65 54 69 6d 65 00 11 03 47 65 74 54 69 63 	ileTime000GetTic
+  0x48c0	6b 43 6f 75 6e 74 00 00 c0 05 55 6e 68 61 6e 64 	kCount0000Unhand
+  0x48d0	6c 65 64 45 78 63 65 70 74 69 6f 6e 46 69 6c 74 	ledExceptionFilt
+  0x48e0	65 72 00 00 20 02 47 65 74 43 75 72 72 65 6e 74 	er00 0GetCurrent
+  0x48f0	50 72 6f 63 65 73 73 00 9e 05 54 65 72 6d 69 6e 	Process000Termin
+  0x4900	61 74 65 50 72 6f 63 65 73 73 00 00 81 00 5f 5f 	ateProcess0000__
+  0x4910	69 6f 62 5f 66 75 6e 63 00 00 00 00 00 00 00 00 	iob_func00000000
+  0x4920	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4930	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4940	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4950	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4960	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4970	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4980	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x4990	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49a0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49b0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49c0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49d0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x49f0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+=== DATA BLOCK END ===
+
+=== DATA BLOCK ADDRESS 0x5000 ===
+  0x5000	01 00 00 00 00 00 00 00 32 a2 df 2d 99 2b 00 00 	00000000200-0+00
+  0x5010	cd 5d 20 d2 66 d4 ff ff 00 00 00 00 00 00 00 00 	0] 0f00000000000
+  0x5020	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5030	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5040	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5050	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5060	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5070	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5080	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5090	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50a0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50b0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50c0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50d0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x50f0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5100	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5110	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5120	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5130	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5140	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5150	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5160	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5170	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5180	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x5190	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51a0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51b0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51c0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51d0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x51f0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+=== DATA BLOCK END ===
+
+=== DATA BLOCK ADDRESS 0x6000 ===
+  0x6000	08 10 00 00 a1 10 00 00 38 40 00 00 a8 10 00 00 	000000008@000000
+  0x6010	b6 11 00 00 4c 40 00 00 bc 11 00 00 a6 15 00 00 	0000L@0000000000
+  0x6020	64 40 00 00 ac 15 00 00 bd 17 00 00 88 40 00 00 	d@00000000000@00
+  0x6030	c4 17 00 00 6b 1a 00 00 cc 40 00 00 74 1a 00 00 	0000k0000@00t000
+  0x6040	b5 1b 00 00 08 41 00 00 bc 1b 00 00 1f 1e 00 00 	00000A0000000000
+  0x6050	38 41 00 00 30 1e 00 00 03 1f 00 00 6c 41 00 00 	8A0000000000lA00
+  0x6060	10 1f 00 00 59 1f 00 00 74 41 00 00 60 1f 00 00 	0000Y000tA00`000
+  0x6070	1e 21 00 00 7c 41 00 00 30 21 00 00 42 21 00 00 	0!00|A000!00B!00
+  0x6080	6c 41 00 00 60 21 00 00 7e 21 00 00 b0 41 00 00 	lA00`!00~!000A00
+  0x6090	90 21 00 00 c9 21 00 00 6c 41 00 00 d0 21 00 00 	0!000!00lA000!00
+  0x60a0	e8 21 00 00 6c 41 00 00 fc 21 00 00 50 22 00 00 	0!00lA000!00P"00
+  0x60b0	b4 41 00 00 58 22 00 00 9d 22 00 00 d4 41 00 00 	0A00X"000"000A00
+  0x60c0	10 23 00 00 5d 23 00 00 dc 41 00 00 a4 23 00 00 	0#00]#000A000#00
+  0x60d0	78 24 00 00 00 42 00 00 9c 24 00 00 d0 24 00 00 	x$000B000$000$00
+  0x60e0	d4 41 00 00 e0 24 00 00 51 26 00 00 0c 42 00 00 	0A000$00Q&000B00
+  0x60f0	68 26 00 00 86 26 00 00 d4 41 00 00 98 26 00 00 	h&000&000A000&00
+  0x6100	b5 26 00 00 6c 41 00 00 bc 26 00 00 17 27 00 00 	0&00lA000&000'00
+  0x6110	1c 42 00 00 20 27 00 00 a6 27 00 00 24 42 00 00 	0B00 '000'00$B00
+  0x6120	c0 27 00 00 c2 27 00 00 18 42 00 00 e0 27 00 00 	0'000'000B000'00
+  0x6130	2d 28 00 00 40 42 00 00 33 28 00 00 50 28 00 00 	-(00@B003(00P(00
+  0x6140	c4 40 00 00 50 28 00 00 6d 28 00 00 c4 40 00 00 	0@00P(00m(000@00
+  0x6150	73 28 00 00 90 28 00 00 30 41 00 00 96 28 00 00 	s(000(000A000(00
+  0x6160	b4 28 00 00 a8 41 00 00 c0 28 00 00 e0 28 00 00 	0(000A000(000(00
+  0x6170	a8 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0A00000000000000
+  0x6180	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x6190	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61a0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61b0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61c0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61d0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61e0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+  0x61f0	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 	0000000000000000
+=== DATA BLOCK END ===

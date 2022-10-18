@@ -196,8 +196,12 @@
 
 === CODE BLOCK ADDRESS 0x20f3 ===
   0x20f3	lea    	edx, [edx]
+  0x20f5	add    	byte ptr [eax], al
+  0x20f7	add    	dword ptr [0x4b7216], esp
+  0x20fd	add    	byte ptr [eax + 2], dh
+  0x2100	sub    	byte ptr [ebx], dl
   === BLOCK LINK ===
-    0x20f4
+    0x2102
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2102 ===
@@ -214,7 +218,6 @@
   0x2114	jb     	0x20f4
   === BLOCK LINK ===
     0x2116
-    0x20f4
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2116 ===
@@ -222,13 +225,16 @@
   0x2118	jo     	0x2189
   === BLOCK LINK ===
     0x211a
-    0x2189
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x211a ===
   0x211a	sbb    	dword ptr [eax], eax
+  0x211c	add    	byte ptr [edx], cl
+  0x211e	cmp    	dword ptr [esi + 1], edx
+  0x2121	add    	byte ptr [eax], al
+  0x2123	sub    	byte ptr [edi], ch
   === BLOCK LINK ===
-    0x211c
+    0x2125
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2125 ===
@@ -256,7 +262,6 @@
   0x213c	jb     	0x211c
   === BLOCK LINK ===
     0x213e
-    0x211c
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x213e ===
@@ -264,7 +269,6 @@
   0x2140	jo     	0x21b1
   === BLOCK LINK ===
     0x2142
-    0x21b1
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2142 ===
@@ -315,7 +319,6 @@
   0x217f	jb     	0x21ff
   === BLOCK LINK ===
     0x2181
-    0x21ff
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2181 ===
@@ -323,22 +326,26 @@
   0x2183	jo     	0x219c
   === BLOCK LINK ===
     0x2185
-    0x219c
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2185 ===
   0x2185	lea    	edx, [edx]
   0x2187	add    	byte ptr [eax], al
+  0x2189	add    	dword ptr [0xa2051116], esp
+  0x218f	sub    	byte ptr [ebp], al
+  0x2192	add    	byte ptr [esi], al
   === BLOCK LINK ===
-    0x2189
+    0x2194
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2194 ===
   0x2194	sub    	dl, byte ptr [ecx]
   0x2196	add    	al, 0x28
   0x2198	sbb    	eax, 0x130a0000
+  0x219d	add    	al, 0x11
+  0x219f	add    	al, 0x28
   === BLOCK LINK ===
-    0x219c
+    0x21a1
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21a1 ===
@@ -357,14 +364,15 @@
   0x21ae	jo     	0x21c3
   === BLOCK LINK ===
     0x21b0
-    0x21c3
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21b0 ===
   0x21b0	push   	es
+  0x21b1	or     	byte ptr [edx + 0x55], dh
+  0x21b4	add    	eax, dword ptr [eax]
+  0x21b6	jo     	0x2227
   === BLOCK LINK ===
-    0x21b1
-    0x2227
+    0x21b8
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21b8 ===
@@ -381,7 +389,6 @@
   0x21c3	jo     	0x2234
   === BLOCK LINK ===
     0x21c5
-    0x2234
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21c5 ===
@@ -409,7 +416,6 @@
   0x21d8	jb     	0x223b
   === BLOCK LINK ===
     0x21da
-    0x223b
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21da ===
@@ -417,7 +423,6 @@
   0x21dc	jo     	0x2251
   === BLOCK LINK ===
     0x21de
-    0x2251
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21de ===
@@ -437,7 +442,6 @@
   0x21ee	jb     	0x21a7
   === BLOCK LINK ===
     0x21f0
-    0x21a7
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x21f0 ===
@@ -452,8 +456,9 @@
   0x21f6	add    	byte ptr [eax], al
   0x21f8	add    	dword ptr [0x8c071116], esp
   0x21fe	xor    	eax, 0xa2010000
+  0x2203	sub    	byte ptr [ebp], al
   === BLOCK LINK ===
-    0x21ff
+    0x2206
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2206 ===
@@ -488,8 +493,12 @@
 
 === CODE BLOCK ADDRESS 0x2226 ===
   0x2226	adc    	eax, dword ptr [edi]
+  0x2228	adc    	dword ptr [edi], eax
+  0x222a	sbb    	dword ptr [edx], esi
+  0x222c	shr    	dword ptr [eax], 3
+  0x222f	add    	byte ptr [eax], al
   === BLOCK LINK ===
-    0x2227
+    0x2231
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2231 ===
@@ -509,8 +518,11 @@
 === CODE BLOCK ADDRESS 0x2238 ===
   0x2238	lea    	edx, [edx]
   0x223a	add    	byte ptr [eax], al
+  0x223c	add    	dword ptr [eax], ebp
+  0x223e	inc    	ebp
+  0x223f	add    	byte ptr [eax], al
   === BLOCK LINK ===
-    0x223b
+    0x2241
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2241 ===
@@ -533,8 +545,10 @@
 === CODE BLOCK ADDRESS 0x224e ===
   0x224e	sub    	al, 0
   0x2250	add    	byte ptr [esi], al
+  0x2252	ficom  	word ptr [edx]
+  0x2254	jb     	0x22d1
   === BLOCK LINK ===
-    0x2251
+    0x2256
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2256 ===
@@ -10102,14 +10116,6 @@
     0x4af2
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x210a ===
-  0x210a	push   	es
-  0x210b	sub    	al, byte ptr [edi]
-  0x210d	sub    	byte ptr [ebx], ch
-  === BLOCK LINK ===
-    0x210f
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x4af2 ===
   0x4af2	or     	ch, byte ptr [edx + eax]
   0x4af5	push   	ss
@@ -11289,15 +11295,6 @@
     0x5066
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x20f4 ===
-  0x20f5	add    	byte ptr [eax], al
-  0x20f7	add    	dword ptr [0x4b7216], esp
-  0x20fd	add    	byte ptr [eax + 2], dh
-  0x2100	sub    	byte ptr [ebx], dl
-  === BLOCK LINK ===
-    0x2102
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x5066 ===
   0x5066	wait   	
   0x5067	add    	dword ptr [edx + 0x18805608], ebx
@@ -11336,23 +11333,6 @@
     0x50ae
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x2189 ===
-  0x2189	add    	dword ptr [0xa2051116], esp
-  0x218f	sub    	byte ptr [ebp], al
-  0x2192	add    	byte ptr [esi], al
-  === BLOCK LINK ===
-    0x2194
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x211c ===
-  0x211c	add    	byte ptr [edx], cl
-  0x211e	cmp    	dword ptr [esi + 1], edx
-  0x2121	add    	byte ptr [eax], al
-  0x2123	sub    	byte ptr [edi], ch
-  === BLOCK LINK ===
-    0x2125
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x50ae ===
   0x50ae	cmc    	
   0x50af	adc    	al, 0xcc
@@ -11373,14 +11353,6 @@
     0x50cc
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x21b1 ===
-  0x21b1	or     	byte ptr [edx + 0x55], dh
-  0x21b4	add    	eax, dword ptr [eax]
-  0x21b6	jo     	0x2227
-  === BLOCK LINK ===
-    0x21b8
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x50cc ===
   0x50cc	daa    	
   0x50cd	adc    	ah, cl
@@ -11389,12 +11361,6 @@
   0x50d4	int3   	
   === BLOCK LINK ===
     0x50d5
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x21ff ===
-  0x2203	sub    	byte ptr [ebp], al
-  === BLOCK LINK ===
-    0x2206
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x50d5 ===
@@ -11415,13 +11381,6 @@
   0x50ed	add    	dword ptr [ecx], esp
   === BLOCK LINK ===
     0x50ef
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x219c ===
-  0x219d	add    	al, 0x11
-  0x219f	add    	al, 0x28
-  === BLOCK LINK ===
-    0x21a1
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x50ef ===
@@ -12217,15 +12176,6 @@
     0x5546
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x2227 ===
-  0x2228	adc    	dword ptr [edi], eax
-  0x222a	sbb    	dword ptr [edx], esi
-  0x222c	shr    	dword ptr [eax], 3
-  0x222f	add    	byte ptr [eax], al
-  === BLOCK LINK ===
-    0x2231
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x5546 ===
   0x5546	add    	byte ptr [eax], al
   0x5548	add    	dword ptr [eax], 0x100ba9
@@ -12715,6 +12665,14 @@
   0x57ac	adc    	al, byte ptr ds:[eax]
   === BLOCK LINK ===
     0x57af
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x210a ===
+  0x210a	push   	es
+  0x210b	sub    	al, byte ptr [edi]
+  0x210d	sub    	byte ptr [ebx], ch
+  === BLOCK LINK ===
+    0x210f
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x57af ===
@@ -13545,14 +13503,6 @@
     0x5bb7
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x223b ===
-  0x223c	add    	dword ptr [eax], ebp
-  0x223e	inc    	ebp
-  0x223f	add    	byte ptr [eax], al
-  === BLOCK LINK ===
-    0x2241
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x5bb7 ===
   0x5bb7	add    	dword ptr [ebp - 0x7efe1aef], ecx
   0x5bbd	add    	dword ptr [edi - 0x3efe10ea], eax
@@ -13579,13 +13529,6 @@
   0x5bdc	ficom  	word ptr [ebx + esi]
   === BLOCK LINK ===
     0x5bdf
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x2251 ===
-  0x2252	ficom  	word ptr [edx]
-  0x2254	jb     	0x22d1
-  === BLOCK LINK ===
-    0x2256
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x5bdf ===
@@ -13774,9 +13717,6 @@
   0x5cc9	add    	dh, byte ptr [ecx + 1]
   === BLOCK LINK ===
     0x5ccc
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x21a7 ===
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x5ccc ===

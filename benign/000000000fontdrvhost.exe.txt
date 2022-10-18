@@ -23,12 +23,104 @@
 === CODE BLOCK ADDRESS 0x1019 ===
   0x1019	int3   	
   0x101a	int3   	
+  0x101b	int3   	
+  0x101c	int3   	
+  0x101d	int3   	
+  === BLOCK LINK ===
+    0x101e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x101e ===
+  0x101e	int3   	
+  0x101f	int3   	
+  0x1020	dec    	eax
+  0x1021	lea    	eax, [0x93519]
+  0x1027	dec    	eax
+  === BLOCK LINK ===
+    0x1028
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1028 ===
+  0x1028	mov    	dword ptr [0xbf40a], eax
+  0x102e	dec    	eax
+  0x102f	lea    	eax, [0x9411b]
+  0x1035	dec    	eax
+  0x1036	mov    	dword ptr [0xbf404], eax
+  === BLOCK LINK ===
+    0x103c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x103c ===
+  0x103c	ret    	
+  0x103d	int3   	
+  0x103e	int3   	
+  0x103f	int3   	
+  0x1040	dec    	eax
+  === BLOCK LINK ===
+    0x1041
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x31080 ===
 === CODE BLOCK END ===
 
+=== CODE BLOCK ADDRESS 0x1041 ===
+  0x1041	lea    	eax, [0x916b9]
+  0x1047	dec    	eax
+  0x1048	mov    	dword ptr [0xbf3e2], eax
+  0x104e	dec    	eax
+  0x104f	lea    	eax, [0xb8fd3]
+  === BLOCK LINK ===
+    0x1055
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1055 ===
+  0x1055	dec    	eax
+  0x1056	mov    	dword ptr [0xbf3c4], eax
+  0x105c	dec    	eax
+  0x105d	lea    	eax, [0xc02ed]
+  0x1063	dec    	eax
+  === BLOCK LINK ===
+    0x1064
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1064 ===
+  0x1064	mov    	dword ptr [0xbf3be], eax
+  0x106a	ret    	
+  0x106b	int3   	
+  0x106c	int3   	
+  0x106d	int3   	
+  === BLOCK LINK ===
+    0x106e
+=== CODE BLOCK END ===
+
 === CODE BLOCK ADDRESS 0x31c34 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x106e ===
+  0x106e	int3   	
+  0x106f	int3   	
+  0x1070	dec    	eax
+  0x1071	lea    	eax, [0x94309]
+  0x1077	dec    	eax
+  === BLOCK LINK ===
+    0x1078
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1078 ===
+  0x1078	mov    	dword ptr [0xc03b2], eax
+  0x107e	dec    	eax
+  0x107f	lea    	eax, [0x943ab]
+  0x1085	dec    	eax
+  0x1086	mov    	dword ptr [0xc0a44], eax
+  === BLOCK LINK ===
+    0x108c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x108c ===
+  0x108c	dec    	eax
+  0x108d	lea    	eax, [0x943dd]
+  0x1093	dec    	eax
+  0x1094	mov    	dword ptr [0xc0a9e], eax
 === CODE BLOCK END ===
 
 === DATA BLOCK ADDRESS 0xa0000 ===

@@ -1,0 +1,5 @@
+int3,int3,int3,int3,int3,
+int3,int3,int3,dec,sub,
+dec,and,inc,movzx,mov,
+dec,call,
+nop,dec,add,

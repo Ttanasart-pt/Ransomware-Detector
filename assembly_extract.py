@@ -11,16 +11,24 @@ from block import block, codeBlock, dataBlock
 
 OPS_LENGTH = 5
 
+args = argparse.ArgumentParser()
+args.add_argument("-i")
+args.add_argument("-o")
+args.add_argument("--dump", action = 'store_true')
+
+parse = args.parse_args()
+
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
         "jge", "jb", "jbe", "ja", "jae", "jcxz", "jecxz", "jrcxz", "loop", "loopne",
         "loope", "call", "lcall"]
     BNC = ["jmp", "jmpf", "ljmp"]
-    END = ["ret", "retn", "retf", "iret", "int3"]
+    END = ["ret", "retn", "retf", "iret"]
 
     def __init__(self):
         self.md = Cs(CS_ARCH_X86, CS_MODE_32)
         self.md.skipdata = True
+        self.assm = ""
         self.blocks = {}
 
         self.adjGraph = []
@@ -105,19 +113,18 @@ class Disassamble():
         self.blocks[addr] = dataBlock(addr, code)
 
     def disassmble(self, infile):
-        pe = pefile.PE(infile)
+        try:
+            pe = pefile.PE(infile)
+        except pefile.PEFormatError:
+            return False
         
         for section in pe.sections:
-            #print(f"Scanning section {section.Name}")
-            #print(f"\tOffset: {section.VirtualAddress}")
-            #print(f"\tSize: {section.SizeOfRawData}")
-            
             if b'text' in section.Name:
                 self.readTextSection(section)
             elif b'data' in section.Name:
                 self.readDataSection(section)
-
-        #print("Assembly extraction complete")
+        
+        return True
     
     def empty(self):
         for _, b in self.blocks.items():
@@ -132,6 +139,11 @@ class Disassamble():
             f.write("===== Assembly blocks =====\n")
             for _, b in self.blocks.items():
                 f.write(str(b))
+
+    def dump(self, fname):
+        with open(fname, "w") as f:
+            f.write("===== Assembly dump =====\n")
+            f.write(self.assm)
 
     def writeOpcode(self, fname):
         with open(fname, "w") as f:
@@ -171,28 +183,36 @@ def disasm(path):
     outfile = f"{folderIn}/{adj}.txt" if parse.o == None else parse.o
     opfile = f"{folderIn}/{adj} ops.txt"
     adjFile = f"{folderIn}/{adj} adj.txt"
+    dumpFile = f"{folderIn}/{adj} dmp.txt"
     
     dism = Disassamble()
-    dism.disassmble(path)
+    if not dism.disassmble(path):
+        return False
+
+    if parse.dump:
+        dism.dump(dumpFile)
 
     dism.graphify()
-    if dism.empty():
-        return
-
     dism.write(outfile)
+    
+    if dism.empty():
+        return False
+
     dism.writeOpcode(opfile)
     dism.writeAdj(adjFile)
 
+    return True
+
 if __name__ == "__main__":
-    args = argparse.ArgumentParser()
-    args.add_argument("-i")
-    args.add_argument("-o")
-
-    parse = args.parse_args()
-
     if parse.i == None: 
+        success = 0
+        total = 0
         for f in tqdm(os.listdir(folderOut)):
-            disasm(folderOut + '/' + f)
+            total += 1
+            res = disasm(folderOut + '/' + f)
+            if res:
+                success += 1
+        print(f"Analyzed {total} files, {success} success {total - success} failed")
     else:
         infile = parse.i
         disasm(infile)

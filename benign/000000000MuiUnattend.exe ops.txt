@@ -1,0 +1,9 @@
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,int3,int3,int3,int3,
+int3,dec,lea,dec,mov,
+dec,lea,dec,mov,dec,
+lea,dec,mov,dec,lea,
+dec,mov,dec,lea,dec,
+mov,dec,lea,dec,mov,
+

@@ -209,7 +209,6 @@
   0x20d4	jmp    	0x10020d9
   === BLOCK LINK ===
     0x20d9
-    0x10020d9
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x20d9 ===
@@ -246,7 +245,6 @@
   0x2104	jb     	0x2119
   === BLOCK LINK ===
     0x2106
-    0x2119
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2106 ===
@@ -1637,13 +1635,6 @@
     0x26db
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x20be ===
-  0x20bf	.byte  	0xfe
-  0x20c0	xor    	dword ptr [ebx + 0x283ba61f], ecx
-  === BLOCK LINK ===
-    0x20c1
-=== CODE BLOCK END ===
-
 === CODE BLOCK ADDRESS 0x26db ===
   0x26db	add    	ah, cl
   0x26dd	add    	bl, byte ptr [ecx - 0x33ffcedd]
@@ -1662,13 +1653,6 @@
   0x2706	int3   	
   === BLOCK LINK ===
     0x2707
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x206d ===
-  0x206d	dec    	esi
-  0x206e	push   	-0x80
-  === BLOCK LINK ===
-    0x2070
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x2707 ===
@@ -1791,10 +1775,11 @@
     0x27b3
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x20e0 ===
-  0x20e2	xor    	edx, dword ptr [ecx]
+=== CODE BLOCK ADDRESS 0x20be ===
+  0x20bf	.byte  	0xfe
+  0x20c0	xor    	dword ptr [ebx + 0x283ba61f], ecx
   === BLOCK LINK ===
-    0x20e4
+    0x20c1
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x27b3 ===
@@ -1947,7 +1932,11 @@
     0x287f
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x211c ===
+=== CODE BLOCK ADDRESS 0x206d ===
+  0x206d	dec    	esi
+  0x206e	push   	-0x80
+  === BLOCK LINK ===
+    0x2070
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x287f ===
@@ -12976,10 +12965,13 @@
     0x58e5
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x10020d9 ===
+=== CODE BLOCK ADDRESS 0x20e0 ===
+  0x20e2	xor    	edx, dword ptr [ecx]
+  === BLOCK LINK ===
+    0x20e4
 === CODE BLOCK END ===
 
-=== CODE BLOCK ADDRESS 0x2119 ===
+=== CODE BLOCK ADDRESS 0x211c ===
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x58e5 ===

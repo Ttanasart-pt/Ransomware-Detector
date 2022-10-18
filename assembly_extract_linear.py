@@ -15,28 +15,16 @@ md.skipdata = True
 
 def disassmble(infile, outfile):
     pe = pefile.PE(infile)
-    addrs = []
-    idx = 0
     assm = ""
-
-    def branch(addr):
-        if(addr in addrs):
-            return
-        bisect.insort_left(addrs, addr)
-
+    
     for section in pe.sections:
         print(f"Scanning section {section.Name}")
-        #print(f"\tOffset: {section.VirtualAddress}")
-        #print(f"\tSize: {section.SizeOfRawData}")
         
         if b'text' not in section.Name:
             continue
 
         addr = section.VirtualAddress
         code = section.get_data()
-        
-        queue = Queue()
-        branch(addr)
         
         disam = md.disasm(code, addr)
         for i in disam:
@@ -48,8 +36,7 @@ def disassmble(infile, outfile):
     print("Assembly extraction complete")
 
 if __name__ == "__main__":
-    infile = "sample/VirusShare_711597ee812105d3ea6600bb0be7a25a"
-    #infile = "sample/VirusShare_e1831d608e91f8eda9633ab698d90513"
-    outfile = f"assembly/{os.path.basename(infile)} lin.txt"
+    infile = "sampleb/aitstatic.exe"
+    outfile = f"dump.txt"
     
     disassmble(infile, outfile)

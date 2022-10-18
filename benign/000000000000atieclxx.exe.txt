@@ -84,9 +84,36 @@
   0x1051	test   	eax, eax
   0x1053	sete   	al
   0x1056	ret    	
+  0x1057	int3   	
+  0x1058	int3   	
+  === BLOCK LINK ===
+    0x1059
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1050 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1059 ===
+  0x1059	int3   	
+  0x105a	int3   	
+  0x105b	int3   	
+  0x105c	int3   	
+  0x105d	int3   	
+  === BLOCK LINK ===
+    0x105e
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x105e ===
+  0x105e	int3   	
+  0x105f	int3   	
+  0x1060	xor    	eax, eax
+  0x1062	cmp    	dword ptr [0xb4fb7], 3
+  0x1069	sete   	al
+  === BLOCK LINK ===
+    0x106c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x106c ===
 === CODE BLOCK END ===
 
 === DATA BLOCK ADDRESS 0x87000 ===

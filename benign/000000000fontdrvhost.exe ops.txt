@@ -1,5 +1,14 @@
 dec,sub,call,
 dec,lea,dec,add,jmp,
-int3,int3,
+int3,int3,int3,int3,int3,
+int3,int3,dec,lea,dec,
+mov,dec,lea,dec,mov,
+ret,int3,int3,int3,dec,
 
+lea,dec,mov,dec,lea,
+dec,mov,dec,lea,dec,
+mov,ret,int3,int3,int3,
 
+int3,int3,dec,lea,dec,
+mov,dec,lea,dec,mov,
+dec,lea,dec,mov,
