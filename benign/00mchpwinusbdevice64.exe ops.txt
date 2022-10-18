@@ -1,0 +1,12 @@
+dec,mov,dec,mov,push,dec,sub,dec,mov,mov,mov,rep stosd,dec,mov,dec,mov,call,
+mov,mov,dec,imul,dec,mov,mov,
+dec,arpl,dec,mov,movsx,cmp,je,
+dec,arpl,dec,mov,movsx,cmp,je,
+cmp,jle,
+mov,dec,mov,jmp,
+cmp,jle,
+mov,inc,mov,dec,arpl,dec,mov,mov,dec,mov,dec,mov,call,
+dec,add,pop,ret,int3,int3,int3,int3,int3,int3,int3,
+
+dec,arpl,dec,mov,movsx,cmp,je,
+

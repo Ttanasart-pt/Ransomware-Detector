@@ -1,0 +1,2 @@
+dec,sub,movzx,dec,lea,dec,mov,dec,mov,shl,mov,inc,movzx,mov,dec,mov,dec,add,dec,mov,dec,mov,dec,mov,dec,mov,dec,mov,movzx,mov,dec,lea,mov,dec,mov,inc,movzx,mov,dec,lea,sub,mov,dec,mov,dec,lea,mov,mov,mov,call,
+dec,add,

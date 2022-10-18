@@ -1,0 +1,7 @@
+dec,mov,dec,mov,nop,
+mov,ret,dec,mov,dec,mov,nop,
+dec,inc,cmp,jne,
+mov,ret,dec,mov,dec,sub,jne,
+dec,inc,cmp,jne,
+dec,mov,dec,sub,dec,test,sete,ret,
+

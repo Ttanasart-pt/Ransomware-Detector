@@ -7,7 +7,7 @@ import argparse
 import csv
 from tqdm import tqdm
 
-from block import codeBlock, dataBlock
+from block import block, codeBlock, dataBlock
 
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
@@ -145,6 +145,8 @@ class Disassamble():
                 continue
             fr = b.ind
             for t in b.target:
+                if t not in blockInd:
+                    continue
                 self.adjGraph.append([fr, blockInd[t]])
         
 def disasm(path):

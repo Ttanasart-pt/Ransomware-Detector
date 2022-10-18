@@ -1,0 +1,5 @@
+dec,sub,call,
+dec,lea,dec,add,jmp,
+int3,int3,
+
+

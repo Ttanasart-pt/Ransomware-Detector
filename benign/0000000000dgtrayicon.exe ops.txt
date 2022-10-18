@@ -1,0 +1,3 @@
+dec,mov,mov,jmp,
+int3,
+
