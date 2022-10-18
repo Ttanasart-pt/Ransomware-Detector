@@ -5,6 +5,7 @@ import os
 from capstone import *
 import argparse
 import csv
+from tqdm import tqdm
 
 from block import codeBlock, dataBlock
 
@@ -101,7 +102,7 @@ class Disassamble():
         pe = pefile.PE(infile)
         
         for section in pe.sections:
-            print(f"Scanning section {section.Name}")
+            #print(f"Scanning section {section.Name}")
             #print(f"\tOffset: {section.VirtualAddress}")
             #print(f"\tSize: {section.SizeOfRawData}")
             
@@ -110,7 +111,7 @@ class Disassamble():
             elif b'data' in section.Name:
                 self.readDataSection(section)
 
-        print("Assembly extraction complete")
+        #print("Assembly extraction complete")
     
     def write(self, fname):
         with open(fname, "w") as f:
@@ -123,7 +124,7 @@ class Disassamble():
             for _, b in self.blocks.items():
                 if not isinstance(b, codeBlock):
                     continue
-                f.write(f"{b.ind}: {b.writeOpcodes()}\n")
+                f.write(f"{b.writeOpcodes()}\n")
 
     def writeAdj(self, fname):
         with open(fname, "w") as f:
@@ -146,25 +147,31 @@ class Disassamble():
             for t in b.target:
                 self.adjGraph.append([fr, blockInd[t]])
         
-if __name__ == "__main__":
-    args = argparse.ArgumentParser()
-    args.add_argument("-i")
-    args.add_argument("-o")
-
-    parse = args.parse_args()
-    infile = "sample/VirusShare_711597ee812105d3ea6600bb0be7a25a" if parse.i == None else parse.i
-    #infile = "sample/VirusShare_e1831d608e91f8eda9633ab698d90513"
-
-    adj = os.path.basename(infile)[:16]
+def disasm(path):
+    adj = os.path.basename(path)[:24]
     outfile = f"assembly/{adj}.txt" if parse.o == None else parse.o
     opfile = f"assembly/{adj} ops.txt"
     adjFile = f"assembly/{adj} adj.txt"
     
     dism = Disassamble()
-    dism.disassmble(infile)
+    dism.disassmble(path)
 
     dism.graphify()
 
     dism.write(outfile)
     dism.writeOpcode(opfile)
     dism.writeAdj(adjFile)
+
+if __name__ == "__main__":
+    args = argparse.ArgumentParser()
+    args.add_argument("-i")
+    args.add_argument("-o")
+
+    parse = args.parse_args()
+
+    if parse.i == None: 
+        for f in tqdm(os.listdir('sample')):
+            disasm('sample/' + f)
+    else:
+        infile = parse.i
+        disasm(infile)
