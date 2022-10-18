@@ -83,3 +83,6 @@ class dataBlock(block):
         
         s += f"=== DATA BLOCK END ===\n"
         return s
+
+    def __len__(self):
+        return len(self.data)

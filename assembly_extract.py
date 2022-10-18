@@ -113,6 +113,12 @@ class Disassamble():
 
         #print("Assembly extraction complete")
     
+    def empty(self):
+        for _, b in self.blocks.items():
+            if len(b) > 0:
+                return False
+        return True
+
     def write(self, fname):
         with open(fname, "w") as f:
             f.write("===== Assembly blocks =====\n")
@@ -159,6 +165,8 @@ def disasm(path):
     dism.disassmble(path)
 
     dism.graphify()
+    if dism.empty():
+        return
 
     dism.write(outfile)
     dism.writeOpcode(opfile)
