@@ -2,10 +2,15 @@ import os
 from tqdm import tqdm
 
 import torch
-from torch_geometric.data import Data
+from torch_geometric.data import Data, data
+from torch_geometric.data import InMemoryDataset
+
 
 import csv
 from process import OpcodeProcessor
+
+def exeGraph():
+    return torch.load('dataset.pt')
 
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"
@@ -31,19 +36,37 @@ def convGraph(path, y):
     op.sentencesRead(sentences_raw)
     
     x = op.sentenceIndex(sentences_raw)
-    y = torch.tensor([y])
+    _y = torch.tensor([y])
     edge = torch.tensor(adjec_raw).t().contiguous()
     
-    data = Data(x = x, y = y, edge_index = edge)
+    data = Data(x = x, y = _y, edge_index = edge)
     return data
 
 if __name__ == "__main__":
     dataset = []
     
+    bn = 0
+    for f in tqdm(os.listdir('benign')):
+        if len(f) > 24 + 4:
+            continue
+        path = 'benign/' + f[:-4]
+        
+        grap = convGraph(path, 0)
+        if grap.x.shape[0] > 1:
+            dataset.append(grap)
+            bn += 1
+    print(f"Converted {bn} benign files.")
+    
+    rs = 0
     for f in tqdm(os.listdir('ransom')):
         if len(f) > 24 + 4:
             continue
         path = 'ransom/' + f[:-4]
-        dataset.append(convGraph(path, 1))
+        
+        grap = convGraph(path, 1)
+        if grap.x.shape[0] > 1:
+            dataset.append(grap)
+            rs += 1
+    print(f"Converted {rs} ransomware files.")
     
     torch.save(dataset, "dataset.pt")
