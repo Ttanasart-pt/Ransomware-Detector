@@ -6,6 +6,11 @@
   0x1004	dec    	eax
   0x1005	lea    	ecx, [0x228a35]
   0x100b	dec    	eax
+  === BLOCK LINK ===
+    0x100c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100c ===
   0x100c	call   	dword ptr [0x194856]
   === BLOCK LINK ===
     0x1012
@@ -17,6 +22,11 @@
   0x1018	lea    	ecx, [0x7c02]
   0x101e	dec    	eax
   0x101f	add    	esp, 0x28
+  === BLOCK LINK ===
+    0x1022
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1022 ===
   0x1022	jmp    	0x5d6c
   === BLOCK LINK ===
     0x1027

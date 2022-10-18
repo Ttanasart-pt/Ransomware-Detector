@@ -1,1 +1,3 @@
-dec,lea,dec,mov,dec,lea,dec,mov,dec,lea,dec,mov,
+dec,lea,dec,mov,dec,
+lea,dec,mov,dec,lea,
+dec,mov,

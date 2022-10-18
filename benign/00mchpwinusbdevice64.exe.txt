@@ -6,16 +6,31 @@
   0x1005	dec    	eax
   0x1006	mov    	dword ptr [esp + 8], ecx
   0x100a	push   	edi
+  === BLOCK LINK ===
+    0x100b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100b ===
   0x100b	dec    	eax
   0x100c	sub    	esp, 0x30
   0x100f	dec    	eax
   0x1010	mov    	edi, esp
   0x1012	mov    	ecx, 0xc
+  === BLOCK LINK ===
+    0x1017
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1017 ===
   0x1017	mov    	eax, 0xcccccccc
   0x101c	rep stosd  	dword ptr es:[edi], eax
   0x101e	dec    	eax
   0x101f	mov    	ecx, dword ptr [esp + 0x40]
   0x1023	dec    	eax
+  === BLOCK LINK ===
+    0x1024
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1024 ===
   0x1024	mov    	ecx, dword ptr [esp + 0x40]
   0x1028	call   	0x4f50
   === BLOCK LINK ===
@@ -29,10 +44,25 @@
   0x1036	dec    	eax
   0x1037	imul   	eax, eax, 0
   0x103a	dec    	eax
+  === BLOCK LINK ===
+    0x103b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x103b ===
   0x103b	mov    	ecx, dword ptr [esp + 0x48]
   0x103f	mov    	byte ptr [ecx + eax], 0
   === BLOCK LINK ===
     0x1043
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1049 ===
+  0x1049	mov    	ecx, dword ptr [esp + 0x40]
+  0x104d	movsx  	eax, byte ptr [ecx + eax]
+  0x1051	cmp    	eax, 0x2f
+  0x1054	je     	0x108f
+  === BLOCK LINK ===
+    0x1056
+    0x108f
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1056 ===
@@ -41,6 +71,11 @@
   0x105b	dec    	eax
   0x105c	mov    	ecx, dword ptr [esp + 0x40]
   0x1060	movsx  	eax, byte ptr [ecx + eax]
+  === BLOCK LINK ===
+    0x1064
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1064 ===
   0x1064	cmp    	eax, 0x5c
   0x1067	je     	0x108f
   === BLOCK LINK ===
@@ -54,6 +89,11 @@
   0x106e	dec    	eax
   0x106f	mov    	ecx, dword ptr [esp + 0x40]
   0x1073	movsx  	eax, byte ptr [ecx + eax]
+  === BLOCK LINK ===
+    0x1077
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1077 ===
   0x1077	cmp    	eax, 0x3a
   0x107a	je     	0x108f
   === BLOCK LINK ===
@@ -93,11 +133,21 @@
   0x109c	mov    	dword ptr [esp + 0x20], eax
   0x10a0	dec    	eax
   0x10a1	arpl   	word ptr [esp + 0x20], ax
+  === BLOCK LINK ===
+    0x10a5
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10a5 ===
   0x10a5	dec    	eax
   0x10a6	mov    	ecx, dword ptr [esp + 0x40]
   0x10aa	mov    	byte ptr [ecx + eax], 0
   0x10ae	dec    	eax
   0x10af	mov    	edx, dword ptr [esp + 0x40]
+  === BLOCK LINK ===
+    0x10b3
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10b3 ===
   0x10b3	dec    	eax
   0x10b4	mov    	ecx, dword ptr [esp + 0x48]
   0x10b8	call   	0x4e00
@@ -112,28 +162,33 @@
   0x10c1	pop    	edi
   0x10c2	ret    	
   0x10c3	int3   	
+  === BLOCK LINK ===
+    0x10c4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x4f50 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10c4 ===
   0x10c4	int3   	
   0x10c5	int3   	
   0x10c6	int3   	
   0x10c7	int3   	
   0x10c8	int3   	
-  0x10c9	int3   	
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x4f50 ===
+  === BLOCK LINK ===
+    0x10c9
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1043 ===
   0x1043	dec    	eax
   0x1044	arpl   	word ptr [esp + 0x20], ax
   0x1048	dec    	eax
-  0x1049	mov    	ecx, dword ptr [esp + 0x40]
-  0x104d	movsx  	eax, byte ptr [ecx + eax]
-  0x1051	cmp    	eax, 0x2f
-  0x1054	je     	0x108f
   === BLOCK LINK ===
-    0x1056
-    0x108f
+    0x1049
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10c9 ===
+  0x10c9	int3   	
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x4e00 ===

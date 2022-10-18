@@ -6,46 +6,91 @@
   0x1004	movzx  	eax, byte ptr [edx]
   0x1007	dec    	esp
   0x1008	lea    	edx, [edx + 1]
+  === BLOCK LINK ===
+    0x100b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100b ===
   0x100b	dec    	eax
   0x100c	mov    	edx, dword ptr [esp + 0x78]
   0x1010	dec    	esp
   0x1011	mov    	ebx, ecx
   0x1013	shl    	eax, 0x18
+  === BLOCK LINK ===
+    0x1016
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1016 ===
   0x1016	mov    	dword ptr [esp + 0x30], eax
   0x101a	inc    	ecx
   0x101b	movzx  	eax, word ptr [edx]
   0x101e	mov    	dword ptr [esp + 0x34], eax
   0x1022	dec    	ecx
+  === BLOCK LINK ===
+    0x1023
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1023 ===
   0x1023	mov    	eax, dword ptr [edx + 2]
   0x1026	dec    	ecx
   0x1027	add    	edx, 0xa
   0x102a	dec    	eax
   0x102b	mov    	dword ptr [esp + 0x38], eax
+  === BLOCK LINK ===
+    0x102f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x102f ===
   0x102f	dec    	eax
   0x1030	mov    	eax, dword ptr [ecx + 8]
   0x1033	dec    	eax
   0x1034	mov    	dword ptr [edx], eax
   0x1036	dec    	eax
+  === BLOCK LINK ===
+    0x1037
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1037 ===
   0x1037	mov    	eax, dword ptr [ecx + 8]
   0x103a	dec    	eax
   0x103b	mov    	dword ptr [esp + 0x28], edx
   0x103f	movzx  	ecx, word ptr [eax]
   0x1042	mov    	dword ptr [edx + 8], ecx
+  === BLOCK LINK ===
+    0x1045
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1045 ===
   0x1045	dec    	eax
   0x1046	lea    	ecx, [0xae9ac]
   0x104c	mov    	dword ptr [edx + 0xc], 2
   0x1053	dec    	esp
   0x1054	mov    	dword ptr [edx + 0x10], edx
+  === BLOCK LINK ===
+    0x1057
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1057 ===
   0x1057	inc    	ecx
   0x1058	movzx  	eax, word ptr [edx]
   0x105b	mov    	dword ptr [edx + 0x18], eax
   0x105e	dec    	eax
   0x105f	lea    	eax, [0xb05f7]
+  === BLOCK LINK ===
+    0x1065
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1065 ===
   0x1065	sub    	eax, ecx
   0x1067	mov    	dword ptr [edx + 0x1c], 1
   0x106e	dec    	ecx
   0x106f	mov    	ecx, dword ptr [ebx + 0x20]
   0x1072	dec    	eax
+  === BLOCK LINK ===
+    0x1073
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1073 ===
   0x1073	lea    	edx, [esp + 0x30]
   0x1077	mov    	dword ptr [esp + 0x78], eax
   0x107b	mov    	eax, dword ptr [esp + 0x70]

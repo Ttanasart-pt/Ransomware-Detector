@@ -1,4 +1,5 @@
-dec,sub,dec,mov,dec,test,je,
+dec,sub,dec,mov,dec,
+test,je,
 call,
 dec,mov,dec,test,je,
 dec,add,dec,jmp,

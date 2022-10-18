@@ -6,6 +6,11 @@
   0x1004	dec    	eax
   0x1005	mov    	ecx, dword ptr [0x74e0d]
   0x100b	dec    	eax
+  === BLOCK LINK ===
+    0x100c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100c ===
   0x100c	test   	ecx, ecx
   0x100e	je     	0x1016
   === BLOCK LINK ===

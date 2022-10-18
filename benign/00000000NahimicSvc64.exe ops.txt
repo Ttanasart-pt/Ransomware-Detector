@@ -1,3 +1,8 @@
 dec,sub,call,
-dec,mov,mov,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,movzx,mov,dec,add,ret,
+dec,mov,mov,mov,movzx,
+mov,movzx,mov,movzx,mov,
+movzx,mov,movzx,mov,movzx,
+mov,movzx,mov,movzx,mov,
+movzx,mov,movzx,mov,dec,
+add,ret,
 

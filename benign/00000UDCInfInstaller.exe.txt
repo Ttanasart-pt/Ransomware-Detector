@@ -6,6 +6,11 @@
   0x1004	dec    	eax
   0x1005	lea    	edx, [0x18f25]
   0x100b	dec    	eax
+  === BLOCK LINK ===
+    0x100c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x100c ===
   0x100c	lea    	ecx, [0x250a6]
   0x1012	call   	0xe990
   === BLOCK LINK ===

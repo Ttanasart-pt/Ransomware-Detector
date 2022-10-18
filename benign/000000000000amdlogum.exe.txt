@@ -28,11 +28,21 @@
   0x1022	dec    	eax
   0x1023	sub    	esp, 0x100
   0x1029	dec    	eax
+  === BLOCK LINK ===
+    0x102a
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x102a ===
   0x102a	lea    	eax, [0xe0]
   0x1030	mov    	dword ptr [esp + 0x60], 0x50
   0x1038	xor    	ebx, ebx
   0x103a	dec    	eax
   0x103b	mov    	dword ptr [esp + 0x68], eax
+  === BLOCK LINK ===
+    0x103f
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x103f ===
   0x103f	xor    	ecx, ecx
   0x1041	dec    	eax
   0x1042	mov    	dword ptr [esp + 0x70], ebx
@@ -48,11 +58,21 @@
   0x1058	mov    	dword ptr [esp + 0xa8], ebx
   0x105f	dec    	eax
   0x1060	mov    	dword ptr [esp + 0x78], eax
+  === BLOCK LINK ===
+    0x1064
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1064 ===
   0x1064	dec    	eax
   0x1065	lea    	ecx, [esp + 0x60]
   0x1069	dec    	eax
   0x106a	lea    	eax, [0x52580]
   0x1070	movdqa  	xmmword ptr [esp + 0x80], xmm0
+  === BLOCK LINK ===
+    0x1079
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1079 ===
   0x1079	xorps  	xmm1, xmm1
   0x107c	dec    	eax
   0x107d	mov    	dword ptr [esp + 0xa0], eax
@@ -68,6 +88,11 @@
   0x1096	lea    	eax, [ebx + 0x50]
   0x1099	dec    	eax
   0x109a	lea    	ecx, [esp + 0xb0]
+  === BLOCK LINK ===
+    0x10a1
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10a1 ===
   0x10a1	call   	0x8330
   === BLOCK LINK ===
     0x10a6
@@ -80,26 +105,51 @@
   0x10ae	dec    	esp
   0x10af	lea    	eax, [0x52563]
   0x10b5	dec    	eax
+  === BLOCK LINK ===
+    0x10b6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10b6 ===
   0x10b6	mov    	edx, dword ptr [esp + 0xa0]
   0x10bd	inc    	ebp
   0x10be	xor    	ecx, ecx
   0x10c0	mov    	ecx, dword ptr [esp + 0xf8]
   0x10c7	dec    	eax
+  === BLOCK LINK ===
+    0x10c8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10c8 ===
   0x10c8	mov    	dword ptr [esp + 0x58], eax
   0x10cc	dec    	eax
   0x10cd	mov    	eax, dword ptr [esp + 0x78]
   0x10d1	dec    	eax
   0x10d2	mov    	dword ptr [esp + 0x50], eax
+  === BLOCK LINK ===
+    0x10d6
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10d6 ===
   0x10d6	dec    	eax
   0x10d7	mov    	eax, dword ptr [esp + 0xc0]
   0x10de	dec    	eax
   0x10df	mov    	dword ptr [esp + 0x48], eax
   0x10e3	dec    	eax
+  === BLOCK LINK ===
+    0x10e4
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10e4 ===
   0x10e4	mov    	eax, dword ptr [esp + 0xc8]
   0x10eb	dec    	eax
   0x10ec	mov    	dword ptr [esp + 0x40], eax
   0x10f0	mov    	dword ptr [esp + 0x38], ebx
   0x10f4	mov    	dword ptr [esp + 0x30], ebx
+  === BLOCK LINK ===
+    0x10f8
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x10f8 ===
   0x10f8	mov    	dword ptr [esp + 0x28], ebx
   0x10fc	mov    	dword ptr [esp + 0x20], ebx
   0x1100	call   	dword ptr [0x5231a]
@@ -113,6 +163,17 @@
   0x110d	pop    	ebx
   0x110e	ret    	
   0x110f	int3   	
+  === BLOCK LINK ===
+    0x1110
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x13f0 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x7704 ===
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1110 ===
   0x1110	dec    	eax
   0x1111	sub    	esp, 0x28
   0x1114	cmp    	edx, 2
@@ -120,12 +181,6 @@
   === BLOCK LINK ===
     0x1119
     0x1159
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x13f0 ===
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x7704 ===
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1119 ===
@@ -173,6 +228,11 @@
   0x114f	dec    	eax
   0x1150	mov    	ebx, dword ptr [esp + 0x20]
   0x1154	dec    	eax
+  === BLOCK LINK ===
+    0x1155
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1155 ===
   0x1155	add    	esp, 0x28
   0x1158	ret    	
   === BLOCK LINK ===
@@ -188,8 +248,8 @@
   0x1164	add    	esp, 0x28
   0x1167	ret    	
   0x1168	int3   	
-  0x1169	int3   	
-  0x116a	int3   	
+  === BLOCK LINK ===
+    0x1169
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1159 ===
@@ -197,6 +257,11 @@
   0x115b	call   	dword ptr [0x52347]
   === BLOCK LINK ===
     0x1161
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1169 ===
+  0x1169	int3   	
+  0x116a	int3   	
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x35d0 ===

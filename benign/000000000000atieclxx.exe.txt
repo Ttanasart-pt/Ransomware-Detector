@@ -8,20 +8,6 @@
   0x100e	nop    	
   === BLOCK LINK ===
     0x1010
-    0x1010
-=== CODE BLOCK END ===
-
-=== CODE BLOCK ADDRESS 0x1019 ===
-  0x1019	mov    	dword ptr [0xb51b1], eax
-  0x101f	ret    	
-  0x1020	dec    	eax
-  0x1021	mov    	ecx, dword ptr [0xb4131]
-  0x1027	dec    	eax
-  0x1028	mov    	eax, 0xffffffff
-  0x102e	nop    	
-  === BLOCK LINK ===
-    0x1030
-    0x1030
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1010 ===
@@ -31,6 +17,31 @@
   0x1017	jne    	0x1010
   === BLOCK LINK ===
     0x1019
+    0x1010
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1019 ===
+  0x1019	mov    	dword ptr [0xb51b1], eax
+  0x101f	ret    	
+  0x1020	dec    	eax
+  0x1021	mov    	ecx, dword ptr [0xb4131]
+  0x1027	dec    	eax
+  === BLOCK LINK ===
+    0x1028
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1028 ===
+  0x1028	mov    	eax, 0xffffffff
+  0x102e	nop    	
+  === BLOCK LINK ===
+    0x1030
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1037 ===
+  0x1037	jne    	0x1030
+  === BLOCK LINK ===
+    0x1039
+    0x1030
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1039 ===
@@ -39,20 +50,24 @@
   0x1040	dec    	eax
   0x1041	mov    	eax, dword ptr [ecx]
   0x1043	dec    	eax
-  0x1044	sub    	eax, dword ptr [edx]
-  0x1046	jne    	0x1050
   === BLOCK LINK ===
-    0x1048
-    0x1050
+    0x1044
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1030 ===
   0x1030	dec    	eax
   0x1031	inc    	eax
   0x1033	cmp    	byte ptr [ecx + eax], 0
-  0x1037	jne    	0x1030
   === BLOCK LINK ===
-    0x1039
+    0x1037
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1044 ===
+  0x1044	sub    	eax, dword ptr [edx]
+  0x1046	jne    	0x1050
+  === BLOCK LINK ===
+    0x1048
+    0x1050
 === CODE BLOCK END ===
 
 === CODE BLOCK ADDRESS 0x1048 ===
@@ -61,6 +76,11 @@
   0x104c	dec    	eax
   0x104d	sub    	eax, dword ptr [edx + 8]
   0x1050	dec    	eax
+  === BLOCK LINK ===
+    0x1051
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1051 ===
   0x1051	test   	eax, eax
   0x1053	sete   	al
   0x1056	ret    	

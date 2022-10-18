@@ -9,6 +9,8 @@ from tqdm import tqdm
 
 from block import block, codeBlock, dataBlock
 
+OPS_LENGTH = 5
+
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
         "jge", "jb", "jbe", "ja", "jae", "jcxz", "jecxz", "jrcxz", "loop", "loopne",
@@ -57,6 +59,10 @@ class Disassamble():
         for asm in disam:
             if _asm:
                 block.append(_asm)
+
+                if(len(block) == OPS_LENGTH):
+                    willBreak = True
+
             if willBreak:
                 _block = self.blocks[asm.address] if asm.address in self.blocks\
                     else codeBlock(asm.address)
@@ -115,7 +121,9 @@ class Disassamble():
     
     def empty(self):
         for _, b in self.blocks.items():
-            if len(b) > 0:
+            if not isinstance(b, codeBlock):
+                continue
+            if len(b) > 1:
                 return False
         return True
 
@@ -154,12 +162,15 @@ class Disassamble():
                 if t not in blockInd:
                     continue
                 self.adjGraph.append([fr, blockInd[t]])
-        
+    
+folderIn, folderOut = "benign", "sampleb"
+#folderIn, folderOut = "ransom", "sample"
+
 def disasm(path):
     adj = os.path.basename(path)[:24].zfill(24)
-    outfile = f"benign/{adj}.txt" if parse.o == None else parse.o
-    opfile = f"benign/{adj} ops.txt"
-    adjFile = f"benign/{adj} adj.txt"
+    outfile = f"{folderIn}/{adj}.txt" if parse.o == None else parse.o
+    opfile = f"{folderIn}/{adj} ops.txt"
+    adjFile = f"{folderIn}/{adj} adj.txt"
     
     dism = Disassamble()
     dism.disassmble(path)
@@ -180,8 +191,8 @@ if __name__ == "__main__":
     parse = args.parse_args()
 
     if parse.i == None: 
-        for f in tqdm(os.listdir('sampleb')):
-            disasm('sampleb/' + f)
+        for f in tqdm(os.listdir(folderOut)):
+            disasm(folderOut + '/' + f)
     else:
         infile = parse.i
         disasm(infile)

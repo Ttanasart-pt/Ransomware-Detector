@@ -15,26 +15,51 @@
   0x100c	mov    	ecx, dword ptr [eax]
   0x100e	mov    	dword ptr [0x10006c], ecx
   0x1014	movzx  	ecx, word ptr [eax + 4]
+  === BLOCK LINK ===
+    0x1018
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1018 ===
   0x1018	mov    	word ptr [0x100065], cx
   0x101f	movzx  	ecx, word ptr [eax + 6]
   0x1023	mov    	word ptr [0x10005c], cx
   0x102a	movzx  	ecx, byte ptr [eax + 8]
   0x102e	mov    	byte ptr [0x100054], cl
+  === BLOCK LINK ===
+    0x1034
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1034 ===
   0x1034	movzx  	ecx, byte ptr [eax + 9]
   0x1038	mov    	byte ptr [0x10004b], cl
   0x103e	movzx  	ecx, byte ptr [eax + 0xa]
   0x1042	mov    	byte ptr [0x100042], cl
   0x1048	movzx  	ecx, byte ptr [eax + 0xb]
+  === BLOCK LINK ===
+    0x104c
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x104c ===
   0x104c	mov    	byte ptr [0x100039], cl
   0x1052	movzx  	eax, byte ptr [eax + 0xc]
   0x1056	mov    	byte ptr [0x100030], al
   0x105c	movzx  	eax, byte ptr [edx + 0xd]
   0x1060	mov    	byte ptr [0x100027], al
+  === BLOCK LINK ===
+    0x1066
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x1066 ===
   0x1066	movzx  	eax, byte ptr [edx + 0xe]
   0x106a	mov    	byte ptr [0x10001e], al
   0x1070	movzx  	eax, byte ptr [edx + 0xf]
   0x1074	mov    	byte ptr [0x100015], al
   0x107a	dec    	eax
+  === BLOCK LINK ===
+    0x107b
+=== CODE BLOCK END ===
+
+=== CODE BLOCK ADDRESS 0x107b ===
   0x107b	add    	esp, 0x28
   0x107e	ret    	
 === CODE BLOCK END ===
