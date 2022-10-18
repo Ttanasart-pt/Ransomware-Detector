@@ -148,10 +148,10 @@ class Disassamble():
                 self.adjGraph.append([fr, blockInd[t]])
         
 def disasm(path):
-    adj = os.path.basename(path)[:24]
-    outfile = f"assembly/{adj}.txt" if parse.o == None else parse.o
-    opfile = f"assembly/{adj} ops.txt"
-    adjFile = f"assembly/{adj} adj.txt"
+    adj = os.path.basename(path)[:24].zfill(24)
+    outfile = f"benign/{adj}.txt" if parse.o == None else parse.o
+    opfile = f"benign/{adj} ops.txt"
+    adjFile = f"benign/{adj} adj.txt"
     
     dism = Disassamble()
     dism.disassmble(path)
@@ -170,8 +170,8 @@ if __name__ == "__main__":
     parse = args.parse_args()
 
     if parse.i == None: 
-        for f in tqdm(os.listdir('sample')):
-            disasm('sample/' + f)
+        for f in tqdm(os.listdir('sampleb')):
+            disasm('sampleb/' + f)
     else:
         infile = parse.i
         disasm(infile)
