@@ -1,3 +1,4 @@
+from genericpath import exists
 import os
 from tqdm import tqdm
 
@@ -16,6 +17,11 @@ def exeGraph():
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"
     adjfile = f"{path} adj.txt"
+    
+    if not os.path.exists(opfile):
+        return None
+    if not os.path.exists(adjfile):
+        return None
     
     sentences_raw = []
     with open(opfile, "r") as f:
@@ -53,6 +59,8 @@ if __name__ == "__main__":
         path = 'benign/' + f[:-4]
         
         grap = convGraph(path, 0)
+        if not grap :
+            continue
         if grap.x.shape[0] > 1:
             dataset.append(grap)
             bn += 1
@@ -65,6 +73,8 @@ if __name__ == "__main__":
         path = 'ransom/' + f[:-4]
         
         grap = convGraph(path, 1)
+        if not grap :
+            continue
         if grap.x.shape[0] > 1:
             dataset.append(grap)
             rs += 1
