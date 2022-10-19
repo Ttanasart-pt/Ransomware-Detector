@@ -1,12 +1,14 @@
 import torch
 
 class OpcodeProcessor():
-    def __init__(self) -> None:
-        self.DICTIONARY = {}
+    def __init__(self, op_len = 5) -> None:
+        self.DICTIONARY = {
+            "nop": 0
+        }
         self.DICT_SIZE = 0
         
         self.sentences = None
-        self.max_length = 0
+        self.op_length = op_len
 
     def sentencesRead(self, sentences):
         self.sentences = sentences
@@ -14,15 +16,15 @@ class OpcodeProcessor():
             for word in sentence:
                 if word not in self.DICTIONARY:
                     self.DICTIONARY[word]= len(self.DICTIONARY)
-            self.max_length = max(self.max_length, len(sentence))
         self.DICT_SIZE = len(self.DICTIONARY)
 
     def sentenceProcess(self, sentence):
-        pad = self.max_length - len(sentence)
-        return [ self.DICTIONARY[word] for word in sentence ] + [0] * pad
+        pad = self.op_length - len(sentence)
+        return [0] * pad + [ self.DICTIONARY[word] for word in sentence ]
 
     def sentenceIndex(self, sentences):
         s = []
         for sentence in sentences:
-            s.append(self.sentenceProcess(sentence))
+            sent = self.sentenceProcess(sentence[:5])
+            s.append(sent)
         return torch.tensor(s)

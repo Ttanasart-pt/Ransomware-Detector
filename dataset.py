@@ -5,9 +5,10 @@ import torch
 from torch_geometric.data import Data, data
 from torch_geometric.data import InMemoryDataset
 
-
 import csv
 from process import OpcodeProcessor
+
+OPS_LENGTH = 5
 
 def exeGraph():
     return torch.load('dataset.pt')
@@ -32,12 +33,12 @@ def convGraph(path, y):
         sp = [int(s) for s in a.split(',')]
         adjec_raw.append(sp)
     
-    op = OpcodeProcessor()
+    op = OpcodeProcessor(OPS_LENGTH)
     op.sentencesRead(sentences_raw)
     
-    x = op.sentenceIndex(sentences_raw)
-    _y = torch.tensor([y])
-    edge = torch.tensor(adjec_raw).t().contiguous()
+    x = op.sentenceIndex(sentences_raw).type(torch.float32)
+    _y = torch.tensor([y]).type(torch.int64)
+    edge = torch.tensor(adjec_raw).type(torch.int64).t().contiguous()
     
     data = Data(x = x, y = _y, edge_index = edge)
     return data
