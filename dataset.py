@@ -53,10 +53,10 @@ if __name__ == "__main__":
     dataset = []
     
     bn = 0
-    for f in tqdm(os.listdir('benign')):
+    for f in tqdm(os.listdir('data/benign')):
         if len(f) > 24 + 4:
             continue
-        path = 'benign/' + f[:-4]
+        path = 'data/benign/' + f[:-4]
         
         grap = convGraph(path, 0)
         if not grap :
@@ -67,10 +67,10 @@ if __name__ == "__main__":
     print(f"Converted {bn} benign files.")
     
     rs = 0
-    for f in tqdm(os.listdir('ransom')):
+    for f in tqdm(os.listdir('data/ransom')):
         if len(f) > 24 + 4:
             continue
-        path = 'ransom/' + f[:-4]
+        path = 'data/ransom/' + f[:-4]
         
         grap = convGraph(path, 1)
         if not grap :
