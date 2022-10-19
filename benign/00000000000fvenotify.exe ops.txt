@@ -1,6 +1,0 @@
-int3,int3,int3,int3,int3,
-int3,int3,int3,int3,int3,
-int3,int3,int3,int3,int3,
-int3,mov,mov,xor,mov,
-dec,mov,mov,dec,mov,
-inc,mov,

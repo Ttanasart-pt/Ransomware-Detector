@@ -2,14 +2,12 @@ class block():
     def __init__(self, address) -> None:
         self.address = address
         self.ind = 0
-
+        self.endAddr = address
 class codeBlock(block):
     def __init__(self, address) -> None:
         super().__init__(address)
         self.target = []
         self.opcodes = []
-
-        self.endAddr = address
 
     def append(self, assm):
         self.opcodes.append(assm)
@@ -61,6 +59,8 @@ class dataBlock(block):
     def __init__(self, address, data) -> None:
         super().__init__(address)
         self.data = data
+
+        self.endAddr = address + len(data)
 
     def __str__(self) -> str:
         s = f"\n=== DATA BLOCK ADDRESS {hex(self.address)} ===\n"

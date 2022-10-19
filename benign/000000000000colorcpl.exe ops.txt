@@ -1,7 +1,0 @@
-int3,int3,int3,int3,int3,
-int3,int3,int3,dec,sub,
-inc,xor,inc,xor,xor,
-inc,lea,dec,call,
-nop,xor,dec,call,
-nop,xor,test,setns,lea,
-dec,add,

@@ -99,7 +99,7 @@ class Disassamble():
                 
                 if addr not in self.blocks:
                     b = self.blockExist(addr)
-                    if b and b.address < addr < b.endAddr:
+                    if b and isinstance(b, codeBlock) and b.address < addr < b.endAddr:
                         self.blocks[addr] = b.split(addr)
                     else:
                         self.blocks[addr] = codeBlock(addr)
@@ -176,7 +176,7 @@ class Disassamble():
                 self.adjGraph.append([fr, blockInd[t]])
     
 folderIn, folderOut = "benign", "sampleb"
-#folderIn, folderOut = "ransom", "sample"
+folderIn, folderOut = "ransom", "sample"
 
 def disasm(path):
     adj = os.path.basename(path)[:24].zfill(24)
