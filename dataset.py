@@ -12,7 +12,7 @@ from process import OpcodeProcessor
 OPS_LENGTH = 5
 
 def exeGraph():
-    return torch.load('dataset.pt')
+    return torch.load('data/dataset.pt')
 
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"
@@ -80,4 +80,4 @@ if __name__ == "__main__":
             rs += 1
     print(f"Converted {rs} ransomware files.")
     
-    torch.save(dataset, "dataset.pt")
+    torch.save(dataset, "data/dataset.pt")
