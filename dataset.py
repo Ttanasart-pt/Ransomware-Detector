@@ -1,4 +1,3 @@
-from genericpath import exists
 import os
 from tqdm import tqdm
 
@@ -9,7 +8,7 @@ from torch_geometric.data import InMemoryDataset
 import csv
 from process import OpcodeProcessor
 
-OPS_LENGTH = 5
+from assembly_extract import OPS_LENGTH
 
 def exeGraph():
     return torch.load('data/dataset.pt')
@@ -49,35 +48,25 @@ def convGraph(path, y):
     data = Data(x = x, y = _y, edge_index = edge)
     return data
 
-if __name__ == "__main__":
-    dataset = []
-    
+def readFile(path, y):
     bn = 0
-    for f in tqdm(os.listdir('data/benign')):
+    for f in tqdm(os.listdir(path)):
         if len(f) > 24 + 4:
             continue
-        path = 'data/benign/' + f[:-4]
+        path = path + f[:-4]
         
-        grap = convGraph(path, 0)
+        grap = convGraph(path, y)
         if not grap :
             continue
         if grap.x.shape[0] > 1:
             dataset.append(grap)
             bn += 1
-    print(f"Converted {bn} benign files.")
+    print(f"Converted {bn} files.")
+
+if __name__ == "__main__":
+    dataset = []
     
-    rs = 0
-    for f in tqdm(os.listdir('data/ransom')):
-        if len(f) > 24 + 4:
-            continue
-        path = 'data/ransom/' + f[:-4]
-        
-        grap = convGraph(path, 1)
-        if not grap :
-            continue
-        if grap.x.shape[0] > 1:
-            dataset.append(grap)
-            rs += 1
-    print(f"Converted {rs} ransomware files.")
+    readFile('data/training/benign/', 0)
+    readFile('data/training/random/', 1)
     
     torch.save(dataset, "data/dataset.pt")

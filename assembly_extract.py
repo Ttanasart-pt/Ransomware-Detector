@@ -145,6 +145,14 @@ class Disassamble():
             f.write("===== Assembly dump =====\n")
             f.write(self.assm)
 
+    def getOpcode(self):
+        ops = []
+        for _, b in self.blocks.items():
+            if not isinstance(b, codeBlock):
+                continue
+            ops.append(b.self.opcodes)
+        return ops
+    
     def writeOpcode(self, fname):
         with open(fname, "w") as f:
             for _, b in self.blocks.items():
@@ -152,6 +160,9 @@ class Disassamble():
                     continue
                 f.write(f"{b.writeOpcodes()}\n")
 
+    def getAdj(self):
+        return self.adjGraph
+    
     def writeAdj(self, fname):
         with open(fname, "w") as f:
             writer = csv.writer(f)
