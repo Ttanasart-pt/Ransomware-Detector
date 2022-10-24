@@ -175,15 +175,15 @@ class Disassamble():
                     continue
                 self.adjGraph.append([fr, blockInd[t]])
     
-folderIn, folderOut = "benign", "sampleb"
-folderIn, folderOut = "ransom", "sample"
+folderIn, folderOut = "/home/remnux/pe/benign", "/home/remnux/asm/benign"
+folderIn, folderOut = "/home/remnux/pe/ransom", "/home/remnux/asm/ransom"
 
 def disasm(path):
     adj = os.path.basename(path)[:24].zfill(24)
-    outfile = f"{folderIn}/{adj}.txt" if parse.o == None else parse.o
-    opfile = f"{folderIn}/{adj} ops.txt"
-    adjFile = f"{folderIn}/{adj} adj.txt"
-    dumpFile = f"{folderIn}/{adj} dmp.txt"
+    outfile = f"{folderOut}/{adj}.txt" if parse.o == None else parse.o
+    opfile = f"{folderOut}/{adj} ops.txt"
+    adjFile = f"{folderOut}/{adj} adj.txt"
+    dumpFile = f"{folderOut}/{adj} dmp.txt"
     
     dism = Disassamble()
     if not dism.disassmble(path):
@@ -207,9 +207,9 @@ if __name__ == "__main__":
     if parse.i == None: 
         success = 0
         total = 0
-        for f in tqdm(os.listdir(folderOut)):
+        for f in tqdm(os.listdir(folderIn)):
             total += 1
-            res = disasm(folderOut + '/' + f)
+            res = disasm(folderIn + '/' + f)
             if res:
                 success += 1
         print(f"Analyzed {total} files, {success} success {total - success} failed")
