@@ -10,9 +10,6 @@ from process import OpcodeProcessor
 
 from assembly_extract import OPS_LENGTH
 
-def exeGraph():
-    return torch.load('data/dataset.pt')
-
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"
     adjfile = f"{path} adj.txt"
@@ -51,11 +48,13 @@ def convGraph(path, y):
 def readFile(path, y):
     bn = 0
     for f in tqdm(os.listdir(path)):
-        if len(f) > 24 + 4:
+        if f[:-7] == "adj.txt":
             continue
-        path = path + f[:-4]
+        if f[:-7] == "ops.txt":
+            continue
+        p = path + f[:-4]
         
-        grap = convGraph(path, y)
+        grap = convGraph(p, y)
         if not grap :
             continue
         if grap.x.shape[0] > 1:
@@ -67,6 +66,6 @@ if __name__ == "__main__":
     dataset = []
     
     readFile('data/training/benign/', 0)
-    readFile('data/training/random/', 1)
+    readFile('data/training/ransom/', 1)
     
     torch.save(dataset, "data/dataset.pt")

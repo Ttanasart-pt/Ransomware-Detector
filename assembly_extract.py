@@ -3,20 +3,12 @@ from queue import Queue
 import pefile
 import os
 from capstone import *
-import argparse
 import csv
 from tqdm import tqdm
 
 from block import block, codeBlock, dataBlock
 
 OPS_LENGTH = 5
-
-args = argparse.ArgumentParser()
-args.add_argument("-i")
-args.add_argument("-o")
-args.add_argument("--dump", action = 'store_true')
-
-parse = args.parse_args()
 
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
@@ -191,7 +183,7 @@ folderIn, folderOut = "/home/remnux/pe/ransom", "/home/remnux/asm/ransom"
 
 def disasm(path):
     adj = os.path.basename(path)[:24].zfill(24)
-    outfile = f"{folderOut}/{adj}.txt" if parse.o == None else parse.o
+    outfile = f"{folderOut}/{adj}.txt"
     opfile = f"{folderOut}/{adj} ops.txt"
     adjFile = f"{folderOut}/{adj} adj.txt"
     dumpFile = f"{folderOut}/{adj} dmp.txt"
@@ -199,9 +191,6 @@ def disasm(path):
     dism = Disassamble()
     if not dism.disassmble(path):
         return False
-
-    if parse.dump:
-        dism.dump(dumpFile)
 
     dism.graphify()
     dism.write(outfile)
@@ -215,15 +204,11 @@ def disasm(path):
     return True
 
 if __name__ == "__main__":
-    if parse.i == None: 
-        success = 0
-        total = 0
-        for f in tqdm(os.listdir(folderIn)):
-            total += 1
-            res = disasm(folderIn + '/' + f)
-            if res:
-                success += 1
-        print(f"Analyzed {total} files, {success} success {total - success} failed")
-    else:
-        infile = parse.i
-        disasm(infile)
+    success = 0
+    total = 0
+    for f in tqdm(os.listdir(folderIn)):
+        total += 1
+        res = disasm(folderIn + '/' + f)
+        if res:
+            success += 1
+    print(f"Analyzed {total} files, {success} success {total - success} failed")
