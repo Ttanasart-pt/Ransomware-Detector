@@ -21,6 +21,13 @@ class RADAR(ttk.Frame):
     def onFileDrop(self, e):
         self.fileDrop = e.data
         self.resLabel.config(text = "File dropped " + e.data)
+        
+        # operations
+        
+        self.onFileAnalzed(res)
+        
+    def onFileAnalzed(self, results):
+        pass
 
 if __name__ == "__main__":
     print("Opening application...")

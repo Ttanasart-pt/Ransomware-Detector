@@ -1,4 +1,3 @@
-from ctypes import addressof
 from queue import Queue
 import pefile
 import os
