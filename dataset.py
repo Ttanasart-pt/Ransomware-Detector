@@ -10,6 +10,8 @@ from process import OpcodeProcessor
 
 from assembly_extract import OPS_LENGTH
 
+op = OpcodeProcessor(OPS_LENGTH)
+
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"
     adjfile = f"{path} adj.txt"
@@ -35,7 +37,6 @@ def convGraph(path, y):
         sp = [int(s) for s in a.split(',')]
         adjec_raw.append(sp)
     
-    op = OpcodeProcessor(OPS_LENGTH)
     op.sentencesRead(sentences_raw)
     
     x = op.sentenceIndex(sentences_raw).type(torch.float32)
@@ -45,7 +46,7 @@ def convGraph(path, y):
     data = Data(x = x, y = _y, edge_index = edge)
     return data
 
-def readFile(path, y):
+def readFile(path, y, amount = 5000):
     bn = 0
     for f in tqdm(os.listdir(path)):
         if f[:-7] == "adj.txt":
@@ -60,12 +61,14 @@ def readFile(path, y):
         if grap.x.shape[0] > 1:
             dataset.append(grap)
             bn += 1
-    print(f"Converted {bn} files.")
+            if bn > amount:
+                break
+    print(f"Converted {bn} files, dict size = {op.DICT_SIZE}")
 
 if __name__ == "__main__":
     dataset = []
     
-    readFile('data/training/benign/', 0)
-    readFile('data/training/ransom/', 1)
+    readFile('data/training/16g/benign/', 0)
+    readFile('data/training/16g/ransom/', 1)
     
-    torch.save(dataset, "data/dataset.pt")
+    torch.save(dataset, "data/dataset16N.pt")

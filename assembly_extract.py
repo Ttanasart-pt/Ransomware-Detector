@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 from block import block, codeBlock, dataBlock
 
-OPS_LENGTH = 5
+OPS_LENGTH = 16
 
 class Disassamble():
     BCC = ["je", "jne", "js", "jns", "jp", "jnp", "jo", "jno", "jl", "jle", "jg",
@@ -142,7 +142,7 @@ class Disassamble():
         for _, b in self.blocks.items():
             if not isinstance(b, codeBlock):
                 continue
-            ops.append(b.self.opcodes)
+            ops.append(b.opcodes)
         return ops
     
     def writeOpcode(self, fname):

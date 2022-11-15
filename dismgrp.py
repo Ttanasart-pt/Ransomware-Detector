@@ -7,12 +7,12 @@ from process import OpcodeProcessor
 def disasm(path):
     dism = Disassamble()
     if not dism.disassmble(path):
-        return None
+        raise Exception("Error decompiling file: Disasembler return none")
 
     dism.graphify()
     
     if dism.empty():
-        return None
+        raise Exception("Error decompiling file: Empty result")
 
     ops = dism.getOpcode()
     adj = dism.getAdj()
@@ -30,7 +30,10 @@ def graphify(ops, adj):
     return data
 
 def dismgrp(path):
-    ops, adj = disasm(path)
-    data = graphify(ops, adj)
+    try:
+        ops, adj = disasm(path)
+        data = graphify(ops, adj)
     
-    return data
+        return data
+    except Exception as e:
+        raise e
