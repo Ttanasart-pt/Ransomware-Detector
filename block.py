@@ -3,6 +3,7 @@ class block():
         self.address = address
         self.ind = 0
         self.endAddr = address
+        
 class codeBlock(block):
     def __init__(self, address) -> None:
         super().__init__(address)

@@ -3,6 +3,12 @@ from tkinter import ttk
 import sv_ttk
 from tkinterdnd2 import DND_FILES, TkinterDnD
 
+from model import Model
+from detector import isRansom
+
+import os
+import threading
+
 class RADAR(ttk.Frame):
     def __init__(self, parent):
         ttk.Frame.__init__(self)
@@ -11,23 +17,43 @@ class RADAR(ttk.Frame):
         self.dnd_bind('<<Drop>>', self.onFileDrop)
         
         ttk.Label(self, text = "Drag file to analyze")\
-            .place(relx = 0.5, rely = 0.5, anchor = tk.CENTER)
+            .place(relx = 0.5, rely = 0.4, anchor = tk.CENTER)
             
-        self.resLabel = ttk.Label(self, text = "No file")
+        self.fileLabel = ttk.Label(self, text = "No file")
+        self.fileLabel.place(relx = 0.5, rely = 0.9, anchor = tk.S)
+        
+        self.resLabel = ttk.Label(self, text = "-")
         self.resLabel.place(relx = 0.5, rely = 1, anchor = tk.S)
         
         self.fileDrop = None
         
+        self.model = Model()
+        self.detectionThread = None
+        
+    def ransomDetect(self):
+        try:
+            res = isRansom(self.model, self.fileDrop)
+            self.onFileAnalzed(res)
+        except Exception as e:
+            self.resLabel.config(text = f"{e}")
+        
     def onFileDrop(self, e):
-        self.fileDrop = e.data
-        self.resLabel.config(text = "File dropped " + e.data)
+        path = e.data[1:-1]
+        self.fileDrop = path
         
-        # operations
+        fname = os.path.basename(path)
+        self.fileLabel.config(text = fname)
+        self.resLabel.config(text = "Analyzing")
         
-        self.onFileAnalzed(res)
+        self.detectionThread = threading.Thread(target = self.ransomDetect)
+        self.detectionThread.start()
         
     def onFileAnalzed(self, results):
-        pass
+        pre, prob = results
+        res = "Ransom" if pre == 1 else "Safe"
+        result = f"{prob:.0f}% {res}"
+        
+        self.resLabel.config(text = result)
 
 if __name__ == "__main__":
     print("Opening application...")
