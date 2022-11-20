@@ -1,15 +1,15 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
+from PyInstaller.utils.hooks import collect_dynamic_libs
 block_cipher = None
 
 
 a = Analysis(
     ['app.py'],
     pathex=[],
-    binaries=[],
+    binaries=collect_dynamic_libs("capstone"),
     datas=[],
-    hiddenimports=['capstone'],
+    hiddenimports=['torch_sparse'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -25,7 +25,7 @@ exe = EXE(
     pyz,
     a.scripts,
     [],
-    exclude_binaries=True, 
+    exclude_binaries=True,
     name='app',
     debug=False,
     bootloader_ignore_signals=False,
