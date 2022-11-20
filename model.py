@@ -35,7 +35,7 @@ class GAT(torch.nn.Module):
         return x
     
 def Model():
-    WEIGHT_PATH = "data/weightGAT.pt"
+    WEIGHT_PATH = "weightGAT.pt"
 
     inference_model = GAT(hidden_channels = latent_dim)
     inference_model.load_state_dict(torch.load(WEIGHT_PATH))
