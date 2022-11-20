@@ -2,5 +2,7 @@ sample
 sampleb
 __pycache__
 data
+build
+dist
 
 dataset.pt
