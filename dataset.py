@@ -72,3 +72,4 @@ if __name__ == "__main__":
     readFile('data/training/16g/ransom/', 1)
     
     torch.save(dataset, "data/dataset16N.pt")
+    op.saveDictionary('data/dict.json')

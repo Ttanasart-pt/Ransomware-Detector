@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch_geometric.nn import global_mean_pool
 from torch_geometric.nn import GATv2Conv
 
-latent_dim = 16
+latent_dim = 32
 
 class GAT(torch.nn.Module):
     def __init__(self, hidden_channels):
@@ -39,6 +39,6 @@ def Model():
 
     inference_model = GAT(hidden_channels = latent_dim)
     inference_model.load_state_dict(torch.load(WEIGHT_PATH))
-    inference_model.eval()
+    #inference_model.eval()
     
     return inference_model

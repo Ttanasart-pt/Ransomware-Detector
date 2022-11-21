@@ -1,5 +1,6 @@
 import torch
 from dismgrp import dismgrp
+from torch.nn.functional import softmax
 
 def isRansom(model, path):
     try:
@@ -10,5 +11,6 @@ def isRansom(model, path):
     res = model(data.x, data.edge_index, data.batch)[0]
     
     pre = torch.argmax(res).item()
-    prob = res[pre].item() * 100
+    sm = softmax(res, dim = 0)
+    prob = sm[pre].item() * 100
     return pre, prob

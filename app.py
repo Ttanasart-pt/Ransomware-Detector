@@ -38,7 +38,7 @@ class RADAR(ttk.Frame):
             self.resLabel.config(text = f"{e}")
         
     def onFileDrop(self, e):
-        path = e.data[1:-1]
+        path = e.data.lstrip('{').rstrip('}')
         self.fileDrop = path
         
         fname = os.path.basename(path)

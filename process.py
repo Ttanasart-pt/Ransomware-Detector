@@ -1,4 +1,5 @@
 import torch
+import json
 
 class OpcodeProcessor():
     def __init__(self, op_len = 5) -> None:
@@ -28,3 +29,7 @@ class OpcodeProcessor():
             sent = self.sentenceProcess(sentence[:5])
             s.append(sent)
         return torch.tensor(s)
+    
+    def saveDictionary(self, path):
+        with open(path, 'w') as f:
+            f.write(json.dumps(self.DICTIONARY))
