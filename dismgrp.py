@@ -1,8 +1,11 @@
-from assembly_extract import Disassamble, OPS_LENGTH
+from assembly_extract import Disassamble
 
 import torch
 from torch_geometric.data import Data
 from process import OpcodeProcessor
+
+op = OpcodeProcessor()
+op.loadDictionary('data/dict.json')
 
 def disasm(path):
     dism = Disassamble()
@@ -20,7 +23,6 @@ def disasm(path):
     return (ops, adj)
 
 def graphify(ops, adj):
-    op = OpcodeProcessor(OPS_LENGTH)
     op.sentencesRead(ops)
     
     x = op.sentenceIndex(ops).type(torch.float32)

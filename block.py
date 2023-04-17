@@ -54,7 +54,13 @@ class codeBlock(block):
         s = ''
         for i in self.opcodes:
             s += f"{i.mnemonic},"
-        return s    
+        return s
+    
+    def listOpcodes(self) -> list:
+        s = []
+        for i in self.opcodes:
+            s.append(i.mnemonic)
+        return s
 
 class dataBlock(block):
     def __init__(self, address, data) -> None:

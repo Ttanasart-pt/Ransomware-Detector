@@ -141,7 +141,7 @@ class Disassamble():
         for _, b in self.blocks.items():
             if not isinstance(b, codeBlock):
                 continue
-            ops.append(b.opcodes)
+            ops.append(b.listOpcodes())
         return ops
     
     def writeOpcode(self, fname):

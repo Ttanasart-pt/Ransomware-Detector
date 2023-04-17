@@ -8,9 +8,7 @@ from torch_geometric.data import InMemoryDataset
 import csv
 from process import OpcodeProcessor
 
-from assembly_extract import OPS_LENGTH
-
-op = OpcodeProcessor(OPS_LENGTH)
+op = OpcodeProcessor()
 
 def convGraph(path, y):
     opfile  = f"{path} ops.txt"

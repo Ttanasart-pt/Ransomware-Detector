@@ -8,7 +8,7 @@ a = Analysis(
     ['app.py'],
     pathex=['.\\env\\Lib\\site-packages'],
     binaries=collect_dynamic_libs("capstone"),
-    datas=[('./data/weightGAT.pt', '.')],
+    datas=[('./data/weightGAT2.pt', 'data'), ('./data/dict.json', 'data')],
     hiddenimports=[ 'sv_ttk',
                     'tkinterdnd2',
                     'pefile',
